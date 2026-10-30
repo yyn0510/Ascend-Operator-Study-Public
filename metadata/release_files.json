@@ -1,0 +1,407 @@
+[
+  {
+    "file": ".gitattributes",
+    "bytes": 89,
+    "sha256": "8b31d0f189dafbe9427736343132dbd43e78bffc7675fd6ef0dbbdb2a9f966be"
+  },
+  {
+    "file": ".gitignore",
+    "bytes": 55,
+    "sha256": "92cffd8f47d1d8e4b4b79e52d50dc04a076da25429b529035d5aba99151c25df"
+  },
+  {
+    "file": "01_v3/code/harness-01.zip",
+    "bytes": 2464156,
+    "sha256": "548f3d1821bb3a95d11d0309dc803b4342c35fb792f35b4007e68eacee0553b2"
+  },
+  {
+    "file": "01_v3/docs/裸基模评测流程.md",
+    "bytes": 30807,
+    "sha256": "5a4427ae709289a2d7c77bef02f3b17b4bf6d37ee4b7193cf63590e6cd466bf2"
+  },
+  {
+    "file": "01_v3/evidence/records-01.zip",
+    "bytes": 13506828,
+    "sha256": "937ae590f35fdcd72f36e434f96920ebc9a836b75e473e12478ccac5f9d31e1b"
+  },
+  {
+    "file": "01_v3/evidence/records-02.zip",
+    "bytes": 13181958,
+    "sha256": "7e267c871a8cacd69cf4d4a3961d9ec68e88dc4bc39f1a04de11c548be946ab0"
+  },
+  {
+    "file": "01_v3/evidence/records-03.zip",
+    "bytes": 13108458,
+    "sha256": "fe22b5d1828639985099cd6cc930cc45398191ec76bf32d888311b3ae4df77f2"
+  },
+  {
+    "file": "01_v3/evidence/records-04.zip",
+    "bytes": 13617080,
+    "sha256": "d27729f792d152bc1a053252aec43b7a4c512c95e8a8fb5a97cbf0ec66d71972"
+  },
+  {
+    "file": "01_v3/evidence/records-05.zip",
+    "bytes": 13335130,
+    "sha256": "c0afba53f09793bcc4cc0dc686efe9c216f5db0a98ee867fa96c0bd35601701c"
+  },
+  {
+    "file": "01_v3/evidence/records-06.zip",
+    "bytes": 16078963,
+    "sha256": "c56fe88a8872787aa1f245440b24f4ab42fcf265ab44e85b1b3f9c0e80737cfb"
+  },
+  {
+    "file": "01_v3/evidence/records-07.zip",
+    "bytes": 16213114,
+    "sha256": "5070ebbf6aeaa42f4d8dc0dc546b586caa05f7b90cbb8adf7b6de8e85d0e2ff5"
+  },
+  {
+    "file": "01_v3/evidence/records-08.zip",
+    "bytes": 13000644,
+    "sha256": "2470d6e8cf972750b660a4d933914b9655b74be329c2d887aff218267735494b"
+  },
+  {
+    "file": "01_v3/evidence/records-09.zip",
+    "bytes": 13438138,
+    "sha256": "9bcaaffe07992958c121c3deda3398ea01c5150c6c9bd3989c7da53118f2607c"
+  },
+  {
+    "file": "01_v3/evidence/records-10.zip",
+    "bytes": 6007489,
+    "sha256": "613c951ffe8309923aa5898442716b7e4c514e9239cd576c5c16f57e6de103c2"
+  },
+  {
+    "file": "01_v3/README.md",
+    "bytes": 2651,
+    "sha256": "ba24c84d17d84ba4a026fa89bd91048e8bb52aa9ad9005616eaa99bc7ec2af22"
+  },
+  {
+    "file": "01_v3/tables/v3_models.csv",
+    "bytes": 1677,
+    "sha256": "041c041898712852ffaa2dd730c6a385ebef2b053dd07194682fa2900a7056b4"
+  },
+  {
+    "file": "01_v3/tables/v3_op_means_wide.csv",
+    "bytes": 961,
+    "sha256": "75e26e4240578431c9ed808d85ab9e4208a0694ac3a0f6f7ad936c1460f4f7a5"
+  },
+  {
+    "file": "01_v3/tables/v3_operators.csv",
+    "bytes": 9915,
+    "sha256": "a6440eaa5c442b4ad2665a18a4291bd52161a0cf89ca4568faccdef6e50519dd"
+  },
+  {
+    "file": "01_v3/tables/v3_round_scores_wide.csv",
+    "bytes": 15312,
+    "sha256": "5b5cb5229392687a91ed8b210dcdbd394dbfdee8648fc03a0b31a62705e8a247"
+  },
+  {
+    "file": "01_v3/tables/v3_rounds.csv",
+    "bytes": 296189,
+    "sha256": "824971e6982e5d4975ff34b3632b56436596830033b866c574a7d155054b9173"
+  },
+  {
+    "file": "01_v3/tables/v3_trajectories.csv",
+    "bytes": 23344,
+    "sha256": "517193c4fa5d982821cedc65154c95da789998689c540b7750e12b1cd3fea002"
+  },
+  {
+    "file": "01_v3/tables/原始精度统计核查结果.json",
+    "bytes": 4333611,
+    "sha256": "74d19dc8be00f8151c5219fab07268a7fea5b5f1eaabad9b22a4ab53436a0ad5"
+  },
+  {
+    "file": "01_v3/tables/报告选择与历史最佳核查数据.json",
+    "bytes": 4333611,
+    "sha256": "74d19dc8be00f8151c5219fab07268a7fea5b5f1eaabad9b22a4ab53436a0ad5"
+  },
+  {
+    "file": "01_v3/tables/正式取数白名单.json",
+    "bytes": 1725,
+    "sha256": "358263168bac14e0578e067797b50ab55bf48ee41e82e7f29a185d7c6c36376a"
+  },
+  {
+    "file": "01_v3/tables/逐轮收益既有核查.json",
+    "bytes": 313909,
+    "sha256": "1c7ac2b52da63f33e1137dc4cb457cb5d59bbca85687c33c0a7dc32eb6f638ce"
+  },
+  {
+    "file": "02_model_transfer/audits/audit_records-01.zip",
+    "bytes": 125017,
+    "sha256": "06a1a8efc57ed281301fcc50c4e5750d7c238ecf6a00a64cfd850a653b6a1edc"
+  },
+  {
+    "file": "02_model_transfer/audits/gelu_reference_audit-01.zip",
+    "bytes": 66172,
+    "sha256": "7e6e7f2cb415dd20bdcdb51d46f72dd29c4593cfe762f53f2caa24743cdf5b80"
+  },
+  {
+    "file": "02_model_transfer/audits/source_statistics-01.zip",
+    "bytes": 135469,
+    "sha256": "bd11196337f22c2ef52ff21376689e7dfc71f3c8e32ad2dbef6920d3c36d0fde"
+  },
+  {
+    "file": "02_model_transfer/candidates/fixed_candidates-01.zip",
+    "bytes": 1122207,
+    "sha256": "39d758b70d39b02139b8211c2d6e131ae6677feee2987c34d872de03cf9608d0"
+  },
+  {
+    "file": "02_model_transfer/code/A_已有路径实验-01.zip",
+    "bytes": 655317,
+    "sha256": "ee1d0bd8baa1339f5d6365321495d86cb5abf93d595d5c482b91c5cae56c8872"
+  },
+  {
+    "file": "02_model_transfer/code/B_新路径预检-01.zip",
+    "bytes": 1250126,
+    "sha256": "8cac9017f59c8e8f30c40abe64c69f9a2723daf8555596c373b190bf7f27e795"
+  },
+  {
+    "file": "02_model_transfer/code/C_正式扩展-01.zip",
+    "bytes": 1725531,
+    "sha256": "9dfad2892bb04533386e70046464a103c1a57befa29d6973a80a521adb37fb35"
+  },
+  {
+    "file": "02_model_transfer/code/D_MMStar与范数补充_20261020-01.zip",
+    "bytes": 1135187,
+    "sha256": "9bcde887f3cd4e1e27df06c171465030772e7a451eeec9721f7e1afa3ecb2967"
+  },
+  {
+    "file": "02_model_transfer/code/early_execution-01.zip",
+    "bytes": 1638929,
+    "sha256": "02642ecac354a86dbcf59adb82b19fad6a79e32126f9a6407a296cd4a777fde5"
+  },
+  {
+    "file": "02_model_transfer/data/subset_manifests-01.zip",
+    "bytes": 34303,
+    "sha256": "eae9cccd4a7a934b3ad91a4c3f9b2ead25f532cf58f19971b59c7b160860201d"
+  },
+  {
+    "file": "02_model_transfer/docs/任务结果表.md",
+    "bytes": 16371,
+    "sha256": "9800cd4698d1bf8982a3e84b5ec4e02b9889d6c06596b5738ea4d92525237d41"
+  },
+  {
+    "file": "02_model_transfer/docs/实验设置参考文献与引用建议.md",
+    "bytes": 19138,
+    "sha256": "693ee0425b69141832e6a669cb484b89ad2353d1f5047ecba5f7e1a9f2a9edbe"
+  },
+  {
+    "file": "02_model_transfer/evidence/auto_clip_screen_001_results-01.zip",
+    "bytes": 530135,
+    "sha256": "03df92bc430145109581749a2a5f35edcbae47b38185fc9224597b380879b35e"
+  },
+  {
+    "file": "02_model_transfer/evidence/auto_completion_002_results-01.zip",
+    "bytes": 2349181,
+    "sha256": "780b5cba6fc29f73adf480b4b24974d8939257599120f241dd997e3739056c58"
+  },
+  {
+    "file": "02_model_transfer/evidence/auto_dev_001_results-01.zip",
+    "bytes": 312836,
+    "sha256": "db1e438030fc538f70e50e3225b09e14c2f3927910d495487f4bfdfa84afcfc1"
+  },
+  {
+    "file": "02_model_transfer/evidence/auto_followup_001_results-01.zip",
+    "bytes": 833328,
+    "sha256": "4927f84aa8b6cf35baed684373ca149ae8418742765916695ed6d959813b1dc1"
+  },
+  {
+    "file": "02_model_transfer/evidence/auto_formal_001_results-01.zip",
+    "bytes": 426250,
+    "sha256": "db149d1db2032d787bc8cc813b7f3c90703529ea2221c4e0db63652f3ec62b57"
+  },
+  {
+    "file": "02_model_transfer/evidence/C_followup_20261020_104410_216979_attempt1_results-01.zip",
+    "bytes": 125796,
+    "sha256": "46ed39f2b4229149e29e1cce096b78fd4bb845178e742703e1556780457f369e"
+  },
+  {
+    "file": "02_model_transfer/evidence/extension_A_20261019_010244_26295_results-01.zip",
+    "bytes": 204849,
+    "sha256": "5a9530581fb9ca162426ae064175e3503ee1e4514edf49892e951ee9a292de32"
+  },
+  {
+    "file": "02_model_transfer/evidence/extension_A_20261019_011532_28198_results-01.zip",
+    "bytes": 2379128,
+    "sha256": "d9c0cc795bc0aa150de7deb718902d7aed3439e52bf7398c8a3b5cedff9775ac"
+  },
+  {
+    "file": "02_model_transfer/evidence/extension_B_20261019_101955_48347_results-01.zip",
+    "bytes": 894897,
+    "sha256": "75f929c9def931de6fa8f8ae7626768f38dfde4fb7779f5493958c5e1e5a55e4"
+  },
+  {
+    "file": "02_model_transfer/evidence/extension_C_20261019_153627_93317_attempt1_results-01.zip",
+    "bytes": 7096748,
+    "sha256": "22bdf62d32888f8c7432fdd9a52c1c1dcc98258b1b42787703a863f84959b149"
+  },
+  {
+    "file": "02_model_transfer/evidence/extension_C_20261019_153627_93317_attempt1_results-02.zip",
+    "bytes": 5383600,
+    "sha256": "ac556e537c5c6944f2ad503773993837aed1ebc172e71268ef0d1c8c49bf07e6"
+  },
+  {
+    "file": "02_model_transfer/evidence/extension_D_20261020_152026_2347_attempt1_results-01.zip",
+    "bytes": 1447648,
+    "sha256": "1b425e0fc34c729d0cebec8a2265ee5bc8d6b94a2c238505e6680b7f375b6b22"
+  },
+  {
+    "file": "02_model_transfer/evidence/gelu_semantics_001_results-01.zip",
+    "bytes": 17813597,
+    "sha256": "58e87b8f3419d653dc55130fe0a62aa5fc6f57c48f65f18fe8ef92c38e92db46"
+  },
+  {
+    "file": "02_model_transfer/evidence/Norm_mechanism_20261020_194642_2275_results-01.zip",
+    "bytes": 399978,
+    "sha256": "6cb56d285ec2b55b20b351885594041106bcf4fef9f939b26805c304aa829be3"
+  },
+  {
+    "file": "02_model_transfer/evidence/Norm_reproduce_20261020_174335_14029_results-01.zip",
+    "bytes": 219674,
+    "sha256": "f3ff2a0f8b47fd37b3a76fa5ca42de9dce66d89d9a775fe73e533194f6886352"
+  },
+  {
+    "file": "02_model_transfer/protocols/C收尾独立协议.json",
+    "bytes": 2745,
+    "sha256": "c7a32a385684e67599eb96b7d6cc6efcd36ec6248c4f7b2db38786190d998ef7"
+  },
+  {
+    "file": "02_model_transfer/protocols/C正式冻结协议.json",
+    "bytes": 104124,
+    "sha256": "606afeb23b80f0daa748cad95881d726037dca141b5e9dcf83de6efe878008b9"
+  },
+  {
+    "file": "02_model_transfer/protocols/D正式冻结协议.json",
+    "bytes": 22239,
+    "sha256": "5097d5b2e5f40e1a911e86e9cd5947c58c700622aca521f8a34c21252d5cc862"
+  },
+  {
+    "file": "02_model_transfer/protocols/ForeachNorm原件复现冻结协议.json",
+    "bytes": 2942,
+    "sha256": "3b229c53d55a16e07182b68e0f5ebdb31d42769ca762114754890f5e152d69b5"
+  },
+  {
+    "file": "02_model_transfer/protocols/ForeachNorm机制诊断冻结协议.json",
+    "bytes": 2589,
+    "sha256": "22cb6286c6e2e4e9568e736b6c97431c49329b436479da8131f58853a0e40e1d"
+  },
+  {
+    "file": "02_model_transfer/protocols/固定候选32份.json",
+    "bytes": 56500,
+    "sha256": "0e59d1eebd785d236c2f3cdecf878dde0061e00a8766f2aaf24095f0770191d9"
+  },
+  {
+    "file": "02_model_transfer/protocols/模型权重校验.json",
+    "bytes": 13663,
+    "sha256": "870f36c79a8ed28f241e54541a2edfd387a7652c10bc9a8b3ca6a7eaa85b2619"
+  },
+  {
+    "file": "02_model_transfer/README.md",
+    "bytes": 3855,
+    "sha256": "8728135b388955afc48dacd5b873498c7d042954623709e84febafe6b4bffbd2"
+  },
+  {
+    "file": "02_model_transfer/support/early_support-01.zip",
+    "bytes": 1851362,
+    "sha256": "7c352e15768e27b41599dc6f6eac879272980224b66fc4a7016bffe18353bc77"
+  },
+  {
+    "file": "02_model_transfer/tables/AI2D_任务与条件对照.json",
+    "bytes": 46103,
+    "sha256": "3046b6b3dd287d91d26ae28effb4d32addd91819631d3168a4dfb5b94da09449"
+  },
+  {
+    "file": "02_model_transfer/tables/COCO_任务与条件对照.json",
+    "bytes": 90449,
+    "sha256": "3806634608a2f9b8ab818c85a4d9d22739d44c90dfd751da3bc5ef0d83db10c5"
+  },
+  {
+    "file": "02_model_transfer/tables/DocVQA_任务与条件对照.json",
+    "bytes": 20067,
+    "sha256": "6c3fb1b3b236966dd7ac1c30c36473cd22ce4c67aaf89f9326f8fe22cd3c97dc"
+  },
+  {
+    "file": "02_model_transfer/tables/ForeachNorm准入与故障定位.json",
+    "bytes": 83814,
+    "sha256": "b2ae8871ab892170f8b35cbe01039763279097de26b930ffa516be6d906d3923"
+  },
+  {
+    "file": "02_model_transfer/tables/MMStar_任务与条件对照.json",
+    "bytes": 12622,
+    "sha256": "c8f34d657470234c11d41ce5b298b34727ce02eecf436d96e52c5595dc55de76"
+  },
+  {
+    "file": "02_model_transfer/tables/参考文献.bib",
+    "bytes": 6141,
+    "sha256": "15feeb0262ac5bf3bd9a6d06471e90dbc4e7ff2ad1c134c19227920e2fea4e83"
+  },
+  {
+    "file": "02_model_transfer/tables/模型完整路径计时.json",
+    "bytes": 631951,
+    "sha256": "6f5456d2d25b1f157dcd6cf6e8a9052471fd43dfe76beb03cdc65bb4dc507e11"
+  },
+  {
+    "file": "02_model_transfer/tables/真实输入扫描.json",
+    "bytes": 911850,
+    "sha256": "c68d7bb37fc4d2e0afe2d6c5345984b05631eb8afc0de8cda9e6db0b58b5cebc"
+  },
+  {
+    "file": "licenses/CANN-LICENSE.txt",
+    "bytes": 5278,
+    "sha256": "cb282ac2b66d7d6734c3fb354db792b28cf23ab29fbc16d5cfd8bd542bedeb1e"
+  },
+  {
+    "file": "metadata/member_manifest.jsonl.gz",
+    "bytes": 2175823,
+    "sha256": "85646765372be1643e39a9ac00dc318a2e1abb4132ea20c4efcb69b2bfeebe02"
+  },
+  {
+    "file": "metadata/redaction_log.json",
+    "bytes": 2100645,
+    "sha256": "53f3b09e30bb60d69822a455b90b91b2f1ff226672a79244ba3bcf9585f0288e"
+  },
+  {
+    "file": "README.md",
+    "bytes": 3382,
+    "sha256": "437b5050c4471fff4d1ca8bfdda3b45d655e08641b1e2253c0e49e0d110f6756"
+  },
+  {
+    "file": "README_zh.md",
+    "bytes": 1702,
+    "sha256": "6a78a565ee3ef1d81634d601a8306939df35a3628efb4c677a6b47c004594c8c"
+  },
+  {
+    "file": "RELEASE_NOTES.md",
+    "bytes": 1777,
+    "sha256": "882d74710d8922ab0bddbac79762b26c28eec10c05bd5d0b2c0a56bfd5e14818"
+  },
+  {
+    "file": "REPRODUCIBILITY.md",
+    "bytes": 3016,
+    "sha256": "aae91520467f16ec7440b6cb297ff7c512d8cc16d9a4f36a346c94b6b7348b58"
+  },
+  {
+    "file": "RESOURCES.md",
+    "bytes": 1183,
+    "sha256": "157e2740fcf63fa983d1cfbe14a0a3959998f8976649b6f55ffd782c82f92bab"
+  },
+  {
+    "file": "THIRD_PARTY_NOTICES.md",
+    "bytes": 970,
+    "sha256": "396f5e3e15217f4cccb4181b16963945270193ce2b9c4ba5a0969761ae202348"
+  },
+  {
+    "file": "tools/find_evidence.py",
+    "bytes": 657,
+    "sha256": "d88610fc3b8b6f8c10072ae26d2755f08025e887a3b1c524ada1a96b2bdb4b86"
+  },
+  {
+    "file": "tools/verify_artifact.py",
+    "bytes": 4226,
+    "sha256": "1afcbac6171423472e7ae2a36041d841c06bf9c8d6b539efe4bc5c2399d543dc"
+  },
+  {
+    "file": "VALIDATION.md",
+    "bytes": 2034,
+    "sha256": "e0716c2cd83d41f4000d2832470f765b1bbea2abcd53c768f23ab4f2bca1abc1"
+  }
+]

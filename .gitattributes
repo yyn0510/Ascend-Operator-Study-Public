@@ -1,0 +1,2 @@
+# Preserve published bytes and checksum validity across Windows/Linux checkouts.
+* -text

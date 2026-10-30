@@ -1,0 +1,1973 @@
+{
+  "九候选分阶段状态": {
+    "scope": "Unique fixed ForeachNorm source candidates across B/C/D, not rounds, builds, or host jobs",
+    "counts": {
+      "fixed_sources_attempted": 9,
+      "benchmark_full_correct": 8,
+      "real_input_gate_passed": 7,
+      "formal_task_comparisons_completed": 7,
+      "default_timing_candidate_groups_completed": 7,
+      "benchmark_precision_failed": 1,
+      "real_input_execution_failed": 1
+    },
+    "pipeline": [
+      "fixed_candidate",
+      "original_benchmark_recheck",
+      "real_input_gate",
+      "formal_task_comparison",
+      "complete_path_measurement",
+      "condition_scan_and_interpretation"
+    ],
+    "rows": [
+      {
+        "candidate": "DeepSeek_V4_1_Flash_foreach_norm_002_R5",
+        "initial_batch": "B",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 20,
+        "original_benchmark_total": 20,
+        "real_input_gate": "passed",
+        "formal_task_comparison": "completed",
+        "default_complete_path_timing": "3_sessions_completed",
+        "condition_scan": "completed",
+        "interpretation": "application_eligible"
+      },
+      {
+        "candidate": "DeepSeek_V4_1_Flash_foreach_norm_003_R5",
+        "initial_batch": "B",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 20,
+        "original_benchmark_total": 20,
+        "real_input_gate": "passed",
+        "formal_task_comparison": "completed",
+        "default_complete_path_timing": "3_sessions_completed",
+        "condition_scan": "completed",
+        "interpretation": "application_eligible"
+      },
+      {
+        "candidate": "GLM_5_3_foreach_norm_003_R5",
+        "initial_batch": "B",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 20,
+        "original_benchmark_total": 20,
+        "real_input_gate": "passed",
+        "formal_task_comparison": "completed",
+        "default_complete_path_timing": "3_sessions_completed",
+        "condition_scan": "completed",
+        "interpretation": "application_eligible"
+      },
+      {
+        "candidate": "Grok_4_6_foreach_norm_001_R5",
+        "initial_batch": "B",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 20,
+        "original_benchmark_total": 20,
+        "real_input_gate": "passed",
+        "formal_task_comparison": "completed",
+        "default_complete_path_timing": "3_sessions_completed",
+        "condition_scan": "supported_conditions_completed_with_C_followup; row128_outside_contract",
+        "interpretation": "application_eligible"
+      },
+      {
+        "candidate": "Grok_4_6_foreach_norm_003_R5",
+        "initial_batch": "B",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 20,
+        "original_benchmark_total": 20,
+        "real_input_gate": "passed",
+        "formal_task_comparison": "completed",
+        "default_complete_path_timing": "3_sessions_completed",
+        "condition_scan": "completed",
+        "interpretation": "application_eligible"
+      },
+      {
+        "candidate": "Kimi_K3_foreach_norm_001_R4",
+        "initial_batch": "B",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 19,
+        "original_benchmark_total": 20,
+        "real_input_gate": "not_run_after_benchmark_failure",
+        "formal_task_comparison": "not_run_after_benchmark_failure",
+        "default_complete_path_timing": "not_run_after_benchmark_failure",
+        "condition_scan": "not_run_after_benchmark_failure",
+        "interpretation": "benchmark_precision_rejected"
+      },
+      {
+        "candidate": "Kimi_K3_foreach_norm_002_R2",
+        "initial_batch": "B",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 20,
+        "original_benchmark_total": 20,
+        "real_input_gate": "passed",
+        "formal_task_comparison": "completed",
+        "default_complete_path_timing": "3_sessions_completed",
+        "condition_scan": "completed",
+        "interpretation": "application_eligible"
+      },
+      {
+        "candidate": "Qwen3_8_Max_foreach_norm_003_R4",
+        "initial_batch": "B",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 20,
+        "original_benchmark_total": 20,
+        "real_input_gate": "passed",
+        "formal_task_comparison": "completed",
+        "default_complete_path_timing": "3_sessions_completed",
+        "condition_scan": "completed",
+        "interpretation": "application_eligible"
+      },
+      {
+        "candidate": "Kimi_K3_foreach_norm_003_R2",
+        "initial_batch": "D",
+        "fixed_source": true,
+        "original_benchmark_passed_cases": 20,
+        "original_benchmark_total": 20,
+        "real_input_gate": "execution_failed_UB_alignment_507035",
+        "formal_task_comparison": "not_run_after_real_input_execution_failure",
+        "default_complete_path_timing": "not_run_after_real_input_execution_failure",
+        "condition_scan": "not_run_after_real_input_execution_failure",
+        "interpretation": "eighth_benchmark_qualified_source; not_eighth_application_eligible_source",
+        "repeatability_confirmation": {
+          "run_id": "Norm_reproduce_20261020_174335_14029",
+          "same_input_new_process_repetitions": 3,
+          "same_alignment_execution_failures": 3,
+          "native_controls_exact": 3,
+          "fresh_after_health_passed": 3,
+          "precise_source_instruction_confirmed": false,
+          "report": "02_合并结果表/ForeachNorm原件三次独立复现.md"
+        },
+        "mechanism_diagnostic": {
+          "run_id": "Norm_mechanism_20261020_194642_2275",
+          "points": 21,
+          "variants": 3,
+          "archive_and_rebuilt_failures_match_tail_padding_conditions": true,
+          "diagnostic_points_numerically_passed": 7,
+          "interpretation": "controlled scan and isolated source change support the tail-fill alignment mechanism in tested conditions",
+          "instruction_PC_trace_performed": false,
+          "diagnostic_promoted_to_formal_candidate": false,
+          "report": "02_合并结果表/ForeachNorm机制定位结果.md"
+        }
+      }
+    ],
+    "unmeasured_policy": "not_run is not zero, numerical rejection, or measured slowdown",
+    "original_archives_modified": false
+  },
+  "应用准入失败": {
+    "candidate": "Kimi_K3_foreach_norm_003_R2",
+    "original_benchmark": {
+      "full_correct": true,
+      "passed": 20,
+      "total": 20,
+      "returncode": 0,
+      "note": "Precision-only rerun; aggregate score is not a V3 score or a speed result"
+    },
+    "application_status": "real_input_gate_execution_failed",
+    "error": "NPU VEC UB address alignment exception; stream synchronization error 507035",
+    "first_capture": {
+      "file": "0000.pt",
+      "sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+      "module": "rowwise_norm",
+      "shape": [
+        8,
+        512
+      ],
+      "dtype": "torch.bfloat16",
+      "phase": "prefill"
+    },
+    "first_capture_output_comparison_not_completed": true,
+    "all_planned_capture_shapes": [
+      [
+        8,
+        512
+      ],
+      [
+        40,
+        512
+      ],
+      [
+        3,
+        512
+      ],
+      [
+        15,
+        512
+      ]
+    ],
+    "native_wrapper_features_exact": true,
+    "fresh_process_NPU_health_passed": true,
+    "formal_COCO_quality": "not_run_after_failed_gate",
+    "three_model_timing_sessions": "not_run_after_failed_gate",
+    "twenty_replay_points": "not_run_after_failed_gate",
+    "failure_log_member": "batch/logs/gate_initial_clip_Kimi_K3_foreach_norm_003_R2.attempt_1_1792485983230789242.log",
+    "root_cause_boundary": "Device log confirms alignment exception, not the precise offending source instruction. No successful per-capture report was saved. Captured tensors/wheels are not in this export, so no local NPU reproduction.",
+    "combined_norm_accounting": {
+      "sources_attempted": 9,
+      "original_benchmark_full_correct": 8,
+      "application_eligible": 7,
+      "benchmark_rejected": 1,
+      "application_execution_failed": 1
+    },
+    "repeatability_confirmation": {
+      "run_id": "Norm_reproduce_20261020_174335_14029",
+      "same_input_new_process_repetitions": 3,
+      "same_alignment_execution_failures": 3,
+      "native_controls_exact": 3,
+      "fresh_after_health_passed": 3,
+      "precise_source_instruction_confirmed": false,
+      "report": "02_合并结果表/ForeachNorm原件三次独立复现.md"
+    },
+    "mechanism_diagnostic": {
+      "run_id": "Norm_mechanism_20261020_194642_2275",
+      "points": 21,
+      "variants": 3,
+      "archive_and_rebuilt_failures_match_tail_padding_conditions": true,
+      "diagnostic_points_numerically_passed": 7,
+      "interpretation": "controlled scan and isolated source change support the tail-fill alignment mechanism in tested conditions",
+      "instruction_PC_trace_performed": false,
+      "diagnostic_promoted_to_formal_candidate": false,
+      "report": "02_合并结果表/ForeachNorm机制定位结果.md"
+    }
+  },
+  "原件三次复现": {
+    "archive": "PUBLIC_HOME\\Downloads\\Norm_reproduce_20261020_174335_14029_results.zip",
+    "archive_sha256": "027cf4dfe88af4f1022cbee0eec596b21875f92adcf34e53b0f992f3e63290eb",
+    "bytes": 219674,
+    "zip_files": 57,
+    "CRC_verified": true,
+    "export_manifest_entries_verified": 56,
+    "run_id": "Norm_reproduce_20261020_174335_14029",
+    "status": "completed_with_records",
+    "error": null,
+    "step_statuses": {
+      "completed": 10
+    },
+    "created_utc": "2026-10-20T09:43:35.599158+00:00",
+    "finished_utc": "2026-10-20T09:44:53.625055+00:00",
+    "elapsed_seconds": 78.025897,
+    "restoration_verified": true,
+    "original_D_provenance_directly_matched": [
+      "plan.json",
+      "PACKAGE_MANIFEST.json",
+      "run_cloud.py",
+      "base_workers.py",
+      "cloud_helpers.py",
+      "workers.py",
+      "results/extension_D_20261020_152026_2347/runtime.json",
+      "results/extension_D_20261020_152026_2347/batch_status.json",
+      "results/extension_D_20261020_152026_2347/build_Kimi_K3_foreach_norm_003_R2/receipt.json",
+      "results/extension_D_20261020_152026_2347/dev_clip_coco/captures/foreach_norm/index.json",
+      "results/extension_D_20261020_152026_2347/requests/gate_initial_clip_Kimi_K3_foreach_norm_003_R2.attempt_1_1792485983230789242.json",
+      "results/extension_D_20261020_152026_2347/logs/gate_initial_clip_Kimi_K3_foreach_norm_003_R2.attempt_1_1792485983230789242.log"
+    ],
+    "remaining_pinned_helpers_matched_to_D_package_manifest": true,
+    "script_matches_local_delivery": true,
+    "candidate": "Kimi_K3_foreach_norm_003_R2",
+    "original_benchmark_precision_from_D": {
+      "passed": 20,
+      "total": 20
+    },
+    "preflight_identity": {
+      "candidate": "Kimi_K3_foreach_norm_003_R2",
+      "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+      "wheel_sha256": "b4700856ab9aeec69645bcc77be17643db4e252a4a0c641c4d75779bd1f74e31",
+      "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+      "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+      "capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4"
+    },
+    "probe_results": [
+      {
+        "probe": 1,
+        "pid": 14245,
+        "candidate": "Kimi_K3_foreach_norm_003_R2",
+        "candidate_status": "candidate_execution_failed",
+        "native_reference_exact": true,
+        "before_device_check_passed": true,
+        "after_device_check_passed": true,
+        "after_device_check_pid": 14379,
+        "exact_UB_alignment_signature": true,
+        "error_code": 507035,
+        "identity": {
+          "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+          "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+          "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+          "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+          "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+          "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6"
+        },
+        "capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "candidate_output_comparison": "not_completed_due_to_execution_exception",
+        "source_result": "batch/probe_1/result.json",
+        "source_log": "batch/logs/probe_1.log"
+      },
+      {
+        "probe": 2,
+        "pid": 14452,
+        "candidate": "Kimi_K3_foreach_norm_003_R2",
+        "candidate_status": "candidate_execution_failed",
+        "native_reference_exact": true,
+        "before_device_check_passed": true,
+        "after_device_check_passed": true,
+        "after_device_check_pid": 14575,
+        "exact_UB_alignment_signature": true,
+        "error_code": 507035,
+        "identity": {
+          "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+          "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+          "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+          "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+          "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+          "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6"
+        },
+        "capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "candidate_output_comparison": "not_completed_due_to_execution_exception",
+        "source_result": "batch/probe_2/result.json",
+        "source_log": "batch/logs/probe_2.log"
+      },
+      {
+        "probe": 3,
+        "pid": 14742,
+        "candidate": "Kimi_K3_foreach_norm_003_R2",
+        "candidate_status": "candidate_execution_failed",
+        "native_reference_exact": true,
+        "before_device_check_passed": true,
+        "after_device_check_passed": true,
+        "after_device_check_pid": 14865,
+        "exact_UB_alignment_signature": true,
+        "error_code": 507035,
+        "identity": {
+          "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+          "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+          "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+          "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+          "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+          "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6"
+        },
+        "capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "candidate_output_comparison": "not_completed_due_to_execution_exception",
+        "source_result": "batch/probe_3/result.json",
+        "source_log": "batch/logs/probe_3.log"
+      }
+    ],
+    "repeatability": {
+      "fresh_probe_processes": 3,
+      "execution_failures": 3,
+      "same_UB_alignment_signature": 3,
+      "native_exact_controls": 3,
+      "device_before_checks_passed": 3,
+      "fresh_device_after_checks_passed": 3
+    },
+    "conclusion": "Original compiled candidate fails reproducibly on this fixed BF16 CLIP real-input replay in three fresh processes.",
+    "boundary": "Not a failure-rate estimate, not a claim for all shapes or hosts, and not an NPU proof of the precise source instruction. No model quality comparison or throughput measurement was performed.",
+    "instrumentation_boundary": "Health/native checks added before invocation; original process allocation history was not reproduced.",
+    "counting": "Same candidate and input repeated; remains 9 norm sources attempted, 8 baseline-qualified, 7 application-qualified."
+  },
+  "三版本七长度": [
+    {
+      "length": 512,
+      "actual_num_partials": 1,
+      "tail_padding_needed_from_source_condition": true,
+      "original_tail_start_offset_mod32": 4,
+      "same_input_value_hash_across_variants": "0a2832249595f1974cee1dcd4013212b48eac4b0af808d1bf41c6ce156740a30",
+      "outcomes": {
+        "archived_original": "candidate_execution_failed",
+        "rebuilt_control": "candidate_execution_failed",
+        "aligned_tail_diagnostic": "success_within_fixed_tolerance"
+      },
+      "diagnostic_norm_max_abs_vs_native": 0.0,
+      "diagnostic_normalized_features_max_abs_vs_native": 0.0,
+      "diagnostic_exact_to_native": true
+    },
+    {
+      "length": 4096,
+      "actual_num_partials": 1,
+      "tail_padding_needed_from_source_condition": true,
+      "original_tail_start_offset_mod32": 4,
+      "same_input_value_hash_across_variants": "d1bfa637e6d24b9e3533c2e1b9444b170f34852cb7f4883766819aaca7200533",
+      "outcomes": {
+        "archived_original": "candidate_execution_failed",
+        "rebuilt_control": "candidate_execution_failed",
+        "aligned_tail_diagnostic": "success_within_fixed_tolerance"
+      },
+      "diagnostic_norm_max_abs_vs_native": 0.25,
+      "diagnostic_normalized_features_max_abs_vs_native": 0.0009765625,
+      "diagnostic_exact_to_native": false
+    },
+    {
+      "length": 4097,
+      "actual_num_partials": 2,
+      "tail_padding_needed_from_source_condition": true,
+      "original_tail_start_offset_mod32": 8,
+      "same_input_value_hash_across_variants": "0c82501d874a7bebf7cf22016b9ba5aff5dd773e73b923772527415df5212c5e",
+      "outcomes": {
+        "archived_original": "candidate_execution_failed",
+        "rebuilt_control": "candidate_execution_failed",
+        "aligned_tail_diagnostic": "success_within_fixed_tolerance"
+      },
+      "diagnostic_norm_max_abs_vs_native": 0.25,
+      "diagnostic_normalized_features_max_abs_vs_native": 0.0009765625,
+      "diagnostic_exact_to_native": false
+    },
+    {
+      "length": 24577,
+      "actual_num_partials": 7,
+      "tail_padding_needed_from_source_condition": true,
+      "original_tail_start_offset_mod32": 28,
+      "same_input_value_hash_across_variants": "d531cdf32b332e378b40f3f53fa478d6764cad6a18971ff2de91123a45d7b04d",
+      "outcomes": {
+        "archived_original": "candidate_execution_failed",
+        "rebuilt_control": "candidate_execution_failed",
+        "aligned_tail_diagnostic": "success_within_fixed_tolerance"
+      },
+      "diagnostic_norm_max_abs_vs_native": 0.5,
+      "diagnostic_normalized_features_max_abs_vs_native": 0.00048828125,
+      "diagnostic_exact_to_native": false
+    },
+    {
+      "length": 28673,
+      "actual_num_partials": 8,
+      "tail_padding_needed_from_source_condition": false,
+      "original_tail_start_offset_mod32": 0,
+      "same_input_value_hash_across_variants": "8dc9eb676c2fb088f134fadb4868ee9131699bcd1bea196ae08b267767fefabf",
+      "outcomes": {
+        "archived_original": "success_within_fixed_tolerance",
+        "rebuilt_control": "success_within_fixed_tolerance",
+        "aligned_tail_diagnostic": "success_within_fixed_tolerance"
+      },
+      "diagnostic_norm_max_abs_vs_native": 0.5,
+      "diagnostic_normalized_features_max_abs_vs_native": 0.00048828125,
+      "diagnostic_exact_to_native": false
+    },
+    {
+      "length": 32768,
+      "actual_num_partials": 8,
+      "tail_padding_needed_from_source_condition": false,
+      "original_tail_start_offset_mod32": 0,
+      "same_input_value_hash_across_variants": "664c9de4c94aac7d692d2cee1c5f9eabc558a86eec3e01d6a104bd9366609bd4",
+      "outcomes": {
+        "archived_original": "success_within_fixed_tolerance",
+        "rebuilt_control": "success_within_fixed_tolerance",
+        "aligned_tail_diagnostic": "success_within_fixed_tolerance"
+      },
+      "diagnostic_norm_max_abs_vs_native": 0.0,
+      "diagnostic_normalized_features_max_abs_vs_native": 0.0,
+      "diagnostic_exact_to_native": true
+    },
+    {
+      "length": 32769,
+      "actual_num_partials": 9,
+      "tail_padding_needed_from_source_condition": true,
+      "original_tail_start_offset_mod32": 4,
+      "same_input_value_hash_across_variants": "54d451f196dc401885d427fd75239ac14550dd872e41f6bb3de712934e402f30",
+      "outcomes": {
+        "archived_original": "candidate_execution_failed",
+        "rebuilt_control": "candidate_execution_failed",
+        "aligned_tail_diagnostic": "success_within_fixed_tolerance"
+      },
+      "diagnostic_norm_max_abs_vs_native": 0.0,
+      "diagnostic_normalized_features_max_abs_vs_native": 0.0,
+      "diagnostic_exact_to_native": true
+    }
+  ],
+  "二十一点原记录": [
+    {
+      "variant": "archived_original",
+      "length": 512,
+      "pid": 2669,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+        "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+        "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6",
+        "variant": "archived_original",
+        "diagnostic_only": false
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 2669
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 1,
+        "block_length": 512,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 512,
+        "value_sha256": "0a2832249595f1974cee1dcd4013212b48eac4b0af808d1bf41c6ce156740a30",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": true,
+        "role": "original real input"
+      },
+      "saved_reference_control": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.026683084746146335,
+        "max_relative_vs_CPU_FP64": 0.002431633475294471
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_archived_original_n512/result.json",
+      "source_log": "batch/logs/scan_archived_original_n512.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 2803
+      }
+    },
+    {
+      "variant": "archived_original",
+      "length": 4096,
+      "pid": 2876,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+        "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+        "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6",
+        "variant": "archived_original",
+        "diagnostic_only": false
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 2876
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 1,
+        "block_length": 4096,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 4096,
+        "value_sha256": "d1bfa637e6d24b9e3533c2e1b9444b170f34852cb7f4883766819aaca7200533",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.1271600903288146,
+        "max_relative_vs_CPU_FP64": 0.003958024611303674
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_archived_original_n4096/result.json",
+      "source_log": "batch/logs/scan_archived_original_n4096.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 2999
+      }
+    },
+    {
+      "variant": "archived_original",
+      "length": 4097,
+      "pid": 3083,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+        "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+        "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6",
+        "variant": "archived_original",
+        "diagnostic_only": false
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3083
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 2,
+        "block_length": 2049,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 8,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          4097
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 4097,
+        "value_sha256": "0c82501d874a7bebf7cf22016b9ba5aff5dd773e73b923772527415df5212c5e",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.12797973937577467,
+        "max_relative_vs_CPU_FP64": 0.003983435635043177
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_archived_original_n4097/result.json",
+      "source_log": "batch/logs/scan_archived_original_n4097.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3209
+      }
+    },
+    {
+      "variant": "archived_original",
+      "length": 24577,
+      "pid": 3282,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+        "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+        "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6",
+        "variant": "archived_original",
+        "diagnostic_only": false
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3282
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 7,
+        "block_length": 3511,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 28,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          24577
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 24577,
+        "value_sha256": "d531cdf32b332e378b40f3f53fa478d6764cad6a18971ff2de91123a45d7b04d",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.3428497850464822,
+        "max_relative_vs_CPU_FP64": 0.004654670782754212
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_archived_original_n24577/result.json",
+      "source_log": "batch/logs/scan_archived_original_n24577.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3419
+      }
+    },
+    {
+      "variant": "archived_original",
+      "length": 28673,
+      "pid": 3492,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+        "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+        "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6",
+        "variant": "archived_original",
+        "diagnostic_only": false
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3492
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 8,
+        "block_length": 3585,
+        "tile_elems": 8192,
+        "tail_padding_branch": false,
+        "original_tail_start_offset_mod32": 0,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          28673
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 28673,
+        "value_sha256": "8dc9eb676c2fb088f134fadb4868ee9131699bcd1bea196ae08b267767fefabf",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.2635656642859914,
+        "max_relative_vs_CPU_FP64": 0.003478791711755892
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.5,
+        "mean_abs": 0.0625,
+        "exact_equal": false
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 229384,
+        "failed_elements": 0,
+        "max_abs": 0.00048828125,
+        "mean_abs": 3.5075788922327005e-06,
+        "exact_equal": false
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.23643433571400863,
+      "source_result": "batch/scan_archived_original_n28673/result.json",
+      "source_log": "batch/logs/scan_archived_original_n28673.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3618
+      }
+    },
+    {
+      "variant": "archived_original",
+      "length": 32768,
+      "pid": 3702,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+        "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+        "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6",
+        "variant": "archived_original",
+        "diagnostic_only": false
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3702
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 8,
+        "block_length": 4096,
+        "tile_elems": 8192,
+        "tail_padding_branch": false,
+        "original_tail_start_offset_mod32": 0,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          32768
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 32768,
+        "value_sha256": "664c9de4c94aac7d692d2cee1c5f9eabc558a86eec3e01d6a104bd9366609bd4",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.21346467796917068,
+        "max_relative_vs_CPU_FP64": 0.002431633475294471
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 262144,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.21346467796917068,
+      "source_result": "batch/scan_archived_original_n32768/result.json",
+      "source_log": "batch/logs/scan_archived_original_n32768.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3828
+      }
+    },
+    {
+      "variant": "archived_original",
+      "length": 32769,
+      "pid": 3901,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "5fffe780e88b2b7854f6af80e67526ad50fdc456ee1a3c792ca692449bbd7f91",
+        "binary_sha256": "e13de2e65f3d9bfa7ea3d295c9455ca2da3545c6384974d6fc509a4778b9b815",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so",
+        "selection_fingerprint": "3963fec38b2ad29013c5938cd46c4412d3161d0dc3b96fd891d83002166674f6",
+        "variant": "archived_original",
+        "diagnostic_only": false
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 3901
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 9,
+        "block_length": 3641,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          32769
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 32769,
+        "value_sha256": "54d451f196dc401885d427fd75239ac14550dd872e41f6bb3de712934e402f30",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.21123984902072834,
+        "max_relative_vs_CPU_FP64": 0.0024062288686779224
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_archived_original_n32769/result.json",
+      "source_log": "batch/logs/scan_archived_original_n32769.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 4038
+      }
+    },
+    {
+      "variant": "rebuilt_control",
+      "length": 512,
+      "pid": 4565,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "rebuilt_control",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "ee2d4b8c806c3fb7eddcaf2ff7380a82dafc6898c704b9796f4a00cdff145c73",
+        "source_manifest_sha256": "44dbb58b28be7bcd911c486c04414f9458ddab294906ff2f900d3e7fcf304f5c",
+        "binary_sha256": "9643db6d478a0875cd667c3c2a2aa56adcc39f6a43ae19c4cc93bb39618e0038",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 4565
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 1,
+        "block_length": 512,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 512,
+        "value_sha256": "0a2832249595f1974cee1dcd4013212b48eac4b0af808d1bf41c6ce156740a30",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": true,
+        "role": "original real input"
+      },
+      "saved_reference_control": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.026683084746146335,
+        "max_relative_vs_CPU_FP64": 0.002431633475294471
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_rebuilt_control_n512/result.json",
+      "source_log": "batch/logs/scan_rebuilt_control_n512.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 4699
+      }
+    },
+    {
+      "variant": "rebuilt_control",
+      "length": 4096,
+      "pid": 4772,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "rebuilt_control",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "ee2d4b8c806c3fb7eddcaf2ff7380a82dafc6898c704b9796f4a00cdff145c73",
+        "source_manifest_sha256": "44dbb58b28be7bcd911c486c04414f9458ddab294906ff2f900d3e7fcf304f5c",
+        "binary_sha256": "9643db6d478a0875cd667c3c2a2aa56adcc39f6a43ae19c4cc93bb39618e0038",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 4772
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 1,
+        "block_length": 4096,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 4096,
+        "value_sha256": "d1bfa637e6d24b9e3533c2e1b9444b170f34852cb7f4883766819aaca7200533",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.1271600903288146,
+        "max_relative_vs_CPU_FP64": 0.003958024611303674
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_rebuilt_control_n4096/result.json",
+      "source_log": "batch/logs/scan_rebuilt_control_n4096.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 4895
+      }
+    },
+    {
+      "variant": "rebuilt_control",
+      "length": 4097,
+      "pid": 4979,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "rebuilt_control",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "ee2d4b8c806c3fb7eddcaf2ff7380a82dafc6898c704b9796f4a00cdff145c73",
+        "source_manifest_sha256": "44dbb58b28be7bcd911c486c04414f9458ddab294906ff2f900d3e7fcf304f5c",
+        "binary_sha256": "9643db6d478a0875cd667c3c2a2aa56adcc39f6a43ae19c4cc93bb39618e0038",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 4979
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 2,
+        "block_length": 2049,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 8,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          4097
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 4097,
+        "value_sha256": "0c82501d874a7bebf7cf22016b9ba5aff5dd773e73b923772527415df5212c5e",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.12797973937577467,
+        "max_relative_vs_CPU_FP64": 0.003983435635043177
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_rebuilt_control_n4097/result.json",
+      "source_log": "batch/logs/scan_rebuilt_control_n4097.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5105
+      }
+    },
+    {
+      "variant": "rebuilt_control",
+      "length": 24577,
+      "pid": 5178,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "rebuilt_control",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "ee2d4b8c806c3fb7eddcaf2ff7380a82dafc6898c704b9796f4a00cdff145c73",
+        "source_manifest_sha256": "44dbb58b28be7bcd911c486c04414f9458ddab294906ff2f900d3e7fcf304f5c",
+        "binary_sha256": "9643db6d478a0875cd667c3c2a2aa56adcc39f6a43ae19c4cc93bb39618e0038",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5178
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 7,
+        "block_length": 3511,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 28,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          24577
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 24577,
+        "value_sha256": "d531cdf32b332e378b40f3f53fa478d6764cad6a18971ff2de91123a45d7b04d",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.3428497850464822,
+        "max_relative_vs_CPU_FP64": 0.004654670782754212
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_rebuilt_control_n24577/result.json",
+      "source_log": "batch/logs/scan_rebuilt_control_n24577.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5315
+      }
+    },
+    {
+      "variant": "rebuilt_control",
+      "length": 28673,
+      "pid": 5388,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "rebuilt_control",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "ee2d4b8c806c3fb7eddcaf2ff7380a82dafc6898c704b9796f4a00cdff145c73",
+        "source_manifest_sha256": "44dbb58b28be7bcd911c486c04414f9458ddab294906ff2f900d3e7fcf304f5c",
+        "binary_sha256": "9643db6d478a0875cd667c3c2a2aa56adcc39f6a43ae19c4cc93bb39618e0038",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5388
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 8,
+        "block_length": 3585,
+        "tile_elems": 8192,
+        "tail_padding_branch": false,
+        "original_tail_start_offset_mod32": 0,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          28673
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 28673,
+        "value_sha256": "8dc9eb676c2fb088f134fadb4868ee9131699bcd1bea196ae08b267767fefabf",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.2635656642859914,
+        "max_relative_vs_CPU_FP64": 0.003478791711755892
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.5,
+        "mean_abs": 0.0625,
+        "exact_equal": false
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 229384,
+        "failed_elements": 0,
+        "max_abs": 0.00048828125,
+        "mean_abs": 3.5075788922327005e-06,
+        "exact_equal": false
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.23643433571400863,
+      "source_result": "batch/scan_rebuilt_control_n28673/result.json",
+      "source_log": "batch/logs/scan_rebuilt_control_n28673.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5525
+      }
+    },
+    {
+      "variant": "rebuilt_control",
+      "length": 32768,
+      "pid": 5598,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "rebuilt_control",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "ee2d4b8c806c3fb7eddcaf2ff7380a82dafc6898c704b9796f4a00cdff145c73",
+        "source_manifest_sha256": "44dbb58b28be7bcd911c486c04414f9458ddab294906ff2f900d3e7fcf304f5c",
+        "binary_sha256": "9643db6d478a0875cd667c3c2a2aa56adcc39f6a43ae19c4cc93bb39618e0038",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5598
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 8,
+        "block_length": 4096,
+        "tile_elems": 8192,
+        "tail_padding_branch": false,
+        "original_tail_start_offset_mod32": 0,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          32768
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 32768,
+        "value_sha256": "664c9de4c94aac7d692d2cee1c5f9eabc558a86eec3e01d6a104bd9366609bd4",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.21346467796917068,
+        "max_relative_vs_CPU_FP64": 0.002431633475294471
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 262144,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.21346467796917068,
+      "source_result": "batch/scan_rebuilt_control_n32768/result.json",
+      "source_log": "batch/logs/scan_rebuilt_control_n32768.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5724
+      }
+    },
+    {
+      "variant": "rebuilt_control",
+      "length": 32769,
+      "pid": 5808,
+      "status": "candidate_execution_failed",
+      "phase": "candidate_call_and_output_checks",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "rebuilt_control",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "ee2d4b8c806c3fb7eddcaf2ff7380a82dafc6898c704b9796f4a00cdff145c73",
+        "source_manifest_sha256": "44dbb58b28be7bcd911c486c04414f9458ddab294906ff2f900d3e7fcf304f5c",
+        "binary_sha256": "9643db6d478a0875cd667c3c2a2aa56adcc39f6a43ae19c4cc93bb39618e0038",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5808
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 9,
+        "block_length": 3641,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          32769
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 32769,
+        "value_sha256": "54d451f196dc401885d427fd75239ac14550dd872e41f6bb3de712934e402f30",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.21123984902072834,
+        "max_relative_vs_CPU_FP64": 0.0024062288686779224
+      },
+      "candidate_invocations": 1,
+      "error_type": "RuntimeError",
+      "error": "ACL stream synchronize failed, error code:507035",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/workspace/gitCode/cann/cann-learning-hub/build/run_norm_mechanism.py\", line 296, in scan_probe\n    r['local_check'] = metrics(actual, native)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/workspace/v3_extension_stage_d_20261020/harness/completion_utils.py\", line 29, in metrics\n    a=actual.detach().cpu().double();b=reference.detach().cpu().double()\n      ^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ACL stream synchronize failed, error code:507035\n",
+      "source_result": "batch/scan_rebuilt_control_n32769/result.json",
+      "source_log": "batch/logs/scan_rebuilt_control_n32769.log",
+      "exact_alignment_signature_in_log": true,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 5934
+      }
+    },
+    {
+      "variant": "aligned_tail_diagnostic",
+      "length": 512,
+      "pid": 6551,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "aligned_tail_diagnostic",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "7dff1d572dadf119a7ecb5ef183602036e7fc34b8c29fe6dd40b1afdc2416730",
+        "source_manifest_sha256": "73df733caf6c6089e442a208f43a56e76f7c7fee97d33e6eab87e140b5851594",
+        "binary_sha256": "4c8e97fb1b7b07dffa5e90b4de557574af7de4449f29abf8ab58dd6eb337f46e",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 6551
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 1,
+        "block_length": 512,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          512
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 512,
+        "value_sha256": "0a2832249595f1974cee1dcd4013212b48eac4b0af808d1bf41c6ce156740a30",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": true,
+        "role": "original real input"
+      },
+      "saved_reference_control": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.026683084746146335,
+        "max_relative_vs_CPU_FP64": 0.002431633475294471
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 4096,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.026683084746146335,
+      "source_result": "batch/scan_aligned_tail_diagnostic_n512/result.json",
+      "source_log": "batch/logs/scan_aligned_tail_diagnostic_n512.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 6674
+      }
+    },
+    {
+      "variant": "aligned_tail_diagnostic",
+      "length": 4096,
+      "pid": 6747,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "aligned_tail_diagnostic",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "7dff1d572dadf119a7ecb5ef183602036e7fc34b8c29fe6dd40b1afdc2416730",
+        "source_manifest_sha256": "73df733caf6c6089e442a208f43a56e76f7c7fee97d33e6eab87e140b5851594",
+        "binary_sha256": "4c8e97fb1b7b07dffa5e90b4de557574af7de4449f29abf8ab58dd6eb337f46e",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 6747
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 1,
+        "block_length": 4096,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          4096
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 4096,
+        "value_sha256": "d1bfa637e6d24b9e3533c2e1b9444b170f34852cb7f4883766819aaca7200533",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.1271600903288146,
+        "max_relative_vs_CPU_FP64": 0.003958024611303674
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.25,
+        "mean_abs": 0.046875,
+        "exact_equal": false
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 32768,
+        "failed_elements": 0,
+        "max_abs": 0.0009765625,
+        "mean_abs": 1.5404686564579606e-05,
+        "exact_equal": false
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.12283990967118541,
+      "source_result": "batch/scan_aligned_tail_diagnostic_n4096/result.json",
+      "source_log": "batch/logs/scan_aligned_tail_diagnostic_n4096.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 6881
+      }
+    },
+    {
+      "variant": "aligned_tail_diagnostic",
+      "length": 4097,
+      "pid": 6954,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "aligned_tail_diagnostic",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "7dff1d572dadf119a7ecb5ef183602036e7fc34b8c29fe6dd40b1afdc2416730",
+        "source_manifest_sha256": "73df733caf6c6089e442a208f43a56e76f7c7fee97d33e6eab87e140b5851594",
+        "binary_sha256": "4c8e97fb1b7b07dffa5e90b4de557574af7de4449f29abf8ab58dd6eb337f46e",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 6954
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 2,
+        "block_length": 2049,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 8,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          4097
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 4097,
+        "value_sha256": "0c82501d874a7bebf7cf22016b9ba5aff5dd773e73b923772527415df5212c5e",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.12797973937577467,
+        "max_relative_vs_CPU_FP64": 0.003983435635043177
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.25,
+        "mean_abs": 0.046875,
+        "exact_equal": false
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 32776,
+        "failed_elements": 0,
+        "max_abs": 0.0009765625,
+        "mean_abs": 1.5403254310881654e-05,
+        "exact_equal": false
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.12202026062422533,
+      "source_result": "batch/scan_aligned_tail_diagnostic_n4097/result.json",
+      "source_log": "batch/logs/scan_aligned_tail_diagnostic_n4097.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7080
+      }
+    },
+    {
+      "variant": "aligned_tail_diagnostic",
+      "length": 24577,
+      "pid": 7164,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "aligned_tail_diagnostic",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "7dff1d572dadf119a7ecb5ef183602036e7fc34b8c29fe6dd40b1afdc2416730",
+        "source_manifest_sha256": "73df733caf6c6089e442a208f43a56e76f7c7fee97d33e6eab87e140b5851594",
+        "binary_sha256": "4c8e97fb1b7b07dffa5e90b4de557574af7de4449f29abf8ab58dd6eb337f46e",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7164
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 7,
+        "block_length": 3511,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 28,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          24577
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 24577,
+        "value_sha256": "d531cdf32b332e378b40f3f53fa478d6764cad6a18971ff2de91123a45d7b04d",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.3428497850464822,
+        "max_relative_vs_CPU_FP64": 0.004654670782754212
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.5,
+        "mean_abs": 0.25,
+        "exact_equal": false
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 196616,
+        "failed_elements": 0,
+        "max_abs": 0.00048828125,
+        "mean_abs": 1.4466310362783455e-05,
+        "exact_equal": false
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.19548372989279983,
+      "source_result": "batch/scan_aligned_tail_diagnostic_n24577/result.json",
+      "source_log": "batch/logs/scan_aligned_tail_diagnostic_n24577.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7290
+      }
+    },
+    {
+      "variant": "aligned_tail_diagnostic",
+      "length": 28673,
+      "pid": 7363,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "aligned_tail_diagnostic",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "7dff1d572dadf119a7ecb5ef183602036e7fc34b8c29fe6dd40b1afdc2416730",
+        "source_manifest_sha256": "73df733caf6c6089e442a208f43a56e76f7c7fee97d33e6eab87e140b5851594",
+        "binary_sha256": "4c8e97fb1b7b07dffa5e90b4de557574af7de4449f29abf8ab58dd6eb337f46e",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7363
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 8,
+        "block_length": 3585,
+        "tile_elems": 8192,
+        "tail_padding_branch": false,
+        "original_tail_start_offset_mod32": 0,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          28673
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 28673,
+        "value_sha256": "8dc9eb676c2fb088f134fadb4868ee9131699bcd1bea196ae08b267767fefabf",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.2635656642859914,
+        "max_relative_vs_CPU_FP64": 0.003478791711755892
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.5,
+        "mean_abs": 0.0625,
+        "exact_equal": false
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 229384,
+        "failed_elements": 0,
+        "max_abs": 0.00048828125,
+        "mean_abs": 3.5075788922327005e-06,
+        "exact_equal": false
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.23643433571400863,
+      "source_result": "batch/scan_aligned_tail_diagnostic_n28673/result.json",
+      "source_log": "batch/logs/scan_aligned_tail_diagnostic_n28673.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7500
+      }
+    },
+    {
+      "variant": "aligned_tail_diagnostic",
+      "length": 32768,
+      "pid": 7573,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "aligned_tail_diagnostic",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "7dff1d572dadf119a7ecb5ef183602036e7fc34b8c29fe6dd40b1afdc2416730",
+        "source_manifest_sha256": "73df733caf6c6089e442a208f43a56e76f7c7fee97d33e6eab87e140b5851594",
+        "binary_sha256": "4c8e97fb1b7b07dffa5e90b4de557574af7de4449f29abf8ab58dd6eb337f46e",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7573
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 8,
+        "block_length": 4096,
+        "tile_elems": 8192,
+        "tail_padding_branch": false,
+        "original_tail_start_offset_mod32": 0,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          32768
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 32768,
+        "value_sha256": "664c9de4c94aac7d692d2cee1c5f9eabc558a86eec3e01d6a104bd9366609bd4",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.21346467796917068,
+        "max_relative_vs_CPU_FP64": 0.002431633475294471
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 262144,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.21346467796917068,
+      "source_result": "batch/scan_aligned_tail_diagnostic_n32768/result.json",
+      "source_log": "batch/logs/scan_aligned_tail_diagnostic_n32768.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7699
+      }
+    },
+    {
+      "variant": "aligned_tail_diagnostic",
+      "length": 32769,
+      "pid": 7783,
+      "status": "success_within_fixed_tolerance",
+      "phase": "completed",
+      "candidate_call_attempted": true,
+      "identity": {
+        "variant": "aligned_tail_diagnostic",
+        "diagnostic_only": true,
+        "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+        "receipt_sha256": "7dff1d572dadf119a7ecb5ef183602036e7fc34b8c29fe6dd40b1afdc2416730",
+        "source_manifest_sha256": "73df733caf6c6089e442a208f43a56e76f7c7fee97d33e6eab87e140b5851594",
+        "binary_sha256": "4c8e97fb1b7b07dffa5e90b4de557574af7de4449f29abf8ab58dd6eb337f46e",
+        "wrapper_sha256": "b6417c5764658658a7bbda35761b6076945868056617c54a00bd510db42e0424",
+        "binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "device_before": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7783
+      },
+      "tolerance": {
+        "atol": 1e-05,
+        "rtol": 0.016
+      },
+      "tiling": {
+        "source": "actual current binary host function",
+        "num_partials": 9,
+        "block_length": 3641,
+        "tile_elems": 8192,
+        "tail_padding_branch": true,
+        "original_tail_start_offset_mod32": 4,
+        "bound_binary": "/home/developer/.local/lib/python3.11/site-packages/cann_bench/_C.abi3.so"
+      },
+      "input": {
+        "shape": [
+          8,
+          32769
+        ],
+        "dtype": "torch.bfloat16",
+        "row_stride": 32769,
+        "value_sha256": "54d451f196dc401885d427fd75239ac14550dd872e41f6bb3de712934e402f30",
+        "original_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+        "exact_original_capture": false,
+        "role": "derived diagnostic input; not a full-model workload"
+      },
+      "native_control": {
+        "finite": true,
+        "max_abs_vs_CPU_FP64": 0.21123984902072834,
+        "max_relative_vs_CPU_FP64": 0.0024062288686779224
+      },
+      "candidate_invocations": 1,
+      "local_check": {
+        "passed": true,
+        "elements": 8,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "normalized_features_check": {
+        "passed": true,
+        "elements": 262152,
+        "failed_elements": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_equal": true
+      },
+      "cpu_fp64_diagnostic_max_abs": 0.21123984902072834,
+      "source_result": "batch/scan_aligned_tail_diagnostic_n32769/result.json",
+      "source_log": "batch/logs/scan_aligned_tail_diagnostic_n32769.log",
+      "exact_alignment_signature_in_log": false,
+      "after_device_health": {
+        "basic_NPU_arithmetic_passed": true,
+        "pid": 7909
+      }
+    }
+  ]
+}

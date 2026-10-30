@@ -1,0 +1,62 @@
+{
+  "stage": "C_followup",
+  "source_C_run": "extension_C_20261019_153627_93317",
+  "source_files": {
+    "plan.json": "606afeb23b80f0daa748cad95881d726037dca141b5e9dcf83de6efe878008b9",
+    "PACKAGE_MANIFEST.json": "d0cfa5baa0f1e937393fbc420fa0cff0e8e3524f761599d92350d366ca42ce8c",
+    "results/extension_C_20261019_153627_93317/runtime.json": "d79247604b1f2ab079c678fda5595398be8ccb50c3f3d031b5194d256afe0021",
+    "results/extension_C_20261019_153627_93317/build_DeepSeek_V4_1_Flash_swi_glu_002_R4/receipt.json": "a93bf4a2241f424100b0045cd73473a8028aed3edc762bc86d7cd89534b93ff1",
+    "results/extension_C_20261019_153627_93317/build_Kimi_K3_swi_glu_003_R5/receipt.json": "829c50a40e63165024fe2311fe78985605be647a51d88355de71fa3068a98905",
+    "results/extension_C_20261019_153627_93317/build_Grok_4_6_foreach_norm_001_R5/receipt.json": "e5a8868e7fc310d61c0b12b37ba90ead87e4db7dd31aeb4f25548c84f279fa8c",
+    "results/extension_C_20261019_153627_93317/dev_clip_coco/captures/foreach_norm/index.json": "c5395fdc729f55f04eeb203ca54c71c282e7c1b417b9366b40a4e99994781ffa",
+    "results/extension_C_20261019_153627_93317/replay_clip_Grok_4_6_foreach_norm_001_R5/replay_results.json": "94f10298f381d9ac2a9f15345d022a583fbd622ef9437754b6448e80dec1d704"
+  },
+  "script_sha256": "14f0b6759a1d6dc6c4b8e65f8a293d0cc57df0f93c1450f33375f24e81ba94b0",
+  "reason": "Complete previously unmeasured C efficiency paths, with original numerical tolerances and kernels.",
+  "internvl": {
+    "candidates": [
+      "DeepSeek_V4_1_Flash_swi_glu_002_R4",
+      "Kimi_K3_swi_glu_003_R5"
+    ],
+    "condition": {
+      "id": "default",
+      "batch": 1,
+      "max_pixels": 401408,
+      "text_tokens": 128,
+      "new_tokens": 16
+    },
+    "tokenizer_use_fast": false,
+    "synthetic_text": " test repeated 127 times",
+    "synthetic_text_sha256": "a2cfd41bce44f9342016053addd2b8a60138985366d52692fe30c06ea5ffc025",
+    "changed": "input construction only: slow tokenizer adds a leading token; keep exact 128-token content budget",
+    "sessions_per_candidate": 3,
+    "profile_native": true,
+    "independent_numbering": true
+  },
+  "foreach_norm": {
+    "candidate": "Grok_4_6_foreach_norm_001_R5",
+    "dtype": "float16",
+    "rows": [
+      1,
+      4,
+      8,
+      32
+    ],
+    "paths": [
+      "kernel_contract",
+      "complete_normalization_adapter"
+    ],
+    "not_repeated": "eight BF16 points already recorded in C",
+    "contract_unsupported_rows": [
+      128
+    ],
+    "implementation_tensor_list_limit": 64
+  },
+  "not_in_scope": [
+    "new quality evaluations",
+    "new candidates",
+    "kernel edits",
+    "tolerance changes",
+    "rerunning 24 failed FP16 Sigmoid points"
+  ]
+}

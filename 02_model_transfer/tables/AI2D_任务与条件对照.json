@@ -1,0 +1,1318 @@
+[
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "InternVL2-4B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "77.0000",
+    "候选结果": "77.4000",
+    "相对原生变化": "+0.4000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化6；选项变化6；token变化6；accuracy区间[+0.0942,+0.8341]",
+    "原来源索引": "C质量比较_63项.json :: internvl_ai2d_DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "记录编号": "0001",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 6,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.77,
+          "candidate": 0.774,
+          "difference_percentage_points": 0.4,
+          "paired_group_bootstrap_95pct_pp": [
+            0.09416195856873823,
+            0.8341080693996006
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 6,
+      "parsed_answer_changes_including_missing": 6
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "InternVL2-4B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "77.0000",
+    "候选结果": "77.4000",
+    "相对原生变化": "+0.4000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化6；选项变化6；token变化6；accuracy区间[+0.0942,+0.8341]",
+    "原来源索引": "C质量比较_63项.json :: internvl_ai2d_Kimi_K3_swi_glu_003_R5",
+    "记录编号": "0002",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 6,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.77,
+          "candidate": 0.774,
+          "difference_percentage_points": 0.4,
+          "paired_group_bootstrap_95pct_pp": [
+            0.09416195856873823,
+            0.8341080693996006
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 6,
+      "parsed_answer_changes_including_missing": 6
+    }
+  },
+  {
+    "记录类型": "开发集检查",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；像素上限200704",
+    "指标": "准确率%",
+    "原生参考": "78.0000",
+    "候选结果": "78.0000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=100；文本变化6；选项变化2；token变化6；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Grok_4_6_gelu_001_R4_pixels200704",
+    "记录编号": "0036",
+    "详细数值": {
+      "samples": 100,
+      "candidate_outputs": 100,
+      "candidate_states": {
+        "success": 99,
+        "invalid_answer": 1
+      },
+      "decoded_output_changes_including_missing": 6,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.78,
+          "candidate": 0.78,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 27,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 6,
+      "parsed_answer_changes_including_missing": 2
+    }
+  },
+  {
+    "记录类型": "开发集检查",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；像素上限802816",
+    "指标": "准确率%",
+    "原生参考": "76.0000",
+    "候选结果": "76.0000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=100；文本变化4；选项变化1；token变化4；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Grok_4_6_gelu_001_R4_pixels802816",
+    "记录编号": "0037",
+    "详细数值": {
+      "samples": 100,
+      "candidate_outputs": 100,
+      "candidate_states": {
+        "success": 99,
+        "invalid_answer": 1
+      },
+      "decoded_output_changes_including_missing": 4,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.76,
+          "candidate": 0.76,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 27,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 4,
+      "parsed_answer_changes_including_missing": 1
+    }
+  },
+  {
+    "记录类型": "开发集检查",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；像素上限200704",
+    "指标": "准确率%",
+    "原生参考": "78.0000",
+    "候选结果": "78.0000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=100；文本变化0；选项变化0；token变化0；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_gelu_002_R3_pixels200704",
+    "记录编号": "0038",
+    "详细数值": {
+      "samples": 100,
+      "candidate_outputs": 100,
+      "candidate_states": {
+        "success": 100
+      },
+      "decoded_output_changes_including_missing": 0,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.78,
+          "candidate": 0.78,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 27,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 0,
+      "parsed_answer_changes_including_missing": 0
+    }
+  },
+  {
+    "记录类型": "开发集检查",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；像素上限802816",
+    "指标": "准确率%",
+    "原生参考": "76.0000",
+    "候选结果": "76.0000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=100；文本变化0；选项变化0；token变化0；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_gelu_002_R3_pixels802816",
+    "记录编号": "0039",
+    "详细数值": {
+      "samples": 100,
+      "candidate_outputs": 100,
+      "candidate_states": {
+        "success": 100
+      },
+      "decoded_output_changes_including_missing": 0,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.76,
+          "candidate": 0.76,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 27,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 0,
+      "parsed_answer_changes_including_missing": 0
+    }
+  },
+  {
+    "记录类型": "开发集检查",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；像素上限200704",
+    "指标": "准确率%",
+    "原生参考": "78.0000",
+    "候选结果": "79.0000",
+    "相对原生变化": "+1.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=100；文本变化3；选项变化3；token变化3；accuracy区间[+0.0000,+3.5297]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_DeepSeek_V4_1_Flash_swi_glu_002_R4_pixels200704",
+    "记录编号": "0040",
+    "详细数值": {
+      "samples": 100,
+      "candidate_outputs": 100,
+      "candidate_states": {
+        "success": 99,
+        "invalid_answer": 1
+      },
+      "decoded_output_changes_including_missing": 3,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.78,
+          "candidate": 0.79,
+          "difference_percentage_points": 1.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            3.5296720458094706
+          ],
+          "groups": 27,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 3,
+      "parsed_answer_changes_including_missing": 3
+    }
+  },
+  {
+    "记录类型": "开发集检查",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；像素上限802816",
+    "指标": "准确率%",
+    "原生参考": "76.0000",
+    "候选结果": "76.0000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=100；文本变化1；选项变化1；token变化1；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_DeepSeek_V4_1_Flash_swi_glu_002_R4_pixels802816",
+    "记录编号": "0041",
+    "详细数值": {
+      "samples": 100,
+      "candidate_outputs": 100,
+      "candidate_states": {
+        "success": 99,
+        "invalid_answer": 1
+      },
+      "decoded_output_changes_including_missing": 1,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.76,
+          "candidate": 0.76,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 27,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 1,
+      "parsed_answer_changes_including_missing": 1
+    }
+  },
+  {
+    "记录类型": "开发集检查",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；像素上限200704",
+    "指标": "准确率%",
+    "原生参考": "78.0000",
+    "候选结果": "79.0000",
+    "相对原生变化": "+1.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=100；文本变化3；选项变化3；token变化3；accuracy区间[+0.0000,+3.5297]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_swi_glu_003_R5_pixels200704",
+    "记录编号": "0042",
+    "详细数值": {
+      "samples": 100,
+      "candidate_outputs": 100,
+      "candidate_states": {
+        "success": 99,
+        "invalid_answer": 1
+      },
+      "decoded_output_changes_including_missing": 3,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.78,
+          "candidate": 0.79,
+          "difference_percentage_points": 1.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            3.5296720458094706
+          ],
+          "groups": 27,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 3,
+      "parsed_answer_changes_including_missing": 3
+    }
+  },
+  {
+    "记录类型": "开发集检查",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；像素上限802816",
+    "指标": "准确率%",
+    "原生参考": "76.0000",
+    "候选结果": "76.0000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=100；文本变化1；选项变化1；token变化1；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_swi_glu_003_R5_pixels802816",
+    "记录编号": "0043",
+    "详细数值": {
+      "samples": 100,
+      "candidate_outputs": 100,
+      "candidate_states": {
+        "success": 99,
+        "invalid_answer": 1
+      },
+      "decoded_output_changes_including_missing": 1,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.76,
+          "candidate": 0.76,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 27,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 1,
+      "parsed_answer_changes_including_missing": 1
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R5",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "78.9000",
+    "相对原生变化": "-0.3000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化34；选项变化17；token变化34；accuracy区间[-1.0101,+0.3836]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_DeepSeek_V4_1_Flash_gelu_002_R5",
+    "记录编号": "0044",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 34,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.789,
+          "difference_percentage_points": -0.3,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0101265434935809,
+            0.38361130311340863
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 34,
+      "parsed_answer_changes_including_missing": 17
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "78.9000",
+    "相对原生变化": "-0.3000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化34；选项变化17；token变化34；accuracy区间[-1.0101,+0.3836]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_DeepSeek_V4_1_Flash_gelu_003_R5",
+    "记录编号": "0045",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 34,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.789,
+          "difference_percentage_points": -0.3,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0101265434935809,
+            0.38361130311340863
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 34,
+      "parsed_answer_changes_including_missing": 17
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "78.9000",
+    "相对原生变化": "-0.3000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化34；选项变化17；token变化34；accuracy区间[-1.0101,+0.3836]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Grok_4_6_gelu_001_R4",
+    "记录编号": "0046",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 34,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.789,
+          "difference_percentage_points": -0.3,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0101265434935809,
+            0.38361130311340863
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 34,
+      "parsed_answer_changes_including_missing": 17
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T3/R2",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "78.9000",
+    "相对原生变化": "-0.3000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化34；选项变化17；token变化34；accuracy区间[-1.0101,+0.3836]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Grok_4_6_gelu_003_R2",
+    "记录编号": "0047",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 34,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.789,
+          "difference_percentage_points": -0.3,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0101265434935809,
+            0.38361130311340863
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 34,
+      "parsed_answer_changes_including_missing": 17
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "78.9000",
+    "相对原生变化": "-0.3000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化34；选项变化17；token变化34；accuracy区间[-1.0101,+0.3836]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_gelu_001_R4",
+    "记录编号": "0048",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 34,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.789,
+          "difference_percentage_points": -0.3,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0101265434935809,
+            0.38361130311340863
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 34,
+      "parsed_answer_changes_including_missing": 17
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.2000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化0；选项变化0；token变化0；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_gelu_002_R3",
+    "记录编号": "0049",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 0,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.792,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 0,
+      "parsed_answer_changes_including_missing": 0
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "78.9000",
+    "相对原生变化": "-0.3000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化34；选项变化17；token变化34；accuracy区间[-1.0101,+0.3836]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_gelu_003_R4",
+    "记录编号": "0050",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 34,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.789,
+          "difference_percentage_points": -0.3,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0101265434935809,
+            0.38361130311340863
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 34,
+      "parsed_answer_changes_including_missing": 17
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Qwen3 8 Max",
+    "轨迹轮次": "T1/R2",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "78.9000",
+    "相对原生变化": "-0.3000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化34；选项变化17；token变化34；accuracy区间[-1.0101,+0.3836]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Qwen3_8_Max_gelu_001_R2",
+    "记录编号": "0051",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 34,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.789,
+          "difference_percentage_points": -0.3,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0101265434935809,
+            0.38361130311340863
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 34,
+      "parsed_answer_changes_including_missing": 17
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.3000",
+    "相对原生变化": "+0.1000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化24；选项变化9；token变化24；accuracy区间[-0.4012,+0.6173]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "记录编号": "0052",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 24,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.793,
+          "difference_percentage_points": 0.1,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.4012237718179664,
+            0.6172839506172839
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 24,
+      "parsed_answer_changes_including_missing": 9
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 Flash",
+    "轨迹轮次": "T1/R2",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.3000",
+    "相对原生变化": "+0.1000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化24；选项变化9；token变化24；accuracy区间[-0.4012,+0.6173]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_DeepSeek_V4_Flash_swi_glu_001_R2",
+    "记录编号": "0053",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 24,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.793,
+          "difference_percentage_points": 0.1,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.4012237718179664,
+            0.6172839506172839
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 24,
+      "parsed_answer_changes_including_missing": 9
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 Flash",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.0000",
+    "相对原生变化": "-0.2000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化26；选项变化14；token变化26；accuracy区间[-0.8764,+0.4888]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_DeepSeek_V4_Flash_swi_glu_002_R3",
+    "记录编号": "0054",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 996,
+        "invalid_answer": 4
+      },
+      "decoded_output_changes_including_missing": 26,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.79,
+          "difference_percentage_points": -0.2,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.8764245146441961,
+            0.48881856783181243
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 26,
+      "parsed_answer_changes_including_missing": 14
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 Flash",
+    "轨迹轮次": "T3/R1",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.0000",
+    "相对原生变化": "-0.2000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化26；选项变化14；token变化26；accuracy区间[-0.8764,+0.4888]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_DeepSeek_V4_Flash_swi_glu_003_R1",
+    "记录编号": "0055",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 996,
+        "invalid_answer": 4
+      },
+      "decoded_output_changes_including_missing": 26,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.79,
+          "difference_percentage_points": -0.2,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.8764245146441961,
+            0.48881856783181243
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 26,
+      "parsed_answer_changes_including_missing": 14
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "GLM 5 3",
+    "轨迹轮次": "T3/R3",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.0000",
+    "相对原生变化": "-0.2000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化26；选项变化14；token变化26；accuracy区间[-0.8764,+0.4888]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_GLM_5_3_swi_glu_003_R3",
+    "记录编号": "0056",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 996,
+        "invalid_answer": 4
+      },
+      "decoded_output_changes_including_missing": 26,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.79,
+          "difference_percentage_points": -0.2,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.8764245146441961,
+            0.48881856783181243
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 26,
+      "parsed_answer_changes_including_missing": 14
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T3/R2",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.2000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化23；选项变化8；token变化23；accuracy区间[-0.4931,+0.4888]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Grok_4_6_swi_glu_003_R2",
+    "记录编号": "0057",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 23,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.792,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.4931088161591617,
+            0.48877050920798143
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 23,
+      "parsed_answer_changes_including_missing": 8
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.3000",
+    "相对原生变化": "+0.1000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化24；选项变化9；token变化24；accuracy区间[-0.4012,+0.6173]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_swi_glu_002_R4",
+    "记录编号": "0058",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 24,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.793,
+          "difference_percentage_points": 0.1,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.4012237718179664,
+            0.6172839506172839
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 24,
+      "parsed_answer_changes_including_missing": 9
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "79.2000",
+    "候选结果": "79.3000",
+    "相对原生变化": "+0.1000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化24；选项变化9；token变化24；accuracy区间[-0.4012,+0.6173]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_ai2d_Kimi_K3_swi_glu_003_R5",
+    "记录编号": "0059",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 995,
+        "invalid_answer": 5
+      },
+      "decoded_output_changes_including_missing": 24,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.792,
+          "candidate": 0.793,
+          "difference_percentage_points": 0.1,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.4012237718179664,
+            0.6172839506172839
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 24,
+      "parsed_answer_changes_including_missing": 9
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "78.1000",
+    "候选结果": "78.4000",
+    "相对原生变化": "+0.3000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化15；选项变化6；token变化15；accuracy区间[+0.0000,+0.6877]",
+    "原来源索引": "C质量比较_63项.json :: qwen7b_ai2d_Grok_4_6_gelu_001_R4",
+    "记录编号": "0068",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 969,
+        "invalid_answer": 31
+      },
+      "decoded_output_changes_including_missing": 15,
+      "possibly_at_length_limit": 11,
+      "metrics": {
+        "accuracy": {
+          "native": 0.781,
+          "candidate": 0.784,
+          "difference_percentage_points": 0.3,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.6876566294881111
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 15,
+      "parsed_answer_changes_including_missing": 6
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "78.1000",
+    "候选结果": "78.1000",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化0；选项变化0；token变化0；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen7b_ai2d_Kimi_K3_gelu_002_R3",
+    "记录编号": "0069",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 969,
+        "invalid_answer": 31
+      },
+      "decoded_output_changes_including_missing": 0,
+      "possibly_at_length_limit": 11,
+      "metrics": {
+        "accuracy": {
+          "native": 0.781,
+          "candidate": 0.781,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 0,
+      "parsed_answer_changes_including_missing": 0
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "78.1000",
+    "候选结果": "77.9000",
+    "相对原生变化": "-0.2000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化16；选项变化8；token变化16；accuracy区间[-0.6199,+0.1916]",
+    "原来源索引": "C质量比较_63项.json :: qwen7b_ai2d_DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "记录编号": "0070",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 967,
+        "invalid_answer": 33
+      },
+      "decoded_output_changes_including_missing": 16,
+      "possibly_at_length_limit": 12,
+      "metrics": {
+        "accuracy": {
+          "native": 0.781,
+          "candidate": 0.779,
+          "difference_percentage_points": -0.2,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.6198828844259838,
+            0.19157088122605362
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 16,
+      "parsed_answer_changes_including_missing": 8
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "AI2D",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "准确率%",
+    "原生参考": "78.1000",
+    "候选结果": "77.9000",
+    "相对原生变化": "-0.2000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化16；选项变化8；token变化16；accuracy区间[-0.6199,+0.1916]",
+    "原来源索引": "C质量比较_63项.json :: qwen7b_ai2d_Kimi_K3_swi_glu_003_R5",
+    "记录编号": "0071",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 967,
+        "invalid_answer": 33
+      },
+      "decoded_output_changes_including_missing": 16,
+      "possibly_at_length_limit": 12,
+      "metrics": {
+        "accuracy": {
+          "native": 0.781,
+          "candidate": 0.779,
+          "difference_percentage_points": -0.2,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.6198828844259838,
+            0.19157088122605362
+          ],
+          "groups": 256,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 16,
+      "parsed_answer_changes_including_missing": 8
+    }
+  }
+]

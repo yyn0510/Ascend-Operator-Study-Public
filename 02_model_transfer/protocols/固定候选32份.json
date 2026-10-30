@@ -1,0 +1,954 @@
+[
+  {
+    "candidate_id": "DeepSeek_V4_1_Flash_gelu_002_R5",
+    "model": "DeepSeek V4.1 Flash",
+    "operator": "gelu",
+    "trajectory": "trajectory_002",
+    "selected_round": 5,
+    "score": 60.56396263896572,
+    "score_raw_decimal": "60.56396263896572",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.36205143337617196,
+    "source": {
+      "source_files": {
+        "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "5c2da1d5b0cde7a6e1338e37986daa78806085059c0881acc7f3f521916fec70",
+        "csrc/ops/gelu/op_kernel/gelu_launch.h": "dce99483221dac2c42216ed029c48bfb53356052effd76cac2654b6b789f49bb",
+        "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "4f4caa68d5509eccbfdd5dd6ae9701bf91342587a53b0760283bc253ce14634d",
+        "csrc/ops/gelu/CMakeLists.txt": "853775855f0faa1533150eb501468c41f2aa19ab02ac5ee6a7c7b61b23169ca6",
+        "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+      },
+      "source_bundle_hash": "51b6f447affe1e8e2d631ed9696f03ab36a1b40415540f0c0b375f93b5dd7d6b",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "ad7cf97ab75ae5c726238565784607888c316cc2985aad84b8951ab86de6caa1",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "deepseek_official",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a1_deepseek_flash_exp_20260910\\deepseek_official\\deepseek-flash\\level1_gelu\\trajectory_002\\round_05"
+  },
+  {
+    "candidate_id": "DeepSeek_V4_1_Flash_gelu_003_R5",
+    "model": "DeepSeek V4.1 Flash",
+    "operator": "gelu",
+    "trajectory": "trajectory_003",
+    "selected_round": 5,
+    "score": 60.93983218719593,
+    "score_raw_decimal": "60.93983218719593",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.3856676004111147,
+    "source": {
+      "source_files": {
+        "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "d04130268d1fd3bc6aa94eadfa3b0032d9abfb004903f58970413c8864af382b",
+        "csrc/ops/gelu/op_kernel/gelu_launch.h": "fab1f1f982b1af7507acc8c67a515c090da20d6953a127a5670cfe113e3ff28e",
+        "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "d968bdf9307184bf75cc0c771f2e681350630c9a431ed58325bbc708b8c9da26",
+        "csrc/ops/gelu/CMakeLists.txt": "853775855f0faa1533150eb501468c41f2aa19ab02ac5ee6a7c7b61b23169ca6",
+        "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+      },
+      "source_bundle_hash": "43ed65f134f78dd975167c9a0181bbddb9b2600ea38a06942a6a0652ec2539de",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "6e4f9191f8c76f3dd60810d09c8dc583fd322c74b514d6cea6f6da8dd3678310",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "deepseek_official",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a1_deepseek_flash_exp_20260910\\deepseek_official\\deepseek-flash\\level1_gelu\\trajectory_003\\round_05"
+  },
+  {
+    "candidate_id": "Grok_4_6_gelu_001_R4",
+    "model": "Grok 4.6",
+    "operator": "gelu",
+    "trajectory": "trajectory_001",
+    "selected_round": 4,
+    "score": 63.63090572206334,
+    "score_raw_decimal": "63.63090572206334",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.48125599950490205,
+    "source": {
+      "source_files": {
+        "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "e18aebca3609bd265ecd123bb8824e75064841cddbc19bc4902fd50a88455f26",
+        "csrc/ops/gelu/op_kernel/gelu_launch.h": "4dcff938caf0c4b10c80902c29895bc703f2aedf6739f3717b9ee8fc567b4f4f",
+        "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "65a539d2fbbbb879ae983b37dc5aa44a4d5e2a10a997fd0599cf48b09c0544b5",
+        "csrc/ops/gelu/CMakeLists.txt": "853775855f0faa1533150eb501468c41f2aa19ab02ac5ee6a7c7b61b23169ca6",
+        "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+      },
+      "source_bundle_hash": "b9f9e20e27e1324996c399856b4710d1769a056f39a5f78138422e0dafae2e5d",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "bf9fe5e6ebaa973bec43e85d8fe90e2539c120236fbbda432ec2834371c9ee2d",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "openrouter_xai_zdr",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_grok_4_6_openrouter_level1_20260916\\openrouter_xai_zdr\\x-ai_grok-4_6\\level1_gelu\\trajectory_001\\round_04"
+  },
+  {
+    "candidate_id": "Grok_4_6_gelu_003_R2",
+    "model": "Grok 4.6",
+    "operator": "gelu",
+    "trajectory": "trajectory_003",
+    "selected_round": 2,
+    "score": 61.70715798064899,
+    "score_raw_decimal": "61.70715798064899",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.4153731122220982,
+    "source": {
+      "source_files": {
+        "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "b8333e03ab6fefb7e9c6367bcce50c8364e56b9e1d82101c5f4f334f84d50b34",
+        "csrc/ops/gelu/op_kernel/gelu_launch.h": "541cab089d277e7b9ca305d4c0340785f2aefba2a88799bf88c80d57608b46ce",
+        "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "b17e6e923ee804fc4115b76d8bf602b0b63ddacfd1bb115fed3941de762392f9",
+        "csrc/ops/gelu/CMakeLists.txt": "853775855f0faa1533150eb501468c41f2aa19ab02ac5ee6a7c7b61b23169ca6",
+        "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+      },
+      "source_bundle_hash": "adb107a0641a7ef14a5c9965d34382778d4977f5d969de2de2053d6f98bf3f28",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "396e2cf7125bb8c73e9ecb4ec9394dc13d7864be7805784e133199865165de7f",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "openrouter_xai_zdr",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_grok_4_6_openrouter_level1_20260916\\openrouter_xai_zdr\\x-ai_grok-4_6\\level1_gelu\\trajectory_003\\round_02"
+  },
+  {
+    "candidate_id": "Kimi_K3_gelu_001_R4",
+    "model": "Kimi K3",
+    "operator": "gelu",
+    "trajectory": "trajectory_001",
+    "selected_round": 4,
+    "score": 62.19333817575233,
+    "score_raw_decimal": "62.19333817575233",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.42763973705114583,
+    "source": {
+      "source_files": {
+        "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "f31e1779808dc76837362e7a8a104e63046c60ef6dc36fef522dbab3dce11329",
+        "csrc/ops/gelu/op_kernel/gelu_launch.h": "e712a1a07a965a4865105489c8b08bb44d7d9905a98dbc3b7370ec647da35911",
+        "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "a2b0f96d818bfa450635c28da0a8391e3c50c5a8833ee9950d0db751dbfa941f",
+        "csrc/ops/gelu/CMakeLists.txt": "898c234956661d560194b25434edbd04af8af3f099541d5f99b280adf4a241f7",
+        "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+      },
+      "source_bundle_hash": "16cbf290359cbc4e4be698b504d76fce2ff1cd8b3c7e24054cd810d155c5f7f3",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "603d03a5362d2f999bdceddf6d3409d030308c38cde60286ada7e5a2cf43c273",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_first4_20260815\\opencode_go\\kimi-k3\\level1_gelu\\trajectory_001\\round_04"
+  },
+  {
+    "candidate_id": "Kimi_K3_gelu_002_R3",
+    "model": "Kimi K3",
+    "operator": "gelu",
+    "trajectory": "trajectory_002",
+    "selected_round": 3,
+    "score": 62.49975209494271,
+    "score_raw_decimal": "62.49975209494271",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.44216237373448236,
+    "source": {
+      "source_files": {
+        "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "a5f8ccd8cabc998c2cc33a138723742f2c54af320305bf7c295cc2b5fdb28f71",
+        "csrc/ops/gelu/op_kernel/gelu_launch.h": "9e4a169f0369c61b39438449f29f295872443c924f82f558a0f6ee96097f7b66",
+        "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "419f61633da7890533990a414c817a6350f677f5d7e55a65b9f5a03b7eeb3f84",
+        "csrc/ops/gelu/CMakeLists.txt": "853775855f0faa1533150eb501468c41f2aa19ab02ac5ee6a7c7b61b23169ca6",
+        "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+      },
+      "source_bundle_hash": "3b652af66e1f651f4019e092956d8be12765b4d8ff1f413d115665660f20eb6f",
+      "source_issue": null,
+      "source_strategy": "verified_archived_submission_tree",
+      "model_output_hash": "6f4df00e0759afa8c203ff712f772e4b8879e8674d901e379f2ea2a6ec0864e6",
+      "output_hash_matches_manifest": false,
+      "verification_basis": "complete_archived_submission_tree_sha256"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_first4_20260815\\opencode_go\\kimi-k3\\level1_gelu\\trajectory_002\\round_03"
+  },
+  {
+    "candidate_id": "Kimi_K3_gelu_003_R4",
+    "model": "Kimi K3",
+    "operator": "gelu",
+    "trajectory": "trajectory_003",
+    "selected_round": 4,
+    "score": 61.99377987607658,
+    "score_raw_decimal": "61.99377987607658",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.41921574531838307,
+    "source": {
+      "source_files": {
+        "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "0680359364659b4359c1a11642115ad08d9e9605569a391a17c2cc41c4f5dd43",
+        "csrc/ops/gelu/op_kernel/gelu_launch.h": "963bdc2e5abef2b2456995a48d2f7053486aca5342a4a9508dc79cc0dddc6b62",
+        "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "31a59748674ffd2514b376d331a761e09299779761a1ddfb0814a1a3737bbf37",
+        "csrc/ops/gelu/CMakeLists.txt": "898c234956661d560194b25434edbd04af8af3f099541d5f99b280adf4a241f7",
+        "cann_bench/__init__.py.append": "c68f9cf54af7ef7745ed8afd2dc3527cd5e17e3c7cd9ea6e9715218d7c4f217b"
+      },
+      "source_bundle_hash": "379ef4df7d4e589eeb9bbe5699a46509c05cc4601f799d6a3dd97b395fe54588",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "8d243978eae5fc118d70ca616c3bbdedd9f2d843f72d1a05ea98365f275083bb",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_first4_20260815\\opencode_go\\kimi-k3\\level1_gelu\\trajectory_003\\round_04"
+  },
+  {
+    "candidate_id": "Qwen3_8_Max_gelu_001_R2",
+    "model": "Qwen3.8-Max",
+    "operator": "gelu",
+    "trajectory": "trajectory_001",
+    "selected_round": 2,
+    "score": 61.604406548545406,
+    "score_raw_decimal": "61.604406548545406",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.4055615994563704,
+    "source": {
+      "source_files": {
+        "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "dbd45546bdfd611fb84904494fd77b515e0887f369daccc31f8596ea05e78adc",
+        "csrc/ops/gelu/op_kernel/gelu_launch.h": "dd326342c5d4eee9023f21f6aa9eda315ef1cab57556037a6557be5b2f12af3d",
+        "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "b4125868129e929a72ade8cdb3a9e67221c4587f0b6d8c95652ea4783794a76d",
+        "csrc/ops/gelu/CMakeLists.txt": "b7712863501fe4d4abe2703e8ed322c23c5fdca180bb5535c44d0456b7f6f2dc",
+        "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+      },
+      "source_bundle_hash": "f4e8bd3f41475291c5277dc6a441c7a429ce58243b9008449464cf1ec38098f2",
+      "source_issue": null,
+      "source_strategy": "verified_archived_submission_tree",
+      "model_output_hash": "74f12bc7d613a5f98b7770068421b3f33810f3ec1b006df96ea2fb491b0bcd6d",
+      "output_hash_matches_manifest": false,
+      "verification_basis": "complete_archived_submission_tree_sha256"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "qwencloud_paygo",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\qwen38max_exp_prefix3_20260820\\qwencloud_paygo\\qwen3_8-max\\level1_gelu\\trajectory_001\\round_02"
+  },
+  {
+    "candidate_id": "DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "model": "DeepSeek V4.1 Flash",
+    "operator": "swi_glu",
+    "trajectory": "trajectory_002",
+    "selected_round": 4,
+    "score": 78.65065754822209,
+    "score_raw_decimal": "78.65065754822209",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.609007212020892,
+    "source": {
+      "source_files": {
+        "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "be1eb8e0b919d723e52780b57fac097fabe134a1340f740d74de9cecc843723d",
+        "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "b6c72411abdce804bf4e5ffcbfdefa926bf7d8725c5a6450ec4bacef7cef7eec",
+        "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "8663740454180cf944084ee38870dd51e58276ad976da6868a41b5e9b5b8bf1a",
+        "csrc/ops/swi_glu/CMakeLists.txt": "91216b76af6191a88c4fb08e8bb53e219213873da38f58ea9e4a30dba1b645d8",
+        "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+      },
+      "source_bundle_hash": "1c5434a72ae91000bbca6866546953792fa66d38955764c5bb99cc735c87edd1",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "32394b8b248a26ca670f0c946b048bf7597d103bab4131ded92e3066780a23f1",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "deepseek_official",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a1_deepseek_flash_exp_20260910\\deepseek_official\\deepseek-flash\\level1_swi_glu\\trajectory_002\\round_04"
+  },
+  {
+    "candidate_id": "DeepSeek_V4_Flash_swi_glu_001_R2",
+    "model": "DeepSeek V4 Flash",
+    "operator": "swi_glu",
+    "trajectory": "trajectory_001",
+    "selected_round": 2,
+    "score": 76.7217008376987,
+    "score_raw_decimal": "76.7217008376987",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.4463756965008827,
+    "source": {
+      "source_files": {
+        "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "c5f578fe22efc8e8728bb3d54cd3691d2d3a602f142df2df9b8af208da2612b5",
+        "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "e0e34c5e68b77b75c89a89f9093373eedbf211d3a33d861d56b8fbcb239a8e5d",
+        "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "da8a9cd02ca99b1fc5b0dd27ca2a8734244b030d9a95e15f1e543b532051e6bc",
+        "csrc/ops/swi_glu/CMakeLists.txt": "de99cfc56d021bd65d45202c56f5f8636af3106cfc8cb84e05e2a34fd93e7c11",
+        "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+      },
+      "source_bundle_hash": "ea3e3d1ed9905eb9920b558dde8fee189cd7071baf14b15f31d5598cc9f17770",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "cdaedc96048d627a3a26a98ec8f83deeac4d85fbafb6fc747e398fc525466d50",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_deepseek_v4_flash_level1_final2_20260815\\opencode_go\\deepseek-v4-flash\\level1_swi_glu\\trajectory_001\\round_02"
+  },
+  {
+    "candidate_id": "DeepSeek_V4_Flash_swi_glu_002_R3",
+    "model": "DeepSeek V4 Flash",
+    "operator": "swi_glu",
+    "trajectory": "trajectory_002",
+    "selected_round": 3,
+    "score": 70.04938942802535,
+    "score_raw_decimal": "70.04938942802535",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.9269902826822805,
+    "source": {
+      "source_files": {
+        "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "6a4ae84ba8aa6c2c3d7c14503b704fd1aeff7dd21be31a01a14e34c0f82402e2",
+        "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "f4be8cdfae8ac20af8972eb97662a22822196ed08ccf47de38efa92e99575ec6",
+        "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "facb286831cd311791e9b9f50deca058003cb37c7b23c32c76d8271c081352c9",
+        "csrc/ops/swi_glu/CMakeLists.txt": "91216b76af6191a88c4fb08e8bb53e219213873da38f58ea9e4a30dba1b645d8",
+        "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+      },
+      "source_bundle_hash": "43f4496dbf6dd606bd9a294d6007855b715c7796b2ff85f8bb662da9797602a1",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "ad23733c6134e978292c0debd53f1ab71181651e652d5030eb9ed3308d724e6a",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_deepseek_v4_flash_level1_final2_20260815\\opencode_go\\deepseek-v4-flash\\level1_swi_glu\\trajectory_002\\round_03"
+  },
+  {
+    "candidate_id": "DeepSeek_V4_Flash_swi_glu_003_R1",
+    "model": "DeepSeek V4 Flash",
+    "operator": "swi_glu",
+    "trajectory": "trajectory_003",
+    "selected_round": 1,
+    "score": 72.46225014160741,
+    "score_raw_decimal": "72.46225014160741",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.0856836905812954,
+    "source": {
+      "source_files": {
+        "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "3dd815c98e61087dce9ad4ef81aaf7db0a4bca1a5245d52fad57fd118c720d16",
+        "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "db9b23a4647afb5752d46d9509252d6c47796bab402be84184f9c0dc9f8282ad",
+        "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "78d0d7b9c747de6283b2a0ab88da37297ea9fd64285d97da1e4a5b3bd3016c8c",
+        "csrc/ops/swi_glu/CMakeLists.txt": "de99cfc56d021bd65d45202c56f5f8636af3106cfc8cb84e05e2a34fd93e7c11",
+        "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+      },
+      "source_bundle_hash": "13e773f4ba97d50485497adcdf15076517431b4732e265c6655d2b05d018a6a0",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "c6de873831b61b7ef3538998681b1fce188a3f1ce49aa33f11b8631c2375869d",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_deepseek_v4_flash_level1_final2_20260815\\opencode_go\\deepseek-v4-flash\\level1_swi_glu\\trajectory_003\\round_01"
+  },
+  {
+    "candidate_id": "GLM_5_3_swi_glu_003_R3",
+    "model": "GLM-5.3",
+    "operator": "swi_glu",
+    "trajectory": "trajectory_003",
+    "selected_round": 3,
+    "score": 77.76982042280551,
+    "score_raw_decimal": "77.76982042280551",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.5155861621951927,
+    "source": {
+      "source_files": {
+        "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "3fd0b946fd435227303145d72435ada8ee7d575163a68822f6ea9462756c4c14",
+        "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "3a166d2957364a9e01e5726a6ac149689ead82dfef3a8ff0391c2470a0832ab3",
+        "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "dfdab1dc7638d008f1fe624927eb4b3fde18f9c879bf92e5c973eb39c83c3a4a",
+        "csrc/ops/swi_glu/CMakeLists.txt": "666785c0bc321862ec093b38fe8d520a5a76c42f84b29d100e486c31c5e7759f",
+        "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+      },
+      "source_bundle_hash": "eeb394a917d15c1edafdbb805e1b5e454e990d0fe21d32545ae6456c999524c1",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "0712fdbcec0cc9aafc2a87a319fe998c1353311a382ae254ee5bc3cd8bba7f71",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "zhipu_bigmodel",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_glm_5_3_level1_remaining4_20260826\\zhipu_bigmodel\\glm-5_3\\level1_swi_glu\\trajectory_003\\round_03"
+  },
+  {
+    "candidate_id": "Grok_4_6_swi_glu_003_R2",
+    "model": "Grok 4.6",
+    "operator": "swi_glu",
+    "trajectory": "trajectory_003",
+    "selected_round": 2,
+    "score": 77.46657485152883,
+    "score_raw_decimal": "77.46657485152883",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.481845404970668,
+    "source": {
+      "source_files": {
+        "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "339bc7bdf26a3161628fe598bfd998726ed83046242817c9313185c7027aa3c8",
+        "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "856e5a258d231ed4cdaaa1056a3a858e3b802a966019736884502090f298b1a9",
+        "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "436c1f5e447c74eafb0acb2f328d3d7cd87f72271fa48cbcc2134fdce8d73907",
+        "csrc/ops/swi_glu/CMakeLists.txt": "feb29883a3b377c5b456c81ee34b1f014873d3c5a41538f56a47310e4e2aeb44",
+        "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+      },
+      "source_bundle_hash": "a891b158adef9c7211127754b79f00b5c08305e7e8ab552adbb8d94013bcf2ed",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "f3086ed2bcaffb91e5ec9fc5a485dc448f38d574222dc7be9fa9936121dfd196",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "openrouter_xai_zdr",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_grok_4_6_openrouter_level1_20260916\\openrouter_xai_zdr\\x-ai_grok-4_6\\level1_swi_glu\\trajectory_003\\round_02"
+  },
+  {
+    "candidate_id": "Kimi_K3_swi_glu_002_R4",
+    "model": "Kimi K3",
+    "operator": "swi_glu",
+    "trajectory": "trajectory_002",
+    "selected_round": 4,
+    "score": 75.04381202743161,
+    "score_raw_decimal": "75.04381202743161",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.221372337007139,
+    "source": {
+      "source_files": {
+        "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "1dcff56f832b42355534e62a97de1833bcec4a49326e697c591e8633609caa60",
+        "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "e3d3262c68b69e435229e1d0ed6220f3e05f95e2c2ce2a2c7ba6895460e88d61",
+        "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "5ae4be9fef7ce2c76c79837f89c5de04445f5578849bbfc632ea65661db6576f",
+        "csrc/ops/swi_glu/CMakeLists.txt": "f663561e5d3648e55e4a38e49ec7f0001ae768abcd58af458585dff17fa72aa2",
+        "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+      },
+      "source_bundle_hash": "a46d18fae61993d7e5e9a581196060c5aba92e5438c763e5ee5a27d20e8990b4",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "2ade42a1da7eb0248002763aa4a34027b31554841be626c23adb8f5f98d36018",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_remaining4_20260817\\opencode_go\\kimi-k3\\level1_swi_glu\\trajectory_002\\round_04"
+  },
+  {
+    "candidate_id": "Kimi_K3_swi_glu_003_R5",
+    "model": "Kimi K3",
+    "operator": "swi_glu",
+    "trajectory": "trajectory_003",
+    "selected_round": 5,
+    "score": 79.88281342546733,
+    "score_raw_decimal": "79.88281342546733",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.7008999878058986,
+    "source": {
+      "source_files": {
+        "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "aacadd765dfb1ad5475bb12a60b2fb3b53da715a62f704995e8c85b490d74a67",
+        "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "35fae4e7990e9dc904acc9615577ce05b2a48372ab37ae0085842499f1e05e37",
+        "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "ea8bb67240a3c19327ab342d8d6cdc02ac9592c0b8497cfb9f80bd758bcf3f70",
+        "csrc/ops/swi_glu/CMakeLists.txt": "feb29883a3b377c5b456c81ee34b1f014873d3c5a41538f56a47310e4e2aeb44",
+        "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+      },
+      "source_bundle_hash": "5295d799674c3324c8d203a834e6c5d69762249d6b9b835b14f5955a4ac23354",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "204fe9edc30ca9b57f7eafa2bade1971db476f3171aef5c17ee55070853e8233",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_remaining4_20260817\\opencode_go\\kimi-k3\\level1_swi_glu\\trajectory_003\\round_05"
+  },
+  {
+    "candidate_id": "DeepSeek_V4_1_Flash_foreach_norm_002_R5",
+    "model": "DeepSeek V4.1 Flash",
+    "operator": "foreach_norm",
+    "trajectory": "trajectory_002",
+    "selected_round": 5,
+    "score": 83.22182636997837,
+    "score_raw_decimal": "83.22182636997837",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.7601091808545923,
+    "source": {
+      "source_files": {
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "055c094c8d2b9a3b9fac71e31c00c5b25a458d6afab893f01ef287ba7b243181",
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "0a54a7c373a54a9307008f75b7f73478ed5ea87da69a97ec0735609bd630411a",
+        "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "5edfda81d4c5d43a286729afddf58c56cdb07ac4e62e878f4bfd844d6e2f89dc",
+        "csrc/ops/foreach_norm/CMakeLists.txt": "57ddd98206d761e5f2534c3b26d6e605f0e5566af88d79a92e9db31a9ebda1a5",
+        "cann_bench/__init__.py.append": "543630ce536c7265327c047efb0b41309d0c1170c22cd2175a6afa7d94d47d11"
+      },
+      "source_bundle_hash": "41e3da4452424465fb98e15b066ca864e8f0fb81151faf0d21e52c57acb0fea3",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "4a67481ea601b78a67a764dd326287753fe3594c849ae792bffabebe82e87934",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "deepseek_official",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a1_deepseek_flash_exp_20260910\\deepseek_official\\deepseek-flash\\level1_foreach_norm\\trajectory_002\\round_05"
+  },
+  {
+    "candidate_id": "DeepSeek_V4_1_Flash_foreach_norm_003_R5",
+    "model": "DeepSeek V4.1 Flash",
+    "operator": "foreach_norm",
+    "trajectory": "trajectory_003",
+    "selected_round": 5,
+    "score": 80.53718853961807,
+    "score_raw_decimal": "80.53718853961807",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.5428363495372825,
+    "source": {
+      "source_files": {
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "893bd61e6d118c4c934df3513ee032e96629288f35f75f8c53fdb972cda66466",
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "d75ff43ce1b2b1030da5583f11cd55900f6f99756397d4f0f65a59c21a835680",
+        "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "d75f7eebd163e8ffe49a7c36a80d853fb03c7a89143a8d275641767c6ab47506",
+        "csrc/ops/foreach_norm/CMakeLists.txt": "9e682a06ed03dca559d879f81fe56588ab5c9f049793d28777274c5c719ba707",
+        "cann_bench/__init__.py.append": "543630ce536c7265327c047efb0b41309d0c1170c22cd2175a6afa7d94d47d11"
+      },
+      "source_bundle_hash": "e912a8fba849057fa41ae0b230954fcf5ca3a387793c5550f70531845e54bd87",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "8c5f0042c5e797af61d337ceab6959c1ea0680b18a1179770e3dce5085a096bf",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "deepseek_official",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a1_deepseek_flash_exp_20260910\\deepseek_official\\deepseek-flash\\level1_foreach_norm\\trajectory_003\\round_05"
+  },
+  {
+    "candidate_id": "GLM_5_3_foreach_norm_003_R5",
+    "model": "GLM-5.3",
+    "operator": "foreach_norm",
+    "trajectory": "trajectory_003",
+    "selected_round": 5,
+    "score": 64.67286837542859,
+    "score_raw_decimal": "64.67286837542859",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.5329835553184273,
+    "source": {
+      "source_files": {
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "b94b178169e63ecc516cbda5db35b4b0dc0331136f1ddaf22723e48155e719d8",
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "92afbdf89a011a06b06d5370b57bfdc1640bc7877a0e4a2b42ce4dbf0cd59fc8",
+        "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "f683c656c6d2df6f1d1579b0f387586a571ee50e1b899bf985bfec6ac82f7624",
+        "csrc/ops/foreach_norm/CMakeLists.txt": "57ddd98206d761e5f2534c3b26d6e605f0e5566af88d79a92e9db31a9ebda1a5",
+        "cann_bench/__init__.py.append": "e64a27b534902cee29904cbd931ded94ef827a6e74e7e2e9c1bf1d3867b3a1b6"
+      },
+      "source_bundle_hash": "1e58467b76a0a21d095a00197a8ba1280a083771deeb1b72f6350043f2f25e71",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "f43e1e3a8d237195e3cf5d53b163276d7150799a43a59b75bb5fe269b5dfc088",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "zhipu_bigmodel",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_glm_5_3_level1_next3_20260822\\zhipu_bigmodel\\glm-5_3\\level1_foreach_norm\\trajectory_003\\round_05"
+  },
+  {
+    "candidate_id": "Grok_4_6_foreach_norm_001_R5",
+    "model": "Grok 4.6",
+    "operator": "foreach_norm",
+    "trajectory": "trajectory_001",
+    "selected_round": 5,
+    "score": 54.925052000594924,
+    "score_raw_decimal": "54.925052000594924",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.13451349510334606,
+    "source": {
+      "source_files": {
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "fc1a77168f663630451328296fc1a7a785370653243e6603bffce6148386c80c",
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "0aa00da703a8ddadb9ac8f06faf16acc8322091d344fe590c3b450ad03a8cbd3",
+        "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "81b6c4efb1478c9e3778a47ddc0d6732b69f3b53075203161b9287c9ebc46127",
+        "csrc/ops/foreach_norm/CMakeLists.txt": "57ddd98206d761e5f2534c3b26d6e605f0e5566af88d79a92e9db31a9ebda1a5",
+        "cann_bench/__init__.py.append": "950debe19fef1c5839ddea376133c932f35c561b8203345b8e5733b13b922247"
+      },
+      "source_bundle_hash": "1c312664c33453f6eb14b0a515666468abdab8b4368dfef3692da385157e6408",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "84e36d67a66c866a7ea8cea2f323f0a85f823a078ddba173be7fb666295a6272",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "openrouter_xai_zdr",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_grok_4_6_openrouter_level1_20260916\\openrouter_xai_zdr\\x-ai_grok-4_6\\level1_foreach_norm\\trajectory_001\\round_05"
+  },
+  {
+    "candidate_id": "Grok_4_6_foreach_norm_003_R5",
+    "model": "Grok 4.6",
+    "operator": "foreach_norm",
+    "trajectory": "trajectory_003",
+    "selected_round": 5,
+    "score": 81.71693787165202,
+    "score_raw_decimal": "81.71693787165202",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.6084125347826426,
+    "source": {
+      "source_files": {
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "573bd1473bdad4a163dc67723eff07ae4633b20ae191900f0ee721e96acd20f0",
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "46cb558c751a52a5bc6908805e043995898182492b8f685475fa995940f8b3a7",
+        "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "6f37e9682033cd4fdd2e9bf9bb70b25e2c19e887e9a2b1a3f89a9338305b7a35",
+        "csrc/ops/foreach_norm/CMakeLists.txt": "9e682a06ed03dca559d879f81fe56588ab5c9f049793d28777274c5c719ba707",
+        "cann_bench/__init__.py.append": "543630ce536c7265327c047efb0b41309d0c1170c22cd2175a6afa7d94d47d11"
+      },
+      "source_bundle_hash": "614595325c1eea71c32e28ec0abf157cadb89c8a117659901f093b5e4fc58d8b",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "f0c5e8d4f44c81d196de3dbf57196602acead85ff31932e8e56b6579dd2dee3e",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "openrouter_xai_zdr",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_grok_4_6_openrouter_level1_20260916\\openrouter_xai_zdr\\x-ai_grok-4_6\\level1_foreach_norm\\trajectory_003\\round_05"
+  },
+  {
+    "candidate_id": "Kimi_K3_foreach_norm_001_R4",
+    "model": "Kimi K3",
+    "operator": "foreach_norm",
+    "trajectory": "trajectory_001",
+    "selected_round": 4,
+    "score": 80.23431485277288,
+    "score_raw_decimal": "80.23431485277288",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.4953079344919333,
+    "source": {
+      "source_files": {
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "3ad000c9f793fa41308b88b61554ffc5438a7f45cc1c014610c39adc0b20a02f",
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "2283f3669602289443a289ce241ec8710190e858f012c12fea094cfa9c64c72f",
+        "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "5926d2643fd6c2e7dbecdb38bc0a3ce779c90692430af605c22599d287a35401",
+        "csrc/ops/foreach_norm/CMakeLists.txt": "57ddd98206d761e5f2534c3b26d6e605f0e5566af88d79a92e9db31a9ebda1a5",
+        "cann_bench/__init__.py.append": "1d6e019bbb101b4c3e604e4f802061df0a52491adb1e0055158aff0ccb1021e3"
+      },
+      "source_bundle_hash": "8f5ffff9e106e5a00463876c6c4c7fd0a6b7a169182947991f32b7a553934ec5",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "617322122de8a303ecc5368bf2cdc9dd6c3c839a24ddec46f5b37ce07f43a660",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_first4_20260815\\opencode_go\\kimi-k3\\level1_foreach_norm\\trajectory_001\\round_04"
+  },
+  {
+    "candidate_id": "Kimi_K3_foreach_norm_002_R2",
+    "model": "Kimi K3",
+    "operator": "foreach_norm",
+    "trajectory": "trajectory_002",
+    "selected_round": 2,
+    "score": 81.56774819766069,
+    "score_raw_decimal": "81.56774819766069",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 1.6584731684696248,
+    "source": {
+      "source_files": {
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "8c03de5c94d0e8fa4b52ed50843336c549543bad0aae870af9bab7a947f9f31c",
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "8f76db023310d1a5d414789d12f2df023c4049e17984fb2d1e33709c26d0d405",
+        "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "428d08500e0d9e3491234750964f433cd7d0118cfc8305feddc2b0f2f1f0360d",
+        "csrc/ops/foreach_norm/CMakeLists.txt": "57ddd98206d761e5f2534c3b26d6e605f0e5566af88d79a92e9db31a9ebda1a5",
+        "cann_bench/__init__.py.append": "543630ce536c7265327c047efb0b41309d0c1170c22cd2175a6afa7d94d47d11"
+      },
+      "source_bundle_hash": "1894fec46aafa408578c61ec291610cbc26e9b3e9c5402f9b41a46e62471dd13",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "7a8909a24f04d8a546bdbed35fc0a3b43acb019b2ed49b07feba546b862c7f7f",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "opencode_go",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_first4_20260815\\opencode_go\\kimi-k3\\level1_foreach_norm\\trajectory_002\\round_02"
+  },
+  {
+    "candidate_id": "Qwen3_8_Max_foreach_norm_003_R4",
+    "model": "Qwen3.8-Max",
+    "operator": "foreach_norm",
+    "trajectory": "trajectory_003",
+    "selected_round": 4,
+    "score": 50.30843068661183,
+    "score_raw_decimal": "50.30843068661183",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.007692806733697094,
+    "source": {
+      "source_files": {
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "f87d79b034cb4666439121e6491a0cf2d75d37cfe7ee78b3668489405f36573c",
+        "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "c808380dc26478d88cba58f645afd73e49539203bdb7ba849ba18e94490327f1",
+        "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "46e605388769461b51b7d7bbf3db26a2fccab387a17fcba387938222c10618d7",
+        "csrc/ops/foreach_norm/CMakeLists.txt": "57ddd98206d761e5f2534c3b26d6e605f0e5566af88d79a92e9db31a9ebda1a5",
+        "cann_bench/__init__.py.append": "15d4e960923aa6553ddf3686d98802a649704f80d0eb98a813aea65aba8e80a1"
+      },
+      "source_bundle_hash": "9a1d4002016d2dfedcb2831cba512dcabddbdbc716ffbfa9427c33b4e534a4aa",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "d08547427507413af6ce981fdc6d23e9ba4bd87df46d9235339a30c45685f339",
+      "output_hash_matches_manifest": true,
+      "verification_basis": "original_output_and_file_comparison"
+    },
+    "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+    "status": "source_verified_npu_not_tested",
+    "generating_provider": "qwencloud_paygo",
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\qwen38max_exp_prefix3_20260820\\qwencloud_paygo\\qwen3_8-max\\level1_foreach_norm\\trajectory_003\\round_04"
+  },
+  {
+    "candidate_id": "DeepSeek_V4_1_Flash_sigmoid_001_R5",
+    "model": "DeepSeek V4.1 Flash",
+    "operator": "sigmoid",
+    "trajectory": "trajectory_001",
+    "selected_round": 5,
+    "score": 72.96961327915267,
+    "score_raw_decimal": "72.96961327915267",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.9275565939589183,
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a1_deepseek_flash_exp_20260910\\deepseek_official\\deepseek-flash\\level1_sigmoid\\trajectory_001\\round_05",
+    "source": {
+      "source_files": {
+        "csrc/ops/sigmoid/op_kernel/sigmoid_kernel.cpp": "b5979b03cbece9370edf60a6d314b8b1d7d83ff683215354dfa020f8af56b2e4",
+        "csrc/ops/sigmoid/op_kernel/sigmoid_launch.h": "639fd972781ea31aad25bb4c94c80ea48d3cdc2e42e5cb771ab62c75807625b8",
+        "csrc/ops/sigmoid/op_plugin/sigmoid_plugin.cpp": "e14fa7cd09c247e8d47ee25de1e6de68784f44ba7ccc30dd08f02b27e763fb41",
+        "csrc/ops/sigmoid/CMakeLists.txt": "0677c9a4431956b4b226a317d0ea49335ad6279077a43a043dd48247218ec65e",
+        "cann_bench/__init__.py.append": "6c1024c719e7e6435825cf0bf548378d00e3f67ab92a56f624d2611cc33cb78f"
+      },
+      "source_bundle_hash": "f21fde22dfb71168664ecc1f006259f4afb9dd2b2460ba7ffb328e6a7ed8761b",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "14624f265bf58b6b830f7f4442a60f016f3cc336958b3fdeef70aed107a88665"
+    }
+  },
+  {
+    "candidate_id": "DeepSeek_V4_1_Flash_sigmoid_003_R1",
+    "model": "DeepSeek V4.1 Flash",
+    "operator": "sigmoid",
+    "trajectory": "trajectory_003",
+    "selected_round": 1,
+    "score": 71.43414924667735,
+    "score_raw_decimal": "71.43414924667735",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.8655274844588762,
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a1_deepseek_flash_exp_20260910\\deepseek_official\\deepseek-flash\\level1_sigmoid\\trajectory_003\\round_01",
+    "source": {
+      "source_files": {
+        "csrc/ops/sigmoid/op_kernel/sigmoid_kernel.cpp": "3ff7bda2810bfdf5ab0817e41de9c1bde56515109015b669d361280aa8b20585",
+        "csrc/ops/sigmoid/op_kernel/sigmoid_launch.h": "0412b64ec9d9bb317d8a7bb856a150fe5bae639e4c3f532ea3ef1e4bcdf921b5",
+        "csrc/ops/sigmoid/op_plugin/sigmoid_plugin.cpp": "87a0540fdc5abaf01a7a3ba6705571b0ae9d3424f08bd6bf07b74cfab56d994b",
+        "csrc/ops/sigmoid/CMakeLists.txt": "86df91516db03fac3dff28454e8d710257213ef46ae692b544fa4350cba177f5",
+        "cann_bench/__init__.py.append": "6c1024c719e7e6435825cf0bf548378d00e3f67ab92a56f624d2611cc33cb78f"
+      },
+      "source_bundle_hash": "c0e199abc2189d274aea307d884c86f31d897400351b016efee1c484ce3e59cc",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "72763490fa887aac25f369621fd74b99c084a913fb24494cd91e5cbf348b0442"
+    }
+  },
+  {
+    "candidate_id": "GLM_5_3_sigmoid_003_R5",
+    "model": "GLM-5.3",
+    "operator": "sigmoid",
+    "trajectory": "trajectory_003",
+    "selected_round": 5,
+    "score": 72.44608355512875,
+    "score_raw_decimal": "72.44608355512875",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.9073070818749978,
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_glm_5_3_level1_remaining4_20260826\\zhipu_bigmodel\\glm-5_3\\level1_sigmoid\\trajectory_003\\round_05",
+    "source": {
+      "source_files": {
+        "csrc/ops/sigmoid/op_kernel/sigmoid_kernel.cpp": "c0f69aa5ece452d7c69f053ff2df0f8badb8decdbcfbad61660d00c9aceffd26",
+        "csrc/ops/sigmoid/op_kernel/sigmoid_launch.h": "b68b2dfdd089e8e2070afa59b7692fcf81b0dea33bf1d43462f48b2df5d47099",
+        "csrc/ops/sigmoid/op_plugin/sigmoid_plugin.cpp": "f81f555360dae7843eb1da875d36fa66956893147f336fe48e338d31641c0c44",
+        "csrc/ops/sigmoid/CMakeLists.txt": "54cc755e49a66a87ae08f52d8c982cbd659f745ffcfaa6ff46bba59b812590fb",
+        "cann_bench/__init__.py.append": "6c1024c719e7e6435825cf0bf548378d00e3f67ab92a56f624d2611cc33cb78f"
+      },
+      "source_bundle_hash": "293aa56f0ad40b6042e147bff5b34087a3b558c786d53e4c125bbfa8a291b279",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "003dda79ab7e544b0118d2f8bf028d204dd5f7aca9f6c47d3992b1a844bbd6f4"
+    }
+  },
+  {
+    "candidate_id": "Grok_4_6_sigmoid_001_R5",
+    "model": "Grok 4.6",
+    "operator": "sigmoid",
+    "trajectory": "trajectory_001",
+    "selected_round": 5,
+    "score": 66.69888044583318,
+    "score_raw_decimal": "66.69888044583318",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.6607103110377371,
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_grok_4_6_openrouter_level1_20260916\\openrouter_xai_zdr\\x-ai_grok-4_6\\level1_sigmoid\\trajectory_001\\round_05",
+    "source": {
+      "source_files": {
+        "csrc/ops/sigmoid/op_kernel/sigmoid_kernel.cpp": "b50de43f1c0dc83f52aec1ab6cc0481a6c5a15be2fa40bb855d393fb8fc4af40",
+        "csrc/ops/sigmoid/op_kernel/sigmoid_launch.h": "7bf36467fdf9f6dd285fdecf7e7a2c25f46b7c030649465a648f1530e39acfce",
+        "csrc/ops/sigmoid/op_plugin/sigmoid_plugin.cpp": "80709b384b878057c5e753ba983e42fe5cfc57940f8e96016f7facd636fddd95",
+        "csrc/ops/sigmoid/CMakeLists.txt": "54cc755e49a66a87ae08f52d8c982cbd659f745ffcfaa6ff46bba59b812590fb",
+        "cann_bench/__init__.py.append": "6c1024c719e7e6435825cf0bf548378d00e3f67ab92a56f624d2611cc33cb78f"
+      },
+      "source_bundle_hash": "35f21ac20aeae942ffea39739fb618b116cb2da8e4bdc2e5494135bea8c630b4",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "997fc74b2d288503f04f287e25469520df4e71d783d5e10781e22bed6b4c5c1a"
+    }
+  },
+  {
+    "candidate_id": "Grok_4_6_sigmoid_002_R4",
+    "model": "Grok 4.6",
+    "operator": "sigmoid",
+    "trajectory": "trajectory_002",
+    "selected_round": 4,
+    "score": 70.97998320710445,
+    "score_raw_decimal": "70.97998320710445",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.8498894359741136,
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_grok_4_6_openrouter_level1_20260916\\openrouter_xai_zdr\\x-ai_grok-4_6\\level1_sigmoid\\trajectory_002\\round_04",
+    "source": {
+      "source_files": {
+        "csrc/ops/sigmoid/op_kernel/sigmoid_kernel.cpp": "ecf8a928d1096eed8fa5548ba85fae017df9752a67b8c6b6cdc24abd143a07dc",
+        "csrc/ops/sigmoid/op_kernel/sigmoid_launch.h": "5fa6aaf4c3dc7fc2a57e12c88dfe3f48aee2c59628bf956fcf9cf6dcc9f50ca0",
+        "csrc/ops/sigmoid/op_plugin/sigmoid_plugin.cpp": "3c4b6cf84880dbce90af0120996d35a64b2516a0e37eadb833669e6416be9709",
+        "csrc/ops/sigmoid/CMakeLists.txt": "54cc755e49a66a87ae08f52d8c982cbd659f745ffcfaa6ff46bba59b812590fb",
+        "cann_bench/__init__.py.append": "6c1024c719e7e6435825cf0bf548378d00e3f67ab92a56f624d2611cc33cb78f"
+      },
+      "source_bundle_hash": "8b77daab86554c4316f80e24b1f4a9722d7073216e698b5084abff1a9e1f9aad",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "31c2011fceed6be6eb4c62b5a8ae907e38e605b54a1616ca3f7a78ef6309e17e"
+    }
+  },
+  {
+    "candidate_id": "Kimi_K3_sigmoid_003_R4",
+    "model": "Kimi K3",
+    "operator": "sigmoid",
+    "trajectory": "trajectory_003",
+    "selected_round": 4,
+    "score": 72.84296100792244,
+    "score_raw_decimal": "72.84296100792244",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.9313995227547569,
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_remaining4_20260817\\opencode_go\\kimi-k3\\level1_sigmoid\\trajectory_003\\round_04",
+    "source": {
+      "source_files": {
+        "csrc/ops/sigmoid/op_kernel/sigmoid_kernel.cpp": "3fcc14ad73a58d227660d2f127df878f9ff387a221d5162280109e427fb5abd8",
+        "csrc/ops/sigmoid/op_kernel/sigmoid_launch.h": "f44d1c63ed88d808f5cdc3f456fe8c9de5569b3eee896713828e14ee54cce812",
+        "csrc/ops/sigmoid/op_plugin/sigmoid_plugin.cpp": "54eb6e8516ef1ca5a0a61d4d8bceff2ac61279b9196854b517f2b1dd96b340b3",
+        "csrc/ops/sigmoid/CMakeLists.txt": "125e4ecc079c1f2a959d834b4757093dd9e156f471a768ad25f378d9b0629e40",
+        "cann_bench/__init__.py.append": "6c1024c719e7e6435825cf0bf548378d00e3f67ab92a56f624d2611cc33cb78f"
+      },
+      "source_bundle_hash": "140f60d85731780bb86b096132eead7bf6a13d3c4fe60651008a926f23327eec",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "bb9805ef5faa525deaa53b037ea02ac86b06e27564c0c51f082c48e4f3359196"
+    }
+  },
+  {
+    "candidate_id": "MiniMax_M3_sigmoid_003_R2",
+    "model": "MiniMax-M3",
+    "operator": "sigmoid",
+    "trajectory": "trajectory_003",
+    "selected_round": 2,
+    "score": 70.01605657278014,
+    "score_raw_decimal": "70.01605657278014",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.8107578986727313,
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\minimax_m3_anthropic_level1_remaining5_20260824\\minimax_paygo_cn_anthropic\\MiniMax-M3\\level1_sigmoid\\trajectory_003\\round_02",
+    "source": {
+      "source_files": {
+        "csrc/ops/sigmoid/op_kernel/sigmoid_kernel.cpp": "8166e1511a4d9ae89cb335215583a87da58944ed692c7142b0ec8f386dc9c6db",
+        "csrc/ops/sigmoid/op_kernel/sigmoid_launch.h": "28c91f3a7abd3445596c566e067261b9741b6076dee88531e072c72f2d8b7633",
+        "csrc/ops/sigmoid/op_plugin/sigmoid_plugin.cpp": "423080efb2bc2a794c81c51753c6f206896816ba753c43c351b1419d64e16723",
+        "csrc/ops/sigmoid/CMakeLists.txt": "54cc755e49a66a87ae08f52d8c982cbd659f745ffcfaa6ff46bba59b812590fb",
+        "cann_bench/__init__.py.append": "6c1024c719e7e6435825cf0bf548378d00e3f67ab92a56f624d2611cc33cb78f"
+      },
+      "source_bundle_hash": "3c649a7a9b71bf202e7ec48a55067b83457cb786a21ace50e914fa9ebec1aa31",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "8f03b9b51612bcdb664b5f2673531e755b304bfc6a4c479bb65a6a171366b3c6"
+    }
+  },
+  {
+    "candidate_id": "Qwen3_8_Max_sigmoid_001_R4",
+    "model": "Qwen3.8-Max",
+    "operator": "sigmoid",
+    "trajectory": "trajectory_001",
+    "selected_round": 4,
+    "score": 70.37509414197834,
+    "score_raw_decimal": "70.37509414197834",
+    "passed_cases": 20,
+    "total_cases": 20,
+    "avg_speedup": 0.821200547207142,
+    "archive_round_path": "model_eval\\runs\\feedback_experiments\\qwen38max_exp_remaining4_20260820\\qwencloud_paygo\\qwen3_8-max\\level1_sigmoid\\trajectory_001\\round_04",
+    "source": {
+      "source_files": {
+        "csrc/ops/sigmoid/op_kernel/sigmoid_kernel.cpp": "a3f85f25345762e35060dabdd100cfc70167af7daa6c75daad692ff10c496e01",
+        "csrc/ops/sigmoid/op_kernel/sigmoid_launch.h": "045db576c8a8b37a67fb7ee3ac9580ae1c54b1e30fc86378aba1e48d20e29b0c",
+        "csrc/ops/sigmoid/op_plugin/sigmoid_plugin.cpp": "3d943d9dc6d07764339dc0ebf9c4b463869fa5c1d9b0ece8e4b4afc49339ab95",
+        "csrc/ops/sigmoid/CMakeLists.txt": "54cc755e49a66a87ae08f52d8c982cbd659f745ffcfaa6ff46bba59b812590fb",
+        "cann_bench/__init__.py.append": "6c1024c719e7e6435825cf0bf548378d00e3f67ab92a56f624d2611cc33cb78f"
+      },
+      "source_bundle_hash": "dbf77acbcd6028febe14cae50f7513ff38e170b4bff3d9af85f4c30c1645d3dc",
+      "source_issue": null,
+      "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+      "model_output_hash": "60405c4851355a6bd95be9a2804f6a6fa0b4cb0550018788a1a3b5ffddfff930"
+    }
+  }
+]

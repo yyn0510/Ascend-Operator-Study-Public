@@ -1,0 +1,217 @@
+﻿model,provider,operator,trajectory,rounds,best_score,best_round,final_round_score,regression_count,n_succeeded,n_partial_correctness,n_compile_failed,n_device_exception,n_format_failure,n_incomplete,tokens_out,elapsed_seconds_total
+Kimi K3,opencode_go,exp,trajectory_001,5,87.091473,5,87.091473,2,5,0,0,0,0,0,71334,2046.607343
+Kimi K3,opencode_go,exp,trajectory_002,5,87.034461,5,87.034461,1,3,1,1,0,0,0,51005,1492.381503
+Kimi K3,opencode_go,exp,trajectory_003,5,86.949646,4,0.0,1,4,0,1,0,0,0,44194,1290.525457
+Kimi K3,opencode_go,foreach_addcdiv_scalar,trajectory_001,5,83.467422,2,19.694692,3,3,1,1,0,0,0,72925,1876.569825
+Kimi K3,opencode_go,foreach_addcdiv_scalar,trajectory_002,5,83.62081,5,83.62081,1,3,1,1,0,0,0,57813,1413.12479
+Kimi K3,opencode_go,foreach_addcdiv_scalar,trajectory_003,5,83.811903,3,0.0,3,1,2,0,0,2,0,66112,2775.523418
+Kimi K3,opencode_go,foreach_norm,trajectory_001,5,80.234315,4,0.0,2,2,1,0,1,1,0,81712,2500.107854
+Kimi K3,opencode_go,foreach_norm,trajectory_002,5,81.567748,2,0.0,3,3,0,2,0,0,0,89496,2361.303124
+Kimi K3,opencode_go,foreach_norm,trajectory_003,5,81.281564,2,81.134927,3,3,0,2,0,0,0,66357,2743.290638
+Kimi K3,opencode_go,gelu,trajectory_001,5,62.193338,4,11.70266,2,1,4,0,0,0,0,158800,5487.806871
+Kimi K3,opencode_go,gelu,trajectory_002,5,62.499752,3,46.971963,2,1,3,0,0,1,0,71772,2886.601564
+Kimi K3,opencode_go,gelu,trajectory_003,5,61.99378,4,57.188881,2,1,4,0,0,0,0,80850,2235.11307
+Kimi K3,opencode_go,masked_scale,trajectory_001,5,86.509849,4,0.0,1,2,0,1,0,2,0,32003,1144.247155
+Kimi K3,opencode_go,masked_scale,trajectory_002,5,87.011729,5,87.011729,1,3,0,1,0,1,0,37564,1330.468365
+Kimi K3,opencode_go,masked_scale,trajectory_003,5,0.0,1,0.0,0,0,0,4,0,1,0,34193,1208.20336
+Kimi K3,opencode_go,mish,trajectory_001,5,84.533655,4,23.293643,1,4,1,0,0,0,0,66884,1678.070136
+Kimi K3,opencode_go,mish,trajectory_002,5,84.9161,3,81.661343,2,4,1,0,0,0,0,59119,1546.30752
+Kimi K3,opencode_go,mish,trajectory_003,5,84.91911,2,58.962268,3,2,1,1,0,1,0,41103,1451.872907
+Kimi K3,opencode_go,sigmoid,trajectory_001,5,70.462801,4,0.0,2,2,0,2,0,1,0,39371,1340.71682
+Kimi K3,opencode_go,sigmoid,trajectory_002,5,71.03977,4,0.0,2,3,1,0,0,1,0,36573,1161.429858
+Kimi K3,opencode_go,sigmoid,trajectory_003,5,72.842961,4,0.0,2,3,1,0,0,1,0,38188,3119.126199
+Kimi K3,opencode_go,swi_glu,trajectory_001,5,75.790979,1,21.517162,4,0,3,1,0,1,0,59464,2171.998932
+Kimi K3,opencode_go,swi_glu,trajectory_002,5,75.043812,4,68.570472,1,1,2,2,0,0,0,48765,1369.75664
+Kimi K3,opencode_go,swi_glu,trajectory_003,5,79.882813,5,79.882813,1,3,2,0,0,0,0,89131,2883.551514
+GLM-5.3,zhipu_bigmodel,exp,trajectory_001,5,74.729008,4,0.0,1,1,0,2,0,2,0,52119,728.820787
+GLM-5.3,zhipu_bigmodel,exp,trajectory_002,5,86.8092,5,86.8092,0,4,1,0,0,0,0,210674,6256.433123
+GLM-5.3,zhipu_bigmodel,exp,trajectory_003,5,85.063241,3,0.0,2,1,0,4,0,0,0,132470,3177.77966
+GLM-5.3,zhipu_bigmodel,foreach_addcdiv_scalar,trajectory_001,5,80.43364,4,0.0,1,1,0,3,0,1,0,257584,2710.170385
+GLM-5.3,zhipu_bigmodel,foreach_addcdiv_scalar,trajectory_002,5,83.337083,4,82.206374,1,3,0,2,0,0,0,146653,2394.219021
+GLM-5.3,zhipu_bigmodel,foreach_addcdiv_scalar,trajectory_003,5,80.717034,4,10.0,1,1,2,2,0,0,0,134922,1359.32611
+GLM-5.3,zhipu_bigmodel,foreach_norm,trajectory_001,5,8.5,5,8.5,0,0,1,3,1,0,0,294802,3076.707297
+GLM-5.3,zhipu_bigmodel,foreach_norm,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,286597,5648.302183
+GLM-5.3,zhipu_bigmodel,foreach_norm,trajectory_003,5,64.672868,5,64.672868,0,1,1,3,0,0,0,226978,9993.852736
+GLM-5.3,zhipu_bigmodel,gelu,trajectory_001,5,41.409132,1,0.0,4,0,1,3,0,1,0,365457,6569.353289
+GLM-5.3,zhipu_bigmodel,gelu,trajectory_002,5,46.17113,4,0.0,1,0,1,3,0,1,0,112135,1625.468593
+GLM-5.3,zhipu_bigmodel,gelu,trajectory_003,5,40.343803,3,12.0,2,0,2,2,0,1,0,133210,6211.520454
+GLM-5.3,zhipu_bigmodel,masked_scale,trajectory_001,5,67.84124,4,0.0,3,1,2,1,0,1,0,325554,5149.141397
+GLM-5.3,zhipu_bigmodel,masked_scale,trajectory_002,5,86.998107,5,86.998107,1,3,1,1,0,0,0,121453,1921.054567
+GLM-5.3,zhipu_bigmodel,masked_scale,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,175139,3354.335438
+GLM-5.3,zhipu_bigmodel,mish,trajectory_001,5,78.928498,3,78.740238,2,3,0,2,0,0,0,64258,1214.434504
+GLM-5.3,zhipu_bigmodel,mish,trajectory_002,5,85.139507,3,84.876333,2,4,0,1,0,0,0,96423,1831.384721
+GLM-5.3,zhipu_bigmodel,mish,trajectory_003,5,84.97539,5,84.97539,0,4,1,0,0,0,0,113320,2235.385238
+GLM-5.3,zhipu_bigmodel,sigmoid,trajectory_001,5,70.838504,5,70.838504,1,3,1,1,0,0,0,40127,745.594655
+GLM-5.3,zhipu_bigmodel,sigmoid,trajectory_002,5,70.776347,5,70.776347,0,2,0,3,0,0,0,83408,1726.395237
+GLM-5.3,zhipu_bigmodel,sigmoid,trajectory_003,5,72.446084,5,72.446084,1,2,2,1,0,0,0,58022,1064.408941
+GLM-5.3,zhipu_bigmodel,swi_glu,trajectory_001,5,45.986365,2,0.0,3,0,1,3,0,1,0,266207,5158.546535
+GLM-5.3,zhipu_bigmodel,swi_glu,trajectory_002,5,76.215607,4,0.0,1,1,1,3,0,0,0,136183,3318.29293
+GLM-5.3,zhipu_bigmodel,swi_glu,trajectory_003,5,77.76982,3,75.798914,2,1,2,2,0,0,0,169260,2490.568488
+Qwen3.8-Max,qwencloud_paygo,exp,trajectory_001,5,86.713291,4,86.396309,2,3,1,1,0,0,0,189285,4177.207513
+Qwen3.8-Max,qwencloud_paygo,exp,trajectory_002,5,87.389829,4,87.315,1,4,1,0,0,0,0,227596,4702.842907
+Qwen3.8-Max,qwencloud_paygo,exp,trajectory_003,5,66.208653,3,0.0,2,0,2,3,0,0,0,173234,3567.401425
+Qwen3.8-Max,qwencloud_paygo,foreach_addcdiv_scalar,trajectory_001,5,62.725717,4,0.0,2,0,3,2,0,0,0,184431,3850.05492
+Qwen3.8-Max,qwencloud_paygo,foreach_addcdiv_scalar,trajectory_002,5,36.868747,3,0.0,2,0,1,3,1,0,0,223420,4636.558664
+Qwen3.8-Max,qwencloud_paygo,foreach_addcdiv_scalar,trajectory_003,5,63.671207,5,63.671207,0,1,1,3,0,0,0,193673,4134.386479
+Qwen3.8-Max,qwencloud_paygo,foreach_norm,trajectory_001,5,38.779339,5,38.779339,0,0,1,3,1,0,0,312388,6422.133072
+Qwen3.8-Max,qwencloud_paygo,foreach_norm,trajectory_002,5,35.023501,2,0.0,3,0,1,3,1,0,0,249831,5330.852697
+Qwen3.8-Max,qwencloud_paygo,foreach_norm,trajectory_003,5,50.308431,4,0.0,1,1,0,4,0,0,0,265755,5347.337341
+Qwen3.8-Max,qwencloud_paygo,gelu,trajectory_001,5,61.604407,2,50.643199,3,1,3,1,0,0,0,255485,5061.90222
+Qwen3.8-Max,qwencloud_paygo,gelu,trajectory_002,5,48.588671,4,42.631408,2,0,3,2,0,0,0,209890,4089.491459
+Qwen3.8-Max,qwencloud_paygo,gelu,trajectory_003,5,40.348725,3,0.0,2,0,1,4,0,0,0,231610,4560.782109
+Qwen3.8-Max,qwencloud_paygo,masked_scale,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,203613,3956.399077
+Qwen3.8-Max,qwencloud_paygo,masked_scale,trajectory_002,5,3.801467,5,3.801467,0,0,1,4,0,0,0,241090,4626.441107
+Qwen3.8-Max,qwencloud_paygo,masked_scale,trajectory_003,5,0.0,1,0.0,0,0,0,4,1,0,0,214483,4227.509043
+Qwen3.8-Max,qwencloud_paygo,mish,trajectory_001,5,53.827629,3,0.0,2,0,1,4,0,0,0,182008,3536.976792
+Qwen3.8-Max,qwencloud_paygo,mish,trajectory_002,5,83.163504,5,83.163504,3,1,4,0,0,0,0,246418,4820.360535
+Qwen3.8-Max,qwencloud_paygo,mish,trajectory_003,5,23.05648,3,22.541606,2,0,3,2,0,0,0,234686,4600.365427
+Qwen3.8-Max,qwencloud_paygo,sigmoid,trajectory_001,5,70.375094,4,0.0,2,1,1,3,0,0,0,166884,3433.527853
+Qwen3.8-Max,qwencloud_paygo,sigmoid,trajectory_002,5,37.359198,3,0.0,2,0,1,4,0,0,0,155435,3136.312506
+Qwen3.8-Max,qwencloud_paygo,sigmoid,trajectory_003,5,56.338337,4,0.0,2,0,2,3,0,0,0,173769,3535.231698
+Qwen3.8-Max,qwencloud_paygo,swi_glu,trajectory_001,5,21.389735,4,15.627206,1,0,2,2,1,0,0,244386,4846.925316
+Qwen3.8-Max,qwencloud_paygo,swi_glu,trajectory_002,5,1.0,3,0.0,2,0,1,3,1,0,0,237573,4915.501872
+Qwen3.8-Max,qwencloud_paygo,swi_glu,trajectory_003,5,12.797829,5,12.797829,0,0,1,4,0,0,0,241510,4532.291568
+DeepSeek V4 Flash,opencode_go,exp,trajectory_001,5,66.321618,4,65.961196,2,0,3,2,0,0,0,173067,1613.631555
+DeepSeek V4 Flash,opencode_go,exp,trajectory_002,5,43.020003,2,0.0,3,0,1,4,0,0,0,156886,1407.354241
+DeepSeek V4 Flash,opencode_go,exp,trajectory_003,5,65.178514,5,65.178514,0,0,3,2,0,0,0,228584,2256.018159
+DeepSeek V4 Flash,opencode_go,foreach_addcdiv_scalar,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,159704,1464.222633
+DeepSeek V4 Flash,opencode_go,foreach_addcdiv_scalar,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,179214,1686.917417
+DeepSeek V4 Flash,opencode_go,foreach_addcdiv_scalar,trajectory_003,5,83.31222,5,83.31222,0,3,0,2,0,0,0,166084,1442.998322
+DeepSeek V4 Flash,opencode_go,foreach_norm,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,193953,1736.624308
+DeepSeek V4 Flash,opencode_go,foreach_norm,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,187465,1676.079028
+DeepSeek V4 Flash,opencode_go,foreach_norm,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,200392,1763.595769
+DeepSeek V4 Flash,opencode_go,gelu,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,222717,1785.222835
+DeepSeek V4 Flash,opencode_go,gelu,trajectory_002,5,58.562132,4,58.429801,1,0,3,2,0,0,0,142695,1175.730562
+DeepSeek V4 Flash,opencode_go,gelu,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,138003,1067.825293
+DeepSeek V4 Flash,opencode_go,masked_scale,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,198900,1650.206626
+DeepSeek V4 Flash,opencode_go,masked_scale,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,194274,1528.343595
+DeepSeek V4 Flash,opencode_go,masked_scale,trajectory_003,5,71.260536,5,71.260536,0,1,0,4,0,0,0,198218,1671.958034
+DeepSeek V4 Flash,opencode_go,mish,trajectory_001,5,84.10215,2,65.19185,3,1,4,0,0,0,0,183799,1601.275857
+DeepSeek V4 Flash,opencode_go,mish,trajectory_002,5,73.364229,5,73.364229,0,1,1,3,0,0,0,227340,1951.553455
+DeepSeek V4 Flash,opencode_go,mish,trajectory_003,5,69.992762,5,69.992762,0,1,2,2,0,0,0,208442,1743.302635
+DeepSeek V4 Flash,opencode_go,sigmoid,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,185170,1547.4157
+DeepSeek V4 Flash,opencode_go,sigmoid,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,128959,1360.166741
+DeepSeek V4 Flash,opencode_go,sigmoid,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,134868,1167.612959
+DeepSeek V4 Flash,opencode_go,swi_glu,trajectory_001,5,76.721701,2,71.777897,3,2,1,2,0,0,0,186412,1722.909277
+DeepSeek V4 Flash,opencode_go,swi_glu,trajectory_002,5,70.049389,3,0.0,2,1,0,4,0,0,0,133376,1588.629784
+DeepSeek V4 Flash,opencode_go,swi_glu,trajectory_003,5,72.46225,1,72.452595,4,2,0,2,1,0,0,176191,1542.632217
+DeepSeek V4.1 Flash,deepseek_official,exp,trajectory_001,5,87.065707,3,20.0,3,3,2,0,0,0,0,109002,409.475794
+DeepSeek V4.1 Flash,deepseek_official,exp,trajectory_002,5,87.286884,3,86.77127,3,4,0,1,0,0,0,117470,567.889718
+DeepSeek V4.1 Flash,deepseek_official,exp,trajectory_003,5,87.108873,3,87.007624,2,5,0,0,0,0,0,159496,615.418079
+DeepSeek V4.1 Flash,deepseek_official,foreach_addcdiv_scalar,trajectory_001,5,84.461477,4,84.409956,1,4,0,1,0,0,0,146548,536.209877
+DeepSeek V4.1 Flash,deepseek_official,foreach_addcdiv_scalar,trajectory_002,5,83.823429,3,82.202851,2,4,0,1,0,0,0,138770,494.207397
+DeepSeek V4.1 Flash,deepseek_official,foreach_addcdiv_scalar,trajectory_003,5,84.207994,4,0.0,2,3,1,1,0,0,0,130348,495.478269
+DeepSeek V4.1 Flash,deepseek_official,foreach_norm,trajectory_001,5,81.914725,4,0.0,1,2,0,2,1,0,0,199755,721.524992
+DeepSeek V4.1 Flash,deepseek_official,foreach_norm,trajectory_002,5,83.221826,5,83.221826,2,2,1,1,1,0,0,170746,635.115936
+DeepSeek V4.1 Flash,deepseek_official,foreach_norm,trajectory_003,5,80.537189,5,80.537189,0,2,0,3,0,0,0,212646,757.38487
+DeepSeek V4.1 Flash,deepseek_official,gelu,trajectory_001,5,59.731178,1,55.467286,4,0,5,0,0,0,0,403799,2524.659572
+DeepSeek V4.1 Flash,deepseek_official,gelu,trajectory_002,5,60.563963,5,60.563963,3,1,4,0,0,0,0,239709,915.008464
+DeepSeek V4.1 Flash,deepseek_official,gelu,trajectory_003,5,60.939832,5,60.939832,1,4,1,0,0,0,0,141499,548.062326
+DeepSeek V4.1 Flash,deepseek_official,masked_scale,trajectory_001,5,86.846916,3,0.0,2,2,1,2,0,0,0,172533,632.105387
+DeepSeek V4.1 Flash,deepseek_official,masked_scale,trajectory_002,5,87.614828,3,20.0,2,4,1,0,0,0,0,156705,736.523794
+DeepSeek V4.1 Flash,deepseek_official,masked_scale,trajectory_003,5,95.619476,5,95.619476,0,4,0,1,0,0,0,138960,527.906842
+DeepSeek V4.1 Flash,deepseek_official,mish,trajectory_001,5,85.230727,5,85.230727,1,4,1,0,0,0,0,163992,714.487819
+DeepSeek V4.1 Flash,deepseek_official,mish,trajectory_002,5,84.9533,3,84.226774,2,5,0,0,0,0,0,190003,764.415598
+DeepSeek V4.1 Flash,deepseek_official,mish,trajectory_003,5,85.01708,2,0.0,3,4,0,1,0,0,0,176155,687.953509
+DeepSeek V4.1 Flash,deepseek_official,sigmoid,trajectory_001,5,72.969613,5,72.969613,1,3,1,1,0,0,0,156879,607.651021
+DeepSeek V4.1 Flash,deepseek_official,sigmoid,trajectory_002,5,70.628046,1,52.273697,4,3,1,1,0,0,0,85091,308.018106
+DeepSeek V4.1 Flash,deepseek_official,sigmoid,trajectory_003,5,71.434149,1,0.0,4,4,0,1,0,0,0,137353,542.737833
+DeepSeek V4.1 Flash,deepseek_official,swi_glu,trajectory_001,5,77.690398,2,77.33459,3,2,2,1,0,0,0,216753,937.571273
+DeepSeek V4.1 Flash,deepseek_official,swi_glu,trajectory_002,5,78.650658,4,0.0,2,2,2,1,0,0,0,182166,673.63334
+DeepSeek V4.1 Flash,deepseek_official,swi_glu,trajectory_003,5,78.00769,5,78.00769,0,3,1,1,0,0,0,284626,1122.165641
+Grok 4.6,openrouter_xai_zdr,exp,trajectory_001,5,87.022467,2,86.58897,3,4,1,0,0,0,0,163333,2609.468007
+Grok 4.6,openrouter_xai_zdr,exp,trajectory_002,5,87.360103,2,25.5,3,4,1,0,0,0,0,184657,4591.048477
+Grok 4.6,openrouter_xai_zdr,exp,trajectory_003,5,86.577845,4,85.865287,3,4,1,0,0,0,0,161361,2532.147186
+Grok 4.6,openrouter_xai_zdr,foreach_addcdiv_scalar,trajectory_001,5,84.264832,1,73.235775,4,3,1,1,0,0,0,184409,2817.785697
+Grok 4.6,openrouter_xai_zdr,foreach_addcdiv_scalar,trajectory_002,5,83.684315,3,77.538396,2,4,0,1,0,0,0,174615,3774.685508
+Grok 4.6,openrouter_xai_zdr,foreach_addcdiv_scalar,trajectory_003,5,84.01049,4,83.808015,2,5,0,0,0,0,0,200205,2994.875865
+Grok 4.6,openrouter_xai_zdr,foreach_norm,trajectory_001,5,59.923083,2,54.925052,3,2,2,0,1,0,0,190451,2872.066042
+Grok 4.6,openrouter_xai_zdr,foreach_norm,trajectory_002,5,81.036988,4,80.670935,3,3,1,0,1,0,0,213510,3545.863881
+Grok 4.6,openrouter_xai_zdr,foreach_norm,trajectory_003,5,81.716938,5,81.716938,0,4,0,1,0,0,0,193648,2893.513548
+Grok 4.6,openrouter_xai_zdr,gelu,trajectory_001,5,63.630906,4,61.967376,2,1,4,0,0,0,0,184918,2922.571962
+Grok 4.6,openrouter_xai_zdr,gelu,trajectory_002,5,58.291142,4,0.0,2,0,4,1,0,0,0,186627,3489.709891
+Grok 4.6,openrouter_xai_zdr,gelu,trajectory_003,5,61.707158,2,36.9487,3,1,3,1,0,0,0,170650,2719.368347
+Grok 4.6,openrouter_xai_zdr,masked_scale,trajectory_001,5,86.091658,4,0.0,1,1,0,4,0,0,0,141116,1903.213847
+Grok 4.6,openrouter_xai_zdr,masked_scale,trajectory_002,5,87.204597,3,87.031841,2,3,0,2,0,0,0,171739,2955.926991
+Grok 4.6,openrouter_xai_zdr,masked_scale,trajectory_003,5,87.504737,4,0.0,1,2,0,3,0,0,0,152921,2086.06848
+Grok 4.6,openrouter_xai_zdr,mish,trajectory_001,5,78.192676,1,75.606118,4,3,2,0,0,0,0,150225,1988.373873
+Grok 4.6,openrouter_xai_zdr,mish,trajectory_002,5,84.839583,3,0.0,2,3,1,1,0,0,0,195389,2915.755661
+Grok 4.6,openrouter_xai_zdr,mish,trajectory_003,5,85.63876,3,78.105087,3,4,1,0,0,0,0,182065,2698.577825
+Grok 4.6,openrouter_xai_zdr,sigmoid,trajectory_001,5,66.69888,5,66.69888,2,3,2,0,0,0,0,143379,2235.18504
+Grok 4.6,openrouter_xai_zdr,sigmoid,trajectory_002,5,70.979983,4,64.794001,1,2,1,2,0,0,0,155695,2488.553435
+Grok 4.6,openrouter_xai_zdr,sigmoid,trajectory_003,5,66.898059,2,65.627671,3,3,0,2,0,0,0,109395,1672.866904
+Grok 4.6,openrouter_xai_zdr,swi_glu,trajectory_001,5,75.770661,1,75.474999,4,2,1,2,0,0,0,178434,2693.447773
+Grok 4.6,openrouter_xai_zdr,swi_glu,trajectory_002,5,75.791197,5,75.791197,1,2,1,1,1,0,0,150394,2255.437109
+Grok 4.6,openrouter_xai_zdr,swi_glu,trajectory_003,5,77.466575,2,71.289181,3,2,3,0,0,0,0,164783,2549.916293
+DeepSeek V4 Pro,deepseek_official,exp,trajectory_001,5,65.485872,5,65.485872,1,0,3,2,0,0,0,103304,1574.251038
+DeepSeek V4 Pro,deepseek_official,exp,trajectory_002,5,42.924404,4,0.0,1,0,2,3,0,0,0,95092,1364.645786
+DeepSeek V4 Pro,deepseek_official,exp,trajectory_003,5,65.499737,2,0.0,3,0,3,2,0,0,0,120569,1669.953735
+DeepSeek V4 Pro,deepseek_official,foreach_addcdiv_scalar,trajectory_001,5,4.031073,3,0.0,2,0,1,4,0,0,0,88789,1471.258946
+DeepSeek V4 Pro,deepseek_official,foreach_addcdiv_scalar,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,97146,1379.064769
+DeepSeek V4 Pro,deepseek_official,foreach_addcdiv_scalar,trajectory_003,5,0.0,1,0.0,0,0,0,4,1,0,0,78711,1221.842652
+DeepSeek V4 Pro,deepseek_official,foreach_norm,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,80930,1190.522197
+DeepSeek V4 Pro,deepseek_official,foreach_norm,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,113616,1604.921895
+DeepSeek V4 Pro,deepseek_official,foreach_norm,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,79329,962.000918
+DeepSeek V4 Pro,deepseek_official,gelu,trajectory_001,5,20.0,5,20.0,0,0,1,4,0,0,0,95305,1272.822117
+DeepSeek V4 Pro,deepseek_official,gelu,trajectory_002,5,20.0,5,20.0,0,0,1,2,2,0,0,82694,1158.630117
+DeepSeek V4 Pro,deepseek_official,gelu,trajectory_003,5,33.263337,5,33.263337,0,0,1,2,2,0,0,88144,1362.452078
+DeepSeek V4 Pro,deepseek_official,masked_scale,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,144368,1864.838347
+DeepSeek V4 Pro,deepseek_official,masked_scale,trajectory_002,5,3.737981,4,0.0,1,0,1,4,0,0,0,125272,1582.907386
+DeepSeek V4 Pro,deepseek_official,masked_scale,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,124394,1603.960219
+DeepSeek V4 Pro,deepseek_official,mish,trajectory_001,5,20.0,4,0.0,1,0,1,4,0,0,0,80007,1132.384466
+DeepSeek V4 Pro,deepseek_official,mish,trajectory_002,5,35.408936,5,35.408936,1,0,2,3,0,0,0,85764,1094.95186
+DeepSeek V4 Pro,deepseek_official,mish,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,95277,1292.510252
+DeepSeek V4 Pro,deepseek_official,sigmoid,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,86208,1124.87082
+DeepSeek V4 Pro,deepseek_official,sigmoid,trajectory_002,5,40.205415,5,40.205415,0,0,2,3,0,0,0,78212,998.93417
+DeepSeek V4 Pro,deepseek_official,sigmoid,trajectory_003,5,37.362455,5,37.362455,0,0,1,4,0,0,0,80078,1000.331495
+DeepSeek V4 Pro,deepseek_official,swi_glu,trajectory_001,5,39.453263,5,39.453263,0,0,4,1,0,0,0,121170,1614.846245
+DeepSeek V4 Pro,deepseek_official,swi_glu,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,89744,1136.1283
+DeepSeek V4 Pro,deepseek_official,swi_glu,trajectory_003,5,41.891306,3,32.0,2,0,3,2,0,0,0,106211,1386.269912
+MiniMax-M3,minimax_paygo_cn_anthropic,exp,trajectory_001,5,85.37373,5,85.37373,2,2,3,0,0,0,0,224875,2674.330695
+MiniMax-M3,minimax_paygo_cn_anthropic,exp,trajectory_002,5,60.773754,5,60.773754,0,0,2,2,0,1,0,112235,1634.452896
+MiniMax-M3,minimax_paygo_cn_anthropic,exp,trajectory_003,5,0.0,1,0.0,0,0,0,4,0,1,0,96793,856.486347
+MiniMax-M3,minimax_paygo_cn_anthropic,foreach_addcdiv_scalar,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,139331,1125.579737
+MiniMax-M3,minimax_paygo_cn_anthropic,foreach_addcdiv_scalar,trajectory_002,5,0.0,1,0.0,0,0,0,1,4,0,0,158734,1466.43754
+MiniMax-M3,minimax_paygo_cn_anthropic,foreach_addcdiv_scalar,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,120847,1047.63641
+MiniMax-M3,minimax_paygo_cn_anthropic,foreach_norm,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,208750,1857.890836
+MiniMax-M3,minimax_paygo_cn_anthropic,foreach_norm,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,335929,3739.968173
+MiniMax-M3,minimax_paygo_cn_anthropic,foreach_norm,trajectory_003,5,0.0,1,0.0,0,0,0,4,0,1,0,180299,1352.221062
+MiniMax-M3,minimax_paygo_cn_anthropic,gelu,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,204183,1981.136437
+MiniMax-M3,minimax_paygo_cn_anthropic,gelu,trajectory_002,5,33.432772,3,33.346574,2,0,3,2,0,0,0,137550,1437.415212
+MiniMax-M3,minimax_paygo_cn_anthropic,gelu,trajectory_003,5,40.075003,1,0.0,4,0,2,2,1,0,0,115738,1290.119381
+MiniMax-M3,minimax_paygo_cn_anthropic,masked_scale,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,174675,1234.152503
+MiniMax-M3,minimax_paygo_cn_anthropic,masked_scale,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,163845,1281.754699
+MiniMax-M3,minimax_paygo_cn_anthropic,masked_scale,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,182356,1576.030666
+MiniMax-M3,minimax_paygo_cn_anthropic,mish,trajectory_001,5,0.0,1,0.0,0,0,0,4,0,1,0,104652,919.552305
+MiniMax-M3,minimax_paygo_cn_anthropic,mish,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,117964,1366.436309
+MiniMax-M3,minimax_paygo_cn_anthropic,mish,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,114244,1657.595756
+MiniMax-M3,minimax_paygo_cn_anthropic,sigmoid,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,77188,851.381137
+MiniMax-M3,minimax_paygo_cn_anthropic,sigmoid,trajectory_002,5,49.86672,4,0.0,2,0,2,3,0,0,0,114037,1011.811534
+MiniMax-M3,minimax_paygo_cn_anthropic,sigmoid,trajectory_003,5,70.016057,2,0.0,3,1,0,4,0,0,0,143717,1311.453759
+MiniMax-M3,minimax_paygo_cn_anthropic,swi_glu,trajectory_001,5,20.0,1,0.0,4,0,1,4,0,0,0,302163,2397.346308
+MiniMax-M3,minimax_paygo_cn_anthropic,swi_glu,trajectory_002,5,34.762701,2,0.0,3,0,2,3,0,0,0,227540,1985.302953
+MiniMax-M3,minimax_paygo_cn_anthropic,swi_glu,trajectory_003,5,47.89084,5,47.89084,1,0,4,1,0,0,0,328857,3177.546613
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,exp,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,40321,1081.363495
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,exp,trajectory_002,5,0.0,1,0.0,0,0,0,4,0,1,0,40713,1392.805584
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,exp,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,85933,1734.956634
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,foreach_addcdiv_scalar,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,39020,1451.387777
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,foreach_addcdiv_scalar,trajectory_002,5,63.631301,1,0.0,4,0,2,3,0,0,0,118350,3102.052817
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,foreach_addcdiv_scalar,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,47148,1174.82729
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,foreach_norm,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,82533,3129.897459
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,foreach_norm,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,84069,2821.148382
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,foreach_norm,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,94601,2430.279349
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,gelu,trajectory_001,5,0.0,1,0.0,0,0,0,4,0,1,0,154647,3319.056432
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,gelu,trajectory_002,5,0.0,1,0.0,0,0,0,3,2,0,0,159365,3607.60677
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,gelu,trajectory_003,5,32.592413,4,0.0,1,0,1,3,0,1,0,91216,2044.334449
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,masked_scale,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,37867,851.637932
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,masked_scale,trajectory_002,5,3.649053,4,0.0,1,0,1,4,0,0,0,92265,1618.088824
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,masked_scale,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,34806,577.24411
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,mish,trajectory_001,5,0.0,1,0.0,0,0,0,3,1,1,0,160395,3414.665356
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,mish,trajectory_002,5,0.0,1,0.0,0,0,0,5,0,0,0,26159,501.948111
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,mish,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,76614,3058.901528
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,sigmoid,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,31107,543.340947
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,sigmoid,trajectory_002,5,37.350899,5,37.350899,1,0,2,3,0,0,0,64288,1701.3643
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,sigmoid,trajectory_003,5,0.0,1,0.0,0,0,0,5,0,0,0,24109,575.499464
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,swi_glu,trajectory_001,5,0.0,1,0.0,0,0,0,5,0,0,0,56980,1852.31998
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,swi_glu,trajectory_002,5,55.274348,3,55.269669,3,0,5,0,0,0,0,131204,3641.317179
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,swi_glu,trajectory_003,5,38.345902,4,0.0,2,0,4,0,1,0,0,138538,4169.697401

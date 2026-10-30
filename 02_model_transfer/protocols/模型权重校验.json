@@ -1,0 +1,380 @@
+{
+  "models": {
+    "qwen3b": {
+      "folder": "PUBLIC_WORKSPACE\\cann-bench-master\\experiments\\v3_model_transfer\\models\\Qwen2.5-VL-3B-Instruct",
+      "repository": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "verified_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50",
+          "bytes": 7387
+        },
+        {
+          "file": "README.md",
+          "sha256": "0b6da5a154b923da4dc66e416140c9b7f235f9b08fbbcc27fd9df7b586e3150d",
+          "bytes": 18276
+        },
+        {
+          "file": "chat_template.json",
+          "sha256": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+          "bytes": 1050
+        },
+        {
+          "file": "config.json",
+          "sha256": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5",
+          "bytes": 1373
+        },
+        {
+          "file": "generation_config.json",
+          "sha256": "533f191cc257b7de37a4fccd0a7a1706d75e1aa660f93efaa54e5a2a9f9aace9",
+          "bytes": 216
+        },
+        {
+          "file": "merges.txt",
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "bytes": 1671839
+        },
+        {
+          "file": "model-00001-of-00002.safetensors",
+          "sha256": "41a8895c164b4d32bae6b302f4603fcbc1797f32dafa45c7e9bcda23c6755df8",
+          "bytes": 3982649232
+        },
+        {
+          "file": "model-00002-of-00002.safetensors",
+          "sha256": "365531ff8752420e89dee707b79d021fb2d6e25abafe486f080555a4fe6972e4",
+          "bytes": 3526688744
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "sha256": "c7dd78a4c6bea60b51332f1baf37b8f8124ecab2c35395a29a29825bf2619768",
+          "bytes": 65448
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+          "bytes": 350
+        },
+        {
+          "file": "tokenizer.json",
+          "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+          "bytes": 7031645
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+          "bytes": 5702
+        },
+        {
+          "file": "vocab.json",
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833
+        }
+      ],
+      "all_required_files_verified": true
+    },
+    "clip": {
+      "folder": "PUBLIC_WORKSPACE\\cann-bench-master\\experiments\\v3_model_transfer\\models\\CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "repository": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+      "verified_files": [
+        {
+          "file": "config.json",
+          "sha256": "1284cbff35169abb23a1c5525a8b0f543c7bd191d4b9aed63880c1571bc4191c",
+          "bytes": 4355
+        },
+        {
+          "file": "merges.txt",
+          "sha256": "f1cd414c2d113a28b296afc0fd66ae854c0e0c34d5de373a2f5b7f62e0c02344",
+          "bytes": 524618
+        },
+        {
+          "file": "model.safetensors",
+          "sha256": "74813fbcdc750f235c9784c367ca1394d2a5c25eb0aac92761752ac239db7cff",
+          "bytes": 605157884
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+          "bytes": 316
+        },
+        {
+          "file": "special_tokens_map.json",
+          "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf",
+          "bytes": 389
+        },
+        {
+          "file": "tokenizer.json",
+          "sha256": "b556ac8c99757ffb677208af34bc8c6721572114111a6e0aaf5fa69ff0b8d842",
+          "bytes": 2224041
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "e19f34ef773563fb695f96cfcae1e4c7b112ab6ad532f6962061df5242d924f0",
+          "bytes": 904
+        },
+        {
+          "file": "vocab.json",
+          "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363",
+          "bytes": 862328
+        }
+      ],
+      "all_required_files_verified": true
+    },
+    "quick_clip": {
+      "folder": "PUBLIC_WORKSPACE\\cann-bench-master\\experiments\\v3_model_transfer\\models\\CLIP-ViT-B-32-openai",
+      "repository": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "verified_files": [
+        {
+          "file": "config.json",
+          "sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+          "bytes": 4186
+        },
+        {
+          "file": "merges.txt",
+          "sha256": "f526393189112391ce6f9795d4695f704121ce452c3aad1f5335cc41337eba85",
+          "bytes": 524657
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+          "bytes": 316
+        },
+        {
+          "file": "pytorch_model.bin",
+          "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+          "bytes": 605247071
+        },
+        {
+          "file": "special_tokens_map.json",
+          "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf",
+          "bytes": 389
+        },
+        {
+          "file": "tokenizer.json",
+          "sha256": "b556ac8c99757ffb677208af34bc8c6721572114111a6e0aaf5fa69ff0b8d842",
+          "bytes": 2224041
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "34b7336e4bee12e0a9730eaf5189f582ef3c3eea5027f65730e5717256755aad",
+          "bytes": 592
+        },
+        {
+          "file": "vocab.json",
+          "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363",
+          "bytes": 862328
+        }
+      ],
+      "all_required_files_verified": true
+    },
+    "qwen7b": {
+      "folder": "PUBLIC_WORKSPACE\\cann-bench-master\\experiments\\v3_model_transfer\\models\\Qwen2.5-VL-7B-Instruct",
+      "repository": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "verified_files": [
+        {
+          "file": "README.md",
+          "sha256": "1fa65dbb08bc9ffe0b020409c8686f08b23008c5a68554353305fd2de6f2b81e",
+          "bytes": 18574
+        },
+        {
+          "file": "chat_template.json",
+          "sha256": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+          "bytes": 1050
+        },
+        {
+          "file": "config.json",
+          "sha256": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+          "bytes": 1374
+        },
+        {
+          "file": "generation_config.json",
+          "sha256": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+          "bytes": 216
+        },
+        {
+          "file": "merges.txt",
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "bytes": 1671839
+        },
+        {
+          "file": "model-00001-of-00005.safetensors",
+          "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+          "bytes": 3900233256
+        },
+        {
+          "file": "model-00002-of-00005.safetensors",
+          "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+          "bytes": 3864726320
+        },
+        {
+          "file": "model-00003-of-00005.safetensors",
+          "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+          "bytes": 3864726424
+        },
+        {
+          "file": "model-00004-of-00005.safetensors",
+          "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+          "bytes": 3864733680
+        },
+        {
+          "file": "model-00005-of-00005.safetensors",
+          "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+          "bytes": 1089994880
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "sha256": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+          "bytes": 57619
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+          "bytes": 350
+        },
+        {
+          "file": "tokenizer.json",
+          "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+          "bytes": 7031645
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+          "bytes": 5702
+        },
+        {
+          "file": "vocab.json",
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833
+        }
+      ],
+      "all_required_files_verified": true
+    },
+    "internvl": {
+      "folder": "PUBLIC_WORKSPACE\\cann-bench-master\\experiments\\v3_model_transfer\\models\\InternVL2-4B",
+      "repository": "OpenGVLab/InternVL2-4B",
+      "revision": "6eb21ec278fbdb03b751a3d48d8dfc9724e05608",
+      "verified_files": [
+        {
+          "file": "README.md",
+          "sha256": "ae660047187fce37c4a31e6f1381c45193b03dc1471eaca011a1e7e6553b9b7b",
+          "bytes": 34326
+        },
+        {
+          "file": "added_tokens.json",
+          "sha256": "e71a94a0bd27f373bf0be1eefa963aeba6a8fd59fe5495b8cea5214f83f7c439",
+          "bytes": 469
+        },
+        {
+          "file": "config.json",
+          "sha256": "0f5b07a3114ae1500eee82b05f7cc059e225e18e2a6c23c69b3b75bcb574d5eb",
+          "bytes": 6632
+        },
+        {
+          "file": "configuration_intern_vit.py",
+          "sha256": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8",
+          "bytes": 5548
+        },
+        {
+          "file": "configuration_internvl_chat.py",
+          "sha256": "44f65dfc124bb2b70283575d44e26d3bddce39befe824d33545d0475679a1091",
+          "bytes": 4063
+        },
+        {
+          "file": "configuration_phi3.py",
+          "sha256": "708af17dfd7133bad59f97d5ccc934a98583845ed38b055a055fb02513166e6a",
+          "bytes": 10396
+        },
+        {
+          "file": "conversation.py",
+          "sha256": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee",
+          "bytes": 15309
+        },
+        {
+          "file": "generation_config.json",
+          "sha256": "cd453b41e3432e40e51224c4d77e1f17d352ee46bb50a387f9ab30b970e1ac0b",
+          "bytes": 122
+        },
+        {
+          "file": "model-00001-of-00002.safetensors",
+          "sha256": "2d49faea2fab060381af9c6902a1ae9593797cffdc6317394b62b6bc97a80f35",
+          "bytes": 4957392176
+        },
+        {
+          "file": "model-00002-of-00002.safetensors",
+          "sha256": "fe85c0ab7ff42c3760870e1168f4de677f8177cbf4b43abde850e1d7ad16348a",
+          "bytes": 3336385864
+        },
+        {
+          "file": "model.safetensors.index.json",
+          "sha256": "8d6b962de4a7d496ae79de35b471af79f40cb7e7b41cb5a0c157548f771f2d8c",
+          "bytes": 48839
+        },
+        {
+          "file": "modeling_intern_vit.py",
+          "sha256": "1978e330ea5533dda4d1379096aded271fc741347fc48cb4924846b56a2a6a4b",
+          "bytes": 18106
+        },
+        {
+          "file": "modeling_internvl_chat.py",
+          "sha256": "bca7cf8b925c8130926fe7043198b6e3000f026935996216c9259b36215b8f01",
+          "bytes": 15964
+        },
+        {
+          "file": "modeling_phi3.py",
+          "sha256": "99cd8b04b9a3e491d1430734ff84e24e175c3e3c4bf1c81fd277f923914a6944",
+          "bytes": 74510
+        },
+        {
+          "file": "preprocessor_config.json",
+          "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4",
+          "bytes": 287
+        },
+        {
+          "file": "special_tokens_map.json",
+          "sha256": "f877c545fc2db4e95a6afb134d6f3072ae9207af1c8160f7ebbb627e5f5da4ad",
+          "bytes": 717
+        },
+        {
+          "file": "tokenizer.model",
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "bytes": 499723
+        },
+        {
+          "file": "tokenizer_config.json",
+          "sha256": "4c772d1ba4150b17d7a2a66f8b6bb6ff0df484ddeb547a60e5c6aed23f7989d9",
+          "bytes": 4887
+        }
+      ],
+      "all_required_files_verified": true
+    }
+  },
+  "errors": [],
+  "shape_checks": {
+    "qwen7b": {
+      "checkpoint_tensors": 729,
+      "model_state_tensors": 729,
+      "missing": [],
+      "unexpected": [],
+      "shape_mismatches": [],
+      "pretrained_tensor_values_loaded": false,
+      "NPU_tested": false,
+      "status": "passed"
+    },
+    "internvl": {
+      "checkpoint_tensors": 541,
+      "model_state_tensors": 541,
+      "missing": [],
+      "unexpected": [],
+      "shape_mismatches": [],
+      "pretrained_tensor_values_loaded": false,
+      "NPU_tested": false,
+      "status": "passed"
+    }
+  },
+  "all_models_ready": true,
+  "new_host_formal_scripts": "not_written_until_B_review",
+  "NPU_tested": false
+}

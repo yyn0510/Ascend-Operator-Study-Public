@@ -1,0 +1,10 @@
+﻿model,provider,complete,rounds,n_succeeded,n_partial_correctness,n_compile_failed,n_device_exception,n_format_failure,n_incomplete,full_correct_rate,zero_rounds,macro_average,operators_counted,sigma_median,nonzero_operators,nonzero_trajectories,nonzero_rounds,tokens_in,tokens_out,tokens_reasoning,elapsed_mean,elapsed_max,rounds_over_1200s,cost_usd_total,cost_rounds_available
+Kimi K3,opencode_go,True,120,57,29,20,1,13,0,0.475,34,75.612491,8,0.478421,8,23,86,1633737,1494728,966975,412.622541,2368.606428,2,,0
+GLM-5.3,zhipu_bigmodel,True,120,36,20,55,1,8,0,0.3,64,62.9209,8,5.034307,8,22,56,1828405,4002955,3400422,677.639799,4505.615519,18,,0
+Qwen3.8-Max,qwencloud_paygo,True,120,12,35,67,6,0,0,0.1,73,43.389158,8,11.37765,8,22,47,2102416,5258453,4512390,883.739947,1866.957283,13,,0
+DeepSeek V4 Flash,opencode_go,True,120,12,18,89,1,0,0,0.1,90,34.764479,8,10.251937,6,12,30,1840858,4304713,3803752,317.935225,1054.773137,0,,0
+DeepSeek V4.1 Flash,deepseek_official,True,120,74,24,20,2,0,0,0.616667,22,79.813582,8,0.553901,8,24,98,1931906,4231004,3631620,145.630045,833.944542,0,,0
+Grok 4.6,openrouter_xai_zdr,True,120,65,30,22,3,0,0,0.541667,25,77.595985,8,1.694756,8,24,95,2115813,4103919,3361587,551.72023,1565.711724,4,28.06218,120
+DeepSeek V4 Pro,deepseek_official,True,120,0,26,89,5,0,0,0.0,94,19.552657,8,10.343732,7,14,26,1862662,2340334,1819183,267.210831,624.453629,0,,0
+MiniMax-M3,minimax_paygo_cn_anthropic,True,120,3,19,89,5,4,0,0.025,98,18.424649,8,6.9767,4,9,22,798295,4086502,,326.950327,1376.09966,2,,0
+MiMo-V2.5-Pro,xiaomi_mimo_paygo,True,120,0,15,97,4,4,0,0.0,105,9.618497,8,10.46201,5,6,15,1951480,1912248,1359058,414.964513,1857.890614,7,,0

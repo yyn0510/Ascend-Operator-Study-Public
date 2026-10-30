@@ -1,0 +1,552 @@
+[
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "InternVL2-4B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "90.7438<br>84.5000",
+    "候选结果": "90.6916<br>84.3000",
+    "相对原生变化": "-0.0522<br>-0.2000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化14；选项变化—；token变化14；anls区间[-0.3525,+0.2383]<br>em区间[-0.6370,+0.1875]",
+    "原来源索引": "C质量比较_63项.json :: internvl_docvqa_DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "记录编号": "0003",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 14,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "anls": {
+          "native": 0.907438056369387,
+          "candidate": 0.9069158341471648,
+          "difference_percentage_points": -0.05222222222222221,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.3524691669453034,
+            0.23832608554480333
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.845,
+          "candidate": 0.843,
+          "difference_percentage_points": -0.2,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.6369595971219126,
+            0.1874546370612565
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 14
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "InternVL2-4B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "90.7438<br>84.5000",
+    "候选结果": "90.6916<br>84.3000",
+    "相对原生变化": "-0.0522<br>-0.2000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化14；选项变化—；token变化14；anls区间[-0.3525,+0.2383]<br>em区间[-0.6370,+0.1875]",
+    "原来源索引": "C质量比较_63项.json :: internvl_docvqa_Kimi_K3_swi_glu_003_R5",
+    "记录编号": "0004",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 14,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "anls": {
+          "native": 0.907438056369387,
+          "candidate": 0.9069158341471648,
+          "difference_percentage_points": -0.05222222222222221,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.3524691669453034,
+            0.23832608554480333
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.845,
+          "candidate": 0.843,
+          "difference_percentage_points": -0.2,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.6369595971219126,
+            0.1874546370612565
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 14
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "86.7592<br>74.5000",
+    "候选结果": "86.9844<br>74.7000",
+    "相对原生变化": "+0.2251<br>+0.2000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化29；选项变化—；token变化29；anls区间[-0.1004,+0.5965]<br>em区间[-0.2838,+0.7071]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_docvqa_Grok_4_6_gelu_001_R4",
+    "记录编号": "0060",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 29,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "anls": {
+          "native": 0.8675924652682815,
+          "candidate": 0.86984387855904,
+          "difference_percentage_points": 0.2251413290758822,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.1003936786567339,
+            0.5964975814126442
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.745,
+          "candidate": 0.747,
+          "difference_percentage_points": 0.2,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.283835589412941,
+            0.7070707070707071
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 29
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "86.7592<br>74.5000",
+    "候选结果": "86.7592<br>74.5000",
+    "相对原生变化": "+0.0000<br>+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化0；选项变化—；token变化0；anls区间[+0.0000,+0.0000]<br>em区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_docvqa_Kimi_K3_gelu_002_R3",
+    "记录编号": "0061",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 0,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "anls": {
+          "native": 0.8675924652682815,
+          "candidate": 0.8675924652682815,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.745,
+          "candidate": 0.745,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 0
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "86.7592<br>74.5000",
+    "候选结果": "86.7753<br>74.5000",
+    "相对原生变化": "+0.0161<br>+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化29；选项变化—；token变化29；anls区间[-0.4874,+0.5103]<br>em区间[-0.7568,+0.7387]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_docvqa_DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "记录编号": "0062",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 29,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "anls": {
+          "native": 0.8675924652682815,
+          "candidate": 0.8677534570542732,
+          "difference_percentage_points": 0.016099178599178598,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.48744232715554614,
+            0.5103052454872004
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.745,
+          "candidate": 0.745,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.7567951838094018,
+            0.7387401251667172
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 29
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "86.7592<br>74.5000",
+    "候选结果": "86.7753<br>74.5000",
+    "相对原生变化": "+0.0161<br>+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化29；选项变化—；token变化29；anls区间[-0.4874,+0.5103]<br>em区间[-0.7568,+0.7387]",
+    "原来源索引": "C质量比较_63项.json :: qwen3b_docvqa_Kimi_K3_swi_glu_003_R5",
+    "记录编号": "0063",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 29,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "anls": {
+          "native": 0.8675924652682815,
+          "candidate": 0.8677534570542732,
+          "difference_percentage_points": 0.016099178599178598,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.48744232715554614,
+            0.5103052454872004
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.745,
+          "candidate": 0.745,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.7567951838094018,
+            0.7387401251667172
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 29
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "89.9088<br>77.0000",
+    "候选结果": "89.8973<br>76.2000",
+    "相对原生变化": "-0.0115<br>-0.8000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化62；选项变化—；token变化63；anls区间[-0.7434,+0.7154]<br>em区间[-1.7017,+0.1027]",
+    "原来源索引": "C质量比较_63项.json :: qwen7b_docvqa_Grok_4_6_gelu_001_R4",
+    "记录编号": "0072",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 62,
+      "possibly_at_length_limit": 4,
+      "metrics": {
+        "anls": {
+          "native": 0.899087962919235,
+          "candidate": 0.8989728493544993,
+          "difference_percentage_points": -0.011511356473562452,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.7433858484821715,
+            0.7154359745259374
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.77,
+          "candidate": 0.762,
+          "difference_percentage_points": -0.8,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.7017017017017018,
+            0.10267204247748761
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 63
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "89.9088<br>77.0000",
+    "候选结果": "89.9088<br>77.0000",
+    "相对原生变化": "+0.0000<br>+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化0；选项变化—；token变化0；anls区间[+0.0000,+0.0000]<br>em区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: qwen7b_docvqa_Kimi_K3_gelu_002_R3",
+    "记录编号": "0073",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 0,
+      "possibly_at_length_limit": 4,
+      "metrics": {
+        "anls": {
+          "native": 0.899087962919235,
+          "candidate": 0.899087962919235,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.77,
+          "candidate": 0.77,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 0
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "89.9088<br>77.0000",
+    "候选结果": "89.5384<br>76.4000",
+    "相对原生变化": "-0.3704<br>-0.6000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化59；选项变化—；token变化60；anls区间[-1.0581,+0.2950]<br>em区间[-1.5066,+0.3090]",
+    "原来源索引": "C质量比较_63项.json :: qwen7b_docvqa_DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "记录编号": "0074",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 59,
+      "possibly_at_length_limit": 5,
+      "metrics": {
+        "anls": {
+          "native": 0.899087962919235,
+          "candidate": 0.8953844309625353,
+          "difference_percentage_points": -0.3703531956699713,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0581273801239717,
+            0.2949811147724949
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.77,
+          "candidate": 0.764,
+          "difference_percentage_points": -0.6,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.5066014729403463,
+            0.3089677981037721
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 60
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "DOCVQA",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "ANLS式×100<br>EM%",
+    "原生参考": "89.9088<br>77.0000",
+    "候选结果": "89.5384<br>76.4000",
+    "相对原生变化": "-0.3704<br>-0.6000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1000；文本变化59；选项变化—；token变化60；anls区间[-1.0581,+0.2950]<br>em区间[-1.5066,+0.3090]",
+    "原来源索引": "C质量比较_63项.json :: qwen7b_docvqa_Kimi_K3_swi_glu_003_R5",
+    "记录编号": "0075",
+    "详细数值": {
+      "samples": 1000,
+      "candidate_outputs": 1000,
+      "candidate_states": {
+        "success": 1000
+      },
+      "decoded_output_changes_including_missing": 59,
+      "possibly_at_length_limit": 5,
+      "metrics": {
+        "anls": {
+          "native": 0.899087962919235,
+          "candidate": 0.8953844309625353,
+          "difference_percentage_points": -0.3703531956699713,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.0581273801239717,
+            0.2949811147724949
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        },
+        "em": {
+          "native": 0.77,
+          "candidate": 0.764,
+          "difference_percentage_points": -0.6,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.5066014729403463,
+            0.3089677981037721
+          ],
+          "groups": 175,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 60
+    }
+  }
+]

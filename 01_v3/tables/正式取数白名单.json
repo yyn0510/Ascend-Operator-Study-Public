@@ -1,0 +1,74 @@
+{
+  "Kimi K3": [
+    "opencode_go",
+    [
+      "formal_v3_a3_kimi_k3_level1_first4_20260815",
+      "formal_v3_a3_kimi_k3_level1_remaining4_20260817"
+    ],
+    true
+  ],
+  "GLM-5.3": [
+    "zhipu_bigmodel",
+    [
+      "formal_v3_a3_glm_5_3_exp_prefix3_20260821",
+      "formal_v3_a3_glm_5_3_level1_next3_20260822",
+      "formal_v3_a3_glm_5_3_level1_remaining4_20260826"
+    ],
+    true
+  ],
+  "Qwen3.8-Max": [
+    "qwencloud_paygo",
+    [
+      "qwen38max_exp_prefix3_20260820",
+      "qwen38max_exp_remaining4_20260820"
+    ],
+    true
+  ],
+  "DeepSeek V4 Flash": [
+    "opencode_go",
+    [
+      "formal_v3_a3_deepseek_v4_flash_level1_first4_20260814",
+      "formal_v3_a3_deepseek_v4_flash_level1_next2_20260814",
+      "formal_v3_a3_deepseek_v4_flash_level1_final2_20260815"
+    ],
+    true
+  ],
+  "DeepSeek V4.1 Flash": [
+    "deepseek_official",
+    [
+      "formal_v3_a1_deepseek_flash_exp_20260910"
+    ],
+    true
+  ],
+  "Grok 4.6": [
+    "openrouter_xai_zdr",
+    [
+      "formal_v3_a3_grok_4_6_openrouter_level1_20260916"
+    ],
+    true
+  ],
+  "DeepSeek V4 Pro": [
+    "deepseek_official",
+    [
+      "formal_v3_a3_deepseek_v4_pro_official_clean_20260828",
+      "formal_v3_a3_deepseek_v4_pro_official_remaining_clean_20260828",
+      "formal_v3_a3_deepseek_v4_pro_official_last2_clean_20260828"
+    ],
+    true
+  ],
+  "MiniMax-M3": [
+    "minimax_paygo_cn_anthropic",
+    [
+      "minimax_m3_anthropic_level1_rerun_first3_20260824",
+      "minimax_m3_anthropic_level1_remaining5_20260824"
+    ],
+    true
+  ],
+  "MiMo-V2.5-Pro": [
+    "xiaomi_mimo_paygo",
+    [
+      "formal_v3_a3_mimo_v2_5_pro_level1_20260907"
+    ],
+    true
+  ]
+}

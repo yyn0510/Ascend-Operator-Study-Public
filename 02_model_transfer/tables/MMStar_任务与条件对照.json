@@ -1,0 +1,338 @@
+[
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "InternVL2-4B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%",
+    "原生参考": "52.3771",
+    "候选结果": "52.3771",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1241；文本变化28；选项变化26；token变化28；accuracy区间[-0.7987,+0.7276]",
+    "原来源索引": "D_MMStar六组正式结果.json :: quality_internvl_mmstar_DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "记录编号": "0005",
+    "详细数值": {
+      "samples": 1241,
+      "candidate_outputs": 1241,
+      "candidate_states": {
+        "success": 1181,
+        "invalid_answer": 60
+      },
+      "decoded_output_changes_including_missing": 28,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.523771152296535,
+          "candidate": 0.523771152296535,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.7987220447284344,
+            0.7275666936135812
+          ],
+          "groups": 1192,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 28,
+      "parsed_answer_changes_including_missing": 26
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "InternVL2-4B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%",
+    "原生参考": "52.3771",
+    "候选结果": "52.3771",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1241；文本变化28；选项变化26；token变化28；accuracy区间[-0.7987,+0.7276]",
+    "原来源索引": "D_MMStar六组正式结果.json :: quality_internvl_mmstar_Kimi_K3_swi_glu_003_R5",
+    "记录编号": "0006",
+    "详细数值": {
+      "samples": 1241,
+      "candidate_outputs": 1241,
+      "candidate_states": {
+        "success": 1181,
+        "invalid_answer": 60
+      },
+      "decoded_output_changes_including_missing": 28,
+      "possibly_at_length_limit": 0,
+      "metrics": {
+        "accuracy": {
+          "native": 0.523771152296535,
+          "candidate": 0.523771152296535,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.7987220447284344,
+            0.7275666936135812
+          ],
+          "groups": 1192,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 28,
+      "parsed_answer_changes_including_missing": 26
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%；正确数",
+    "原生参考": "56.7284；704/1241",
+    "候选结果": "56.8896；706/1241",
+    "相对原生变化": "+0.1612",
+    "效率变化": "本表未合并早期计时",
+    "备注": "选项变化20；错→对7；对→错5；95%区间[-0.4013, 0.7258]",
+    "原来源索引": "auto_completion_002或auto_followup_001核查报告",
+    "记录编号": "0064",
+    "精度说明": "早期MMStar四组采用已核查汇总数值；区间按现有汇总精度保留。"
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%；正确数",
+    "原生参考": "56.7284；704/1241",
+    "候选结果": "56.7284；704/1241",
+    "相对原生变化": "+0.0000",
+    "效率变化": "本表未合并早期计时",
+    "备注": "选项变化0；错→对0；对→错0；95%区间[0, 0]",
+    "原来源索引": "auto_completion_002或auto_followup_001核查报告",
+    "记录编号": "0065",
+    "精度说明": "早期MMStar四组采用已核查汇总数值；区间按现有汇总精度保留。"
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%；正确数",
+    "原生参考": "56.7284；704/1241",
+    "候选结果": "56.8090；705/1241",
+    "相对原生变化": "+0.0806",
+    "效率变化": "本表未合并早期计时",
+    "备注": "选项变化18；错→对6；对→错5；95%区间[-0.4118, 0.5715]",
+    "原来源索引": "auto_completion_002或auto_followup_001核查报告",
+    "记录编号": "0066",
+    "精度说明": "早期MMStar四组采用已核查汇总数值；区间按现有汇总精度保留。"
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-3B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%；正确数",
+    "原生参考": "56.7284；704/1241",
+    "候选结果": "56.8090；705/1241",
+    "相对原生变化": "+0.0806",
+    "效率变化": "本表未合并早期计时",
+    "备注": "选项变化18；错→对6；对→错5；95%区间[-0.4118, 0.5715]",
+    "原来源索引": "auto_completion_002或auto_followup_001核查报告",
+    "记录编号": "0067",
+    "精度说明": "早期MMStar四组采用已核查汇总数值；区间按现有汇总精度保留。"
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%",
+    "原生参考": "57.3731",
+    "候选结果": "57.0508",
+    "相对原生变化": "-0.3223",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1241；文本变化41；选项变化32；token变化41；accuracy区间[-1.1318,+0.4858]",
+    "原来源索引": "D_MMStar六组正式结果.json :: quality_qwen7b_mmstar_Grok_4_6_gelu_001_R4",
+    "记录编号": "0076",
+    "详细数值": {
+      "samples": 1241,
+      "candidate_outputs": 1241,
+      "candidate_states": {
+        "success": 1203,
+        "invalid_answer": 38
+      },
+      "decoded_output_changes_including_missing": 41,
+      "possibly_at_length_limit": 26,
+      "metrics": {
+        "accuracy": {
+          "native": 0.5737308622078968,
+          "candidate": 0.5705076551168412,
+          "difference_percentage_points": -0.32232070910556004,
+          "paired_group_bootstrap_95pct_pp": [
+            -1.1317933040841581,
+            0.4858299595141701
+          ],
+          "groups": 1192,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 41,
+      "parsed_answer_changes_including_missing": 32
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%",
+    "原生参考": "57.3731",
+    "候选结果": "57.3731",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1241；文本变化0；选项变化0；token变化0；accuracy区间[+0.0000,+0.0000]",
+    "原来源索引": "D_MMStar六组正式结果.json :: quality_qwen7b_mmstar_Kimi_K3_gelu_002_R3",
+    "记录编号": "0077",
+    "详细数值": {
+      "samples": 1241,
+      "candidate_outputs": 1241,
+      "candidate_states": {
+        "success": 1202,
+        "invalid_answer": 39
+      },
+      "decoded_output_changes_including_missing": 0,
+      "possibly_at_length_limit": 24,
+      "metrics": {
+        "accuracy": {
+          "native": 0.5737308622078968,
+          "candidate": 0.5737308622078968,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ],
+          "groups": 1192,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 0,
+      "parsed_answer_changes_including_missing": 0
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "SwiGLU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%",
+    "原生参考": "57.3731",
+    "候选结果": "57.3731",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1241；文本变化41；选项变化29；token变化41；accuracy区间[-0.8032,+0.7311]",
+    "原来源索引": "D_MMStar六组正式结果.json :: quality_qwen7b_mmstar_DeepSeek_V4_1_Flash_swi_glu_002_R4",
+    "记录编号": "0078",
+    "详细数值": {
+      "samples": 1241,
+      "candidate_outputs": 1241,
+      "candidate_states": {
+        "success": 1200,
+        "invalid_answer": 41
+      },
+      "decoded_output_changes_including_missing": 41,
+      "possibly_at_length_limit": 25,
+      "metrics": {
+        "accuracy": {
+          "native": 0.5737308622078968,
+          "candidate": 0.5737308622078968,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.8032289931429898,
+            0.7311129163281885
+          ],
+          "groups": 1192,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 41,
+      "parsed_answer_changes_including_missing": 29
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "Qwen2.5-VL-7B",
+    "替换算子": "SwiGLU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "MMStar",
+    "条件版本": "BF16；eval1241",
+    "指标": "准确率%",
+    "原生参考": "57.3731",
+    "候选结果": "57.3731",
+    "相对原生变化": "+0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "n=1241；文本变化41；选项变化29；token变化41；accuracy区间[-0.8032,+0.7311]",
+    "原来源索引": "D_MMStar六组正式结果.json :: quality_qwen7b_mmstar_Kimi_K3_swi_glu_003_R5",
+    "记录编号": "0079",
+    "详细数值": {
+      "samples": 1241,
+      "candidate_outputs": 1241,
+      "candidate_states": {
+        "success": 1200,
+        "invalid_answer": 41
+      },
+      "decoded_output_changes_including_missing": 41,
+      "possibly_at_length_limit": 25,
+      "metrics": {
+        "accuracy": {
+          "native": 0.5737308622078968,
+          "candidate": 0.5737308622078968,
+          "difference_percentage_points": 0.0,
+          "paired_group_bootstrap_95pct_pp": [
+            -0.8032289931429898,
+            0.7311129163281885
+          ],
+          "groups": 1192,
+          "replicates": 5000,
+          "seed": 20261019,
+          "interpretation": "conditional on frozen sample set; does not establish equivalence"
+        }
+      },
+      "token_sequence_changes_including_missing": 41,
+      "parsed_answer_changes_including_missing": 29
+    }
+  }
+]

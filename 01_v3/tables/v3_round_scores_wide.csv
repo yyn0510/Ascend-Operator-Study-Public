@@ -1,0 +1,217 @@
+﻿model,operator,trajectory,R1,R2,R3,R4,R5
+DeepSeek V4 Flash,exp,trajectory_001,0.0,43.238773,0.0,66.321618,65.961196
+DeepSeek V4 Flash,exp,trajectory_002,0.0,43.020003,0.0,0.0,0.0
+DeepSeek V4 Flash,exp,trajectory_003,0.0,0.0,43.166059,65.077251,65.178514
+DeepSeek V4 Flash,foreach_addcdiv_scalar,trajectory_001,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,foreach_addcdiv_scalar,trajectory_002,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,foreach_addcdiv_scalar,trajectory_003,0.0,0.0,79.273765,80.637742,83.31222
+DeepSeek V4 Flash,foreach_norm,trajectory_001,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,foreach_norm,trajectory_002,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,foreach_norm,trajectory_003,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,gelu,trajectory_001,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,gelu,trajectory_002,0.0,0.0,46.271342,58.562132,58.429801
+DeepSeek V4 Flash,gelu,trajectory_003,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,masked_scale,trajectory_001,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,masked_scale,trajectory_002,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,masked_scale,trajectory_003,0.0,0.0,0.0,0.0,71.260536
+DeepSeek V4 Flash,mish,trajectory_001,45.810555,84.10215,65.047944,64.85407,65.19185
+DeepSeek V4 Flash,mish,trajectory_002,0.0,0.0,0.0,52.472823,73.364229
+DeepSeek V4 Flash,mish,trajectory_003,0.0,0.0,57.843664,68.048449,69.992762
+DeepSeek V4 Flash,sigmoid,trajectory_001,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,sigmoid,trajectory_002,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,sigmoid,trajectory_003,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Flash,swi_glu,trajectory_001,0.0,76.721701,0.0,63.732581,71.777897
+DeepSeek V4 Flash,swi_glu,trajectory_002,0.0,0.0,70.049389,0.0,0.0
+DeepSeek V4 Flash,swi_glu,trajectory_003,72.46225,0.0,0.0,0.0,72.452595
+DeepSeek V4 Pro,exp,trajectory_001,0.0,0.0,65.473476,59.416321,65.485872
+DeepSeek V4 Pro,exp,trajectory_002,0.0,0.0,42.523445,42.924404,0.0
+DeepSeek V4 Pro,exp,trajectory_003,42.480739,65.499737,0.0,41.0,0.0
+DeepSeek V4 Pro,foreach_addcdiv_scalar,trajectory_001,0.0,0.0,4.031073,0.0,0.0
+DeepSeek V4 Pro,foreach_addcdiv_scalar,trajectory_002,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,foreach_addcdiv_scalar,trajectory_003,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,foreach_norm,trajectory_001,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,foreach_norm,trajectory_002,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,foreach_norm,trajectory_003,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,gelu,trajectory_001,0.0,0.0,0.0,0.0,20.0
+DeepSeek V4 Pro,gelu,trajectory_002,0.0,0.0,0.0,0.0,20.0
+DeepSeek V4 Pro,gelu,trajectory_003,0.0,0.0,0.0,0.0,33.263337
+DeepSeek V4 Pro,masked_scale,trajectory_001,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,masked_scale,trajectory_002,0.0,0.0,0.0,3.737981,0.0
+DeepSeek V4 Pro,masked_scale,trajectory_003,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,mish,trajectory_001,0.0,0.0,0.0,20.0,0.0
+DeepSeek V4 Pro,mish,trajectory_002,0.0,0.0,20.0,0.0,35.408936
+DeepSeek V4 Pro,mish,trajectory_003,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,sigmoid,trajectory_001,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,sigmoid,trajectory_002,0.0,0.0,0.0,8.0,40.205415
+DeepSeek V4 Pro,sigmoid,trajectory_003,0.0,0.0,0.0,0.0,37.362455
+DeepSeek V4 Pro,swi_glu,trajectory_001,0.0,20.0,27.5,32.550602,39.453263
+DeepSeek V4 Pro,swi_glu,trajectory_002,0.0,0.0,0.0,0.0,0.0
+DeepSeek V4 Pro,swi_glu,trajectory_003,0.0,6.646207,41.891306,0.0,32.0
+DeepSeek V4.1 Flash,exp,trajectory_001,85.547478,85.437185,87.065707,20.0,20.0
+DeepSeek V4.1 Flash,exp,trajectory_002,86.169791,86.027251,87.286884,0.0,86.77127
+DeepSeek V4.1 Flash,exp,trajectory_003,85.764439,85.846103,87.108873,86.837589,87.007624
+DeepSeek V4.1 Flash,foreach_addcdiv_scalar,trajectory_001,0.0,81.710158,82.24521,84.461477,84.409956
+DeepSeek V4.1 Flash,foreach_addcdiv_scalar,trajectory_002,0.0,81.540651,83.823429,81.765112,82.202851
+DeepSeek V4.1 Flash,foreach_addcdiv_scalar,trajectory_003,82.115778,82.251869,23.211334,84.207994,0.0
+DeepSeek V4.1 Flash,foreach_norm,trajectory_001,0.0,0.0,81.184972,81.914725,0.0
+DeepSeek V4.1 Flash,foreach_norm,trajectory_002,42.317664,0.0,0.0,81.562513,83.221826
+DeepSeek V4.1 Flash,foreach_norm,trajectory_003,0.0,0.0,0.0,79.457558,80.537189
+DeepSeek V4.1 Flash,gelu,trajectory_001,59.731178,56.846378,56.846614,52.205459,55.467286
+DeepSeek V4.1 Flash,gelu,trajectory_002,59.39124,58.57307,1.0,58.750165,60.563963
+DeepSeek V4.1 Flash,gelu,trajectory_003,57.047828,60.751921,60.905835,60.205377,60.939832
+DeepSeek V4.1 Flash,masked_scale,trajectory_001,59.823487,86.368587,86.846916,0.0,0.0
+DeepSeek V4.1 Flash,masked_scale,trajectory_002,85.622182,87.011637,87.614828,86.256679,20.0
+DeepSeek V4.1 Flash,masked_scale,trajectory_003,0.0,86.361615,87.25186,87.921593,95.619476
+DeepSeek V4.1 Flash,mish,trajectory_001,78.83835,78.991811,85.054153,65.356549,85.230727
+DeepSeek V4.1 Flash,mish,trajectory_002,83.790597,84.615182,84.9533,83.570438,84.226774
+DeepSeek V4.1 Flash,mish,trajectory_003,84.577815,85.01708,84.366721,84.116917,0.0
+DeepSeek V4.1 Flash,sigmoid,trajectory_001,51.37302,68.65758,72.699819,0.0,72.969613
+DeepSeek V4.1 Flash,sigmoid,trajectory_002,70.628046,0.0,52.275205,20.0,52.273697
+DeepSeek V4.1 Flash,sigmoid,trajectory_003,71.434149,71.191454,71.058326,70.815644,0.0
+DeepSeek V4.1 Flash,swi_glu,trajectory_001,0.0,77.690398,71.455002,32.452614,77.33459
+DeepSeek V4.1 Flash,swi_glu,trajectory_002,61.150632,76.374125,61.913073,78.650658,0.0
+DeepSeek V4.1 Flash,swi_glu,trajectory_003,0.0,56.389269,75.722647,76.498074,78.00769
+GLM-5.3,exp,trajectory_001,0.0,0.0,0.0,74.729008,0.0
+GLM-5.3,exp,trajectory_002,65.471538,85.858199,86.30039,86.558723,86.8092
+GLM-5.3,exp,trajectory_003,0.0,0.0,85.063241,0.0,0.0
+GLM-5.3,foreach_addcdiv_scalar,trajectory_001,0.0,0.0,0.0,80.43364,0.0
+GLM-5.3,foreach_addcdiv_scalar,trajectory_002,0.0,0.0,80.863023,83.337083,82.206374
+GLM-5.3,foreach_addcdiv_scalar,trajectory_003,0.0,0.0,62.608569,80.717034,10.0
+GLM-5.3,foreach_norm,trajectory_001,0.0,0.0,0.0,0.0,8.5
+GLM-5.3,foreach_norm,trajectory_002,0.0,0.0,0.0,0.0,0.0
+GLM-5.3,foreach_norm,trajectory_003,0.0,0.0,0.0,41.0,64.672868
+GLM-5.3,gelu,trajectory_001,41.409132,0.0,0.0,0.0,0.0
+GLM-5.3,gelu,trajectory_002,0.0,0.0,0.0,46.17113,0.0
+GLM-5.3,gelu,trajectory_003,0.0,0.0,40.343803,0.0,12.0
+GLM-5.3,masked_scale,trajectory_001,66.516635,0.0,50.0,67.84124,0.0
+GLM-5.3,masked_scale,trajectory_002,0.0,66.160403,85.732639,85.463094,86.998107
+GLM-5.3,masked_scale,trajectory_003,0.0,0.0,0.0,0.0,0.0
+GLM-5.3,mish,trajectory_001,0.0,0.0,78.928498,78.797638,78.740238
+GLM-5.3,mish,trajectory_002,0.0,50.0,85.139507,50.0,84.876333
+GLM-5.3,mish,trajectory_003,41.0,50.0,80.40286,84.962492,84.97539
+GLM-5.3,sigmoid,trajectory_001,0.0,11.008458,70.253998,50.0,70.838504
+GLM-5.3,sigmoid,trajectory_002,0.0,0.0,0.0,50.0,70.776347
+GLM-5.3,sigmoid,trajectory_003,0.0,56.73539,70.730992,51.946787,72.446084
+GLM-5.3,swi_glu,trajectory_001,0.0,45.986365,0.0,0.0,0.0
+GLM-5.3,swi_glu,trajectory_002,0.0,0.0,60.681844,76.215607,0.0
+GLM-5.3,swi_glu,trajectory_003,0.0,69.891718,77.76982,0.0,75.798914
+Grok 4.6,exp,trajectory_001,85.426378,87.022467,20.0,85.694412,86.58897
+Grok 4.6,exp,trajectory_002,86.127506,87.360103,86.425904,85.874504,25.5
+Grok 4.6,exp,trajectory_003,85.259089,5.360774,84.692779,86.577845,85.865287
+Grok 4.6,foreach_addcdiv_scalar,trajectory_001,84.264832,83.996542,82.095367,0.0,73.235775
+Grok 4.6,foreach_addcdiv_scalar,trajectory_002,0.0,82.310233,83.684315,78.366261,77.538396
+Grok 4.6,foreach_addcdiv_scalar,trajectory_003,81.897903,83.934754,83.80275,84.01049,83.808015
+Grok 4.6,foreach_norm,trajectory_001,0.0,59.923083,54.90843,3.646703,54.925052
+Grok 4.6,foreach_norm,trajectory_002,66.539589,0.0,60.762237,81.036988,80.670935
+Grok 4.6,foreach_norm,trajectory_003,0.0,73.698811,80.235675,81.229951,81.716938
+Grok 4.6,gelu,trajectory_001,60.038194,41.616392,62.38743,63.630906,61.967376
+Grok 4.6,gelu,trajectory_002,46.735387,58.246323,40.622319,58.291142,0.0
+Grok 4.6,gelu,trajectory_003,52.850977,61.707158,0.0,58.154842,36.9487
+Grok 4.6,masked_scale,trajectory_001,0.0,0.0,0.0,86.091658,0.0
+Grok 4.6,masked_scale,trajectory_002,0.0,85.916118,87.204597,0.0,87.031841
+Grok 4.6,masked_scale,trajectory_003,0.0,0.0,85.96534,87.504737,0.0
+Grok 4.6,mish,trajectory_001,78.192676,42.933998,73.922953,76.284002,75.606118
+Grok 4.6,mish,trajectory_002,80.847754,81.559044,84.839583,84.515725,0.0
+Grok 4.6,mish,trajectory_003,82.530578,42.67143,85.63876,78.0917,78.105087
+Grok 4.6,sigmoid,trajectory_001,43.364563,64.104858,30.422521,64.093366,66.69888
+Grok 4.6,sigmoid,trajectory_002,0.0,0.0,50.472189,70.979983,64.794001
+Grok 4.6,sigmoid,trajectory_003,0.0,66.898059,0.0,62.327876,65.627671
+Grok 4.6,swi_glu,trajectory_001,75.770661,0.0,0.0,31.623288,75.474999
+Grok 4.6,swi_glu,trajectory_002,0.0,67.013708,73.688298,0.0,75.791197
+Grok 4.6,swi_glu,trajectory_003,69.682068,77.466575,28.79703,75.851755,71.289181
+Kimi K3,exp,trajectory_001,85.851643,85.439445,86.837134,86.700072,87.091473
+Kimi K3,exp,trajectory_002,0.0,65.854438,86.056025,85.700521,87.034461
+Kimi K3,exp,trajectory_003,85.542214,85.790668,85.974736,86.949646,0.0
+Kimi K3,foreach_addcdiv_scalar,trajectory_001,80.871516,83.467422,0.0,83.113308,19.694692
+Kimi K3,foreach_addcdiv_scalar,trajectory_002,0.0,10.0,82.6575,82.60984,83.62081
+Kimi K3,foreach_addcdiv_scalar,trajectory_003,10.0,0.0,83.811903,19.742708,0.0
+Kimi K3,foreach_norm,trajectory_001,59.218925,74.243564,0.0,80.234315,0.0
+Kimi K3,foreach_norm,trajectory_002,76.990606,81.567748,0.0,80.738564,0.0
+Kimi K3,foreach_norm,trajectory_003,78.119271,81.281564,0.0,0.0,81.134927
+Kimi K3,gelu,trajectory_001,44.463202,44.095446,55.98019,62.193338,11.70266
+Kimi K3,gelu,trajectory_002,0.0,59.587756,62.499752,48.484025,46.971963
+Kimi K3,gelu,trajectory_003,32.285739,56.504773,41.930262,61.99378,57.188881
+Kimi K3,masked_scale,trajectory_001,0.0,0.0,84.781486,86.509849,0.0
+Kimi K3,masked_scale,trajectory_002,0.0,0.0,85.690403,85.427815,87.011729
+Kimi K3,masked_scale,trajectory_003,0.0,0.0,0.0,0.0,0.0
+Kimi K3,mish,trajectory_001,83.935038,83.992911,84.219143,84.533655,23.293643
+Kimi K3,mish,trajectory_002,58.541342,77.968745,84.9161,84.747952,81.661343
+Kimi K3,mish,trajectory_003,84.640974,84.91911,0.0,0.0,58.962268
+Kimi K3,sigmoid,trajectory_001,0.0,70.339788,0.0,70.462801,0.0
+Kimi K3,sigmoid,trajectory_002,70.05343,70.813015,18.469641,71.03977,0.0
+Kimi K3,sigmoid,trajectory_003,51.065199,72.456353,72.028932,72.842961,0.0
+Kimi K3,swi_glu,trajectory_001,75.790979,0.0,0.0,21.517168,21.517162
+Kimi K3,swi_glu,trajectory_002,0.0,0.0,44.782263,75.043812,68.570472
+Kimi K3,swi_glu,trajectory_003,43.782913,76.462459,70.23031,78.090735,79.882813
+MiMo-V2.5-Pro,exp,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,exp,trajectory_002,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,exp,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,foreach_addcdiv_scalar,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,foreach_addcdiv_scalar,trajectory_002,63.631301,0.0,0.0,8.182236,0.0
+MiMo-V2.5-Pro,foreach_addcdiv_scalar,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,foreach_norm,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,foreach_norm,trajectory_002,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,foreach_norm,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,gelu,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,gelu,trajectory_002,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,gelu,trajectory_003,0.0,0.0,0.0,32.592413,0.0
+MiMo-V2.5-Pro,masked_scale,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,masked_scale,trajectory_002,0.0,0.0,0.0,3.649053,0.0
+MiMo-V2.5-Pro,masked_scale,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,mish,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,mish,trajectory_002,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,mish,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,sigmoid,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,sigmoid,trajectory_002,0.0,0.0,20.799383,0.0,37.350899
+MiMo-V2.5-Pro,sigmoid,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,swi_glu,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiMo-V2.5-Pro,swi_glu,trajectory_002,42.373068,38.773737,55.274348,49.240157,55.269669
+MiMo-V2.5-Pro,swi_glu,trajectory_003,8.0,8.0,1.0,38.345902,0.0
+MiniMax-M3,exp,trajectory_001,62.113586,62.062852,4.251786,85.171817,85.37373
+MiniMax-M3,exp,trajectory_002,0.0,0.0,0.0,60.763778,60.773754
+MiniMax-M3,exp,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,foreach_addcdiv_scalar,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,foreach_addcdiv_scalar,trajectory_002,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,foreach_addcdiv_scalar,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,foreach_norm,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,foreach_norm,trajectory_002,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,foreach_norm,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,gelu,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,gelu,trajectory_002,0.0,0.0,33.432772,6.597064,33.346574
+MiniMax-M3,gelu,trajectory_003,40.075003,2.548803,0.0,0.0,0.0
+MiniMax-M3,masked_scale,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,masked_scale,trajectory_002,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,masked_scale,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,mish,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,mish,trajectory_002,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,mish,trajectory_003,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,sigmoid,trajectory_001,0.0,0.0,0.0,0.0,0.0
+MiniMax-M3,sigmoid,trajectory_002,0.0,41.0,0.0,49.86672,0.0
+MiniMax-M3,sigmoid,trajectory_003,0.0,70.016057,0.0,0.0,0.0
+MiniMax-M3,swi_glu,trajectory_001,20.0,0.0,0.0,0.0,0.0
+MiniMax-M3,swi_glu,trajectory_002,0.0,34.762701,0.0,33.5,0.0
+MiniMax-M3,swi_glu,trajectory_003,0.0,7.094173,7.087075,20.0,47.89084
+Qwen3.8-Max,exp,trajectory_001,65.551982,85.501739,0.0,86.713291,86.396309
+Qwen3.8-Max,exp,trajectory_002,65.51586,85.341975,85.865673,87.389829,87.315
+Qwen3.8-Max,exp,trajectory_003,0.0,0.0,66.208653,60.269661,0.0
+Qwen3.8-Max,foreach_addcdiv_scalar,trajectory_001,0.0,62.52491,30.363771,62.725717,0.0
+Qwen3.8-Max,foreach_addcdiv_scalar,trajectory_002,0.0,0.0,36.868747,0.0,0.0
+Qwen3.8-Max,foreach_addcdiv_scalar,trajectory_003,0.0,0.0,0.0,36.127719,63.671207
+Qwen3.8-Max,foreach_norm,trajectory_001,0.0,0.0,0.0,0.0,38.779339
+Qwen3.8-Max,foreach_norm,trajectory_002,0.0,35.023501,0.0,0.0,0.0
+Qwen3.8-Max,foreach_norm,trajectory_003,0.0,0.0,0.0,50.308431,0.0
+Qwen3.8-Max,gelu,trajectory_001,56.696548,61.604407,54.620466,0.0,50.643199
+Qwen3.8-Max,gelu,trajectory_002,0.0,45.909998,0.0,48.588671,42.631408
+Qwen3.8-Max,gelu,trajectory_003,0.0,0.0,40.348725,0.0,0.0
+Qwen3.8-Max,masked_scale,trajectory_001,0.0,0.0,0.0,0.0,0.0
+Qwen3.8-Max,masked_scale,trajectory_002,0.0,0.0,0.0,0.0,3.801467
+Qwen3.8-Max,masked_scale,trajectory_003,0.0,0.0,0.0,0.0,0.0
+Qwen3.8-Max,mish,trajectory_001,0.0,0.0,53.827629,0.0,0.0
+Qwen3.8-Max,mish,trajectory_002,64.251919,45.450036,63.786473,63.854693,83.163504
+Qwen3.8-Max,mish,trajectory_003,0.0,22.960559,23.05648,0.0,22.541606
+Qwen3.8-Max,sigmoid,trajectory_001,0.0,8.125708,0.0,70.375094,0.0
+Qwen3.8-Max,sigmoid,trajectory_002,0.0,0.0,37.359198,0.0,0.0
+Qwen3.8-Max,sigmoid,trajectory_003,0.0,8.0,0.0,56.338337,0.0
+Qwen3.8-Max,swi_glu,trajectory_001,0.0,0.0,0.0,21.389735,15.627206
+Qwen3.8-Max,swi_glu,trajectory_002,0.0,0.0,1.0,0.0,0.0
+Qwen3.8-Max,swi_glu,trajectory_003,0.0,0.0,0.0,0.0,12.797829

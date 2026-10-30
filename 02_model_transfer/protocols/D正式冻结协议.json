@@ -1,0 +1,514 @@
+{
+  "schema": "D_frozen_protocol_v1",
+  "stage": "D",
+  "date": "2026-10-20",
+  "status": "frozen_before_NPU_results",
+  "soc": "ascend910b",
+  "seed": 20261018,
+  "models": {
+    "qwen7b": {
+      "repository": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "folder": "Qwen2.5-VL-7B-Instruct",
+      "files": {
+        "README.md": {
+          "sha256": "1fa65dbb08bc9ffe0b020409c8686f08b23008c5a68554353305fd2de6f2b81e",
+          "bytes": 18574
+        },
+        "chat_template.json": {
+          "sha256": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+          "bytes": 1050
+        },
+        "config.json": {
+          "sha256": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+          "bytes": 1374
+        },
+        "generation_config.json": {
+          "sha256": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+          "bytes": 216
+        },
+        "merges.txt": {
+          "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+          "bytes": 1671839
+        },
+        "model-00001-of-00005.safetensors": {
+          "sha256": "e97b877e47fde53a6c6e77aafb36e58e91ee9d95c4a3eeac6f1b5c0e6a1c986e",
+          "bytes": 3900233256
+        },
+        "model-00002-of-00005.safetensors": {
+          "sha256": "a9a300a43b4724eee2abe7c18ceb26768d0ab011eb0cad19d9bfd2476a24d024",
+          "bytes": 3864726320
+        },
+        "model-00003-of-00005.safetensors": {
+          "sha256": "111223d173e00bbee81cba1216fad28668df3476706b7fd26f4d5b50f8b3a507",
+          "bytes": 3864726424
+        },
+        "model-00004-of-00005.safetensors": {
+          "sha256": "ef47f634fa57d46ee134edcc09f34085a47da1e16c12a2abe0d67118be6d72ed",
+          "bytes": 3864733680
+        },
+        "model-00005-of-00005.safetensors": {
+          "sha256": "0c859795ad3a627a9b95bcb762e059d5b768a4a36fdd4affeff269d93fdecc67",
+          "bytes": 1089994880
+        },
+        "model.safetensors.index.json": {
+          "sha256": "73b333b0b16e5286ddba615d2caebcd495cf7e616f52eb217a81781393d79de9",
+          "bytes": 57619
+        },
+        "preprocessor_config.json": {
+          "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+          "bytes": 350
+        },
+        "tokenizer.json": {
+          "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+          "bytes": 7031645
+        },
+        "tokenizer_config.json": {
+          "sha256": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+          "bytes": 5702
+        },
+        "vocab.json": {
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833
+        }
+      }
+    },
+    "internvl": {
+      "repository": "OpenGVLab/InternVL2-4B",
+      "revision": "6eb21ec278fbdb03b751a3d48d8dfc9724e05608",
+      "folder": "InternVL2-4B",
+      "files": {
+        "README.md": {
+          "sha256": "ae660047187fce37c4a31e6f1381c45193b03dc1471eaca011a1e7e6553b9b7b",
+          "bytes": 34326
+        },
+        "added_tokens.json": {
+          "sha256": "e71a94a0bd27f373bf0be1eefa963aeba6a8fd59fe5495b8cea5214f83f7c439",
+          "bytes": 469
+        },
+        "config.json": {
+          "sha256": "0f5b07a3114ae1500eee82b05f7cc059e225e18e2a6c23c69b3b75bcb574d5eb",
+          "bytes": 6632
+        },
+        "configuration_intern_vit.py": {
+          "sha256": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8",
+          "bytes": 5548
+        },
+        "configuration_internvl_chat.py": {
+          "sha256": "44f65dfc124bb2b70283575d44e26d3bddce39befe824d33545d0475679a1091",
+          "bytes": 4063
+        },
+        "configuration_phi3.py": {
+          "sha256": "708af17dfd7133bad59f97d5ccc934a98583845ed38b055a055fb02513166e6a",
+          "bytes": 10396
+        },
+        "conversation.py": {
+          "sha256": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee",
+          "bytes": 15309
+        },
+        "generation_config.json": {
+          "sha256": "cd453b41e3432e40e51224c4d77e1f17d352ee46bb50a387f9ab30b970e1ac0b",
+          "bytes": 122
+        },
+        "model-00001-of-00002.safetensors": {
+          "sha256": "2d49faea2fab060381af9c6902a1ae9593797cffdc6317394b62b6bc97a80f35",
+          "bytes": 4957392176
+        },
+        "model-00002-of-00002.safetensors": {
+          "sha256": "fe85c0ab7ff42c3760870e1168f4de677f8177cbf4b43abde850e1d7ad16348a",
+          "bytes": 3336385864
+        },
+        "model.safetensors.index.json": {
+          "sha256": "8d6b962de4a7d496ae79de35b471af79f40cb7e7b41cb5a0c157548f771f2d8c",
+          "bytes": 48839
+        },
+        "modeling_intern_vit.py": {
+          "sha256": "1978e330ea5533dda4d1379096aded271fc741347fc48cb4924846b56a2a6a4b",
+          "bytes": 18106
+        },
+        "modeling_internvl_chat.py": {
+          "sha256": "bca7cf8b925c8130926fe7043198b6e3000f026935996216c9259b36215b8f01",
+          "bytes": 15964
+        },
+        "modeling_phi3.py": {
+          "sha256": "99cd8b04b9a3e491d1430734ff84e24e175c3e3c4bf1c81fd277f923914a6944",
+          "bytes": 74510
+        },
+        "preprocessor_config.json": {
+          "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4",
+          "bytes": 287
+        },
+        "special_tokens_map.json": {
+          "sha256": "f877c545fc2db4e95a6afb134d6f3072ae9207af1c8160f7ebbb627e5f5da4ad",
+          "bytes": 717
+        },
+        "tokenizer.model": {
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "bytes": 499723
+        },
+        "tokenizer_config.json": {
+          "sha256": "4c772d1ba4150b17d7a2a66f8b6bb6ff0df484ddeb547a60e5c6aed23f7989d9",
+          "bytes": 4887
+        }
+      }
+    },
+    "clip": {
+      "repository": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+      "folder": "CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "files": {
+        "config.json": {
+          "sha256": "1284cbff35169abb23a1c5525a8b0f543c7bd191d4b9aed63880c1571bc4191c",
+          "bytes": 4355
+        },
+        "merges.txt": {
+          "sha256": "f1cd414c2d113a28b296afc0fd66ae854c0e0c34d5de373a2f5b7f62e0c02344",
+          "bytes": 524618
+        },
+        "model.safetensors": {
+          "sha256": "74813fbcdc750f235c9784c367ca1394d2a5c25eb0aac92761752ac239db7cff",
+          "bytes": 605157884
+        },
+        "preprocessor_config.json": {
+          "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+          "bytes": 316
+        },
+        "special_tokens_map.json": {
+          "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf",
+          "bytes": 389
+        },
+        "tokenizer.json": {
+          "sha256": "b556ac8c99757ffb677208af34bc8c6721572114111a6e0aaf5fa69ff0b8d842",
+          "bytes": 2224041
+        },
+        "tokenizer_config.json": {
+          "sha256": "e19f34ef773563fb695f96cfcae1e4c7b112ab6ad532f6962061df5242d924f0",
+          "bytes": 904
+        },
+        "vocab.json": {
+          "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363",
+          "bytes": 862328
+        }
+      }
+    }
+  },
+  "candidates": [
+    {
+      "candidate_id": "Grok_4_6_gelu_001_R4",
+      "model": "Grok 4.6",
+      "operator": "gelu",
+      "trajectory": "trajectory_001",
+      "selected_round": 4,
+      "score": 63.63090572206334,
+      "score_raw_decimal": "63.63090572206334",
+      "passed_cases": 20,
+      "total_cases": 20,
+      "avg_speedup": 0.48125599950490205,
+      "source": {
+        "source_files": {
+          "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "e18aebca3609bd265ecd123bb8824e75064841cddbc19bc4902fd50a88455f26",
+          "csrc/ops/gelu/op_kernel/gelu_launch.h": "4dcff938caf0c4b10c80902c29895bc703f2aedf6739f3717b9ee8fc567b4f4f",
+          "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "65a539d2fbbbb879ae983b37dc5aa44a4d5e2a10a997fd0599cf48b09c0544b5",
+          "csrc/ops/gelu/CMakeLists.txt": "853775855f0faa1533150eb501468c41f2aa19ab02ac5ee6a7c7b61b23169ca6",
+          "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+        },
+        "source_bundle_hash": "b9f9e20e27e1324996c399856b4710d1769a056f39a5f78138422e0dafae2e5d",
+        "source_issue": null,
+        "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+        "model_output_hash": "bf9fe5e6ebaa973bec43e85d8fe90e2539c120236fbbda432ec2834371c9ee2d",
+        "output_hash_matches_manifest": true,
+        "verification_basis": "original_output_and_file_comparison"
+      },
+      "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+      "status": "source_verified_npu_not_tested",
+      "generating_provider": "openrouter_xai_zdr",
+      "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_grok_4_6_openrouter_level1_20260916\\openrouter_xai_zdr\\x-ai_grok-4_6\\level1_gelu\\trajectory_001\\round_04"
+    },
+    {
+      "candidate_id": "Kimi_K3_gelu_002_R3",
+      "model": "Kimi K3",
+      "operator": "gelu",
+      "trajectory": "trajectory_002",
+      "selected_round": 3,
+      "score": 62.49975209494271,
+      "score_raw_decimal": "62.49975209494271",
+      "passed_cases": 20,
+      "total_cases": 20,
+      "avg_speedup": 0.44216237373448236,
+      "source": {
+        "source_files": {
+          "csrc/ops/gelu/op_kernel/gelu_kernel.cpp": "a5f8ccd8cabc998c2cc33a138723742f2c54af320305bf7c295cc2b5fdb28f71",
+          "csrc/ops/gelu/op_kernel/gelu_launch.h": "9e4a169f0369c61b39438449f29f295872443c924f82f558a0f6ee96097f7b66",
+          "csrc/ops/gelu/op_plugin/gelu_plugin.cpp": "419f61633da7890533990a414c817a6350f677f5d7e55a65b9f5a03b7eeb3f84",
+          "csrc/ops/gelu/CMakeLists.txt": "853775855f0faa1533150eb501468c41f2aa19ab02ac5ee6a7c7b61b23169ca6",
+          "cann_bench/__init__.py.append": "03b27bbf5cd4320c0f0512888676972019ab4304fb3afe92fc110f51e7d7fbb0"
+        },
+        "source_bundle_hash": "3b652af66e1f651f4019e092956d8be12765b4d8ff1f413d115665660f20eb6f",
+        "source_issue": null,
+        "source_strategy": "verified_archived_submission_tree",
+        "model_output_hash": "6f4df00e0759afa8c203ff712f772e4b8879e8674d901e379f2ea2a6ec0864e6",
+        "output_hash_matches_manifest": false,
+        "verification_basis": "complete_archived_submission_tree_sha256"
+      },
+      "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+      "status": "source_verified_npu_not_tested",
+      "generating_provider": "opencode_go",
+      "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_first4_20260815\\opencode_go\\kimi-k3\\level1_gelu\\trajectory_002\\round_03"
+    },
+    {
+      "candidate_id": "DeepSeek_V4_1_Flash_swi_glu_002_R4",
+      "model": "DeepSeek V4.1 Flash",
+      "operator": "swi_glu",
+      "trajectory": "trajectory_002",
+      "selected_round": 4,
+      "score": 78.65065754822209,
+      "score_raw_decimal": "78.65065754822209",
+      "passed_cases": 20,
+      "total_cases": 20,
+      "avg_speedup": 1.609007212020892,
+      "source": {
+        "source_files": {
+          "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "be1eb8e0b919d723e52780b57fac097fabe134a1340f740d74de9cecc843723d",
+          "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "b6c72411abdce804bf4e5ffcbfdefa926bf7d8725c5a6450ec4bacef7cef7eec",
+          "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "8663740454180cf944084ee38870dd51e58276ad976da6868a41b5e9b5b8bf1a",
+          "csrc/ops/swi_glu/CMakeLists.txt": "91216b76af6191a88c4fb08e8bb53e219213873da38f58ea9e4a30dba1b645d8",
+          "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+        },
+        "source_bundle_hash": "1c5434a72ae91000bbca6866546953792fa66d38955764c5bb99cc735c87edd1",
+        "source_issue": null,
+        "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+        "model_output_hash": "32394b8b248a26ca670f0c946b048bf7597d103bab4131ded92e3066780a23f1",
+        "output_hash_matches_manifest": true,
+        "verification_basis": "original_output_and_file_comparison"
+      },
+      "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+      "status": "source_verified_npu_not_tested",
+      "generating_provider": "deepseek_official",
+      "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a1_deepseek_flash_exp_20260910\\deepseek_official\\deepseek-flash\\level1_swi_glu\\trajectory_002\\round_04"
+    },
+    {
+      "candidate_id": "Kimi_K3_swi_glu_003_R5",
+      "model": "Kimi K3",
+      "operator": "swi_glu",
+      "trajectory": "trajectory_003",
+      "selected_round": 5,
+      "score": 79.88281342546733,
+      "score_raw_decimal": "79.88281342546733",
+      "passed_cases": 20,
+      "total_cases": 20,
+      "avg_speedup": 1.7008999878058986,
+      "source": {
+        "source_files": {
+          "csrc/ops/swi_glu/op_kernel/swi_glu_kernel.cpp": "aacadd765dfb1ad5475bb12a60b2fb3b53da715a62f704995e8c85b490d74a67",
+          "csrc/ops/swi_glu/op_kernel/swi_glu_launch.h": "35fae4e7990e9dc904acc9615577ce05b2a48372ab37ae0085842499f1e05e37",
+          "csrc/ops/swi_glu/op_plugin/swi_glu_plugin.cpp": "ea8bb67240a3c19327ab342d8d6cdc02ac9592c0b8497cfb9f80bd758bcf3f70",
+          "csrc/ops/swi_glu/CMakeLists.txt": "feb29883a3b377c5b456c81ee34b1f014873d3c5a41538f56a47310e4e2aeb44",
+          "cann_bench/__init__.py.append": "318bd7255ca56c2f485c3060cabfc1726f7e084e42226d47942294f5d6b98c31"
+        },
+        "source_bundle_hash": "5295d799674c3324c8d203a834e6c5d69762249d6b9b835b14f5955a4ac23354",
+        "source_issue": null,
+        "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+        "model_output_hash": "204fe9edc30ca9b57f7eafa2bade1971db476f3171aef5c17ee55070853e8233",
+        "output_hash_matches_manifest": true,
+        "verification_basis": "original_output_and_file_comparison"
+      },
+      "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+      "status": "source_verified_npu_not_tested",
+      "generating_provider": "opencode_go",
+      "archive_round_path": "model_eval\\runs\\feedback_experiments\\formal_v3_a3_kimi_k3_level1_remaining4_20260817\\opencode_go\\kimi-k3\\level1_swi_glu\\trajectory_003\\round_05"
+    },
+    {
+      "candidate_id": "Kimi_K3_foreach_norm_003_R2",
+      "model": "Kimi K3",
+      "operator": "foreach_norm",
+      "trajectory": "trajectory_003",
+      "selected_round": 2,
+      "score": 81.28156360546998,
+      "score_raw_decimal": "81.28156360546998",
+      "passed_cases": 20,
+      "total_cases": 20,
+      "avg_speedup": 1.6327565282312517,
+      "source": {
+        "source_files": {
+          "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp": "13682a9979845f4c9068c4ad5c443ae3e47e5f52ee9be9915219a2c54fec71f3",
+          "csrc/ops/foreach_norm/op_kernel/foreach_norm_launch.h": "4ffe876b8cf984f1721806d83d5dc82999cdba5f1f6ad1d8f82a44e83adf5ba4",
+          "csrc/ops/foreach_norm/op_plugin/foreach_norm_plugin.cpp": "607053d198d8768fbca609b0a7999e41d113640cd5769eb55d5e9b73a2cdc9ab",
+          "csrc/ops/foreach_norm/CMakeLists.txt": "57ddd98206d761e5f2534c3b26d6e605f0e5566af88d79a92e9db31a9ebda1a5",
+          "cann_bench/__init__.py.append": "543630ce536c7265327c047efb0b41309d0c1170c22cd2175a6afa7d94d47d11"
+        },
+        "source_bundle_hash": "844414e18648a850d627986e1043a12a5437e76cfe99ae43d8a95aa70616ab45",
+        "source_issue": null,
+        "source_strategy": "mechanical_original_output_verified_against_evaluated_submission",
+        "model_output_hash": "2595c7ed5584a21dabe805421839230b833c3e7be271827895e9af866b8cc87b",
+        "output_hash_matches_manifest": true,
+        "verification_basis": "original_output_and_file_comparison"
+      },
+      "selection_rule": "highest raw score among platform-success 20/20 rounds in each complete trajectory; ties earlier round",
+      "status": "source_verified_npu_not_tested",
+      "generating_provider": "opencode_go"
+    }
+  ],
+  "additional_norm_candidate": "Kimi_K3_foreach_norm_003_R2",
+  "mmstar_jobs": [
+    {
+      "candidate": "Grok_4_6_gelu_001_R4",
+      "host": "qwen7b",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "Kimi_K3_gelu_002_R3",
+      "host": "qwen7b",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "DeepSeek_V4_1_Flash_swi_glu_002_R4",
+      "host": "qwen7b",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "DeepSeek_V4_1_Flash_swi_glu_002_R4",
+      "host": "internvl",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "Kimi_K3_swi_glu_003_R5",
+      "host": "qwen7b",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "Kimi_K3_swi_glu_003_R5",
+      "host": "internvl",
+      "dataset": "mmstar"
+    }
+  ],
+  "quality_jobs": [
+    {
+      "candidate": "Grok_4_6_gelu_001_R4",
+      "host": "qwen7b",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "Kimi_K3_gelu_002_R3",
+      "host": "qwen7b",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "DeepSeek_V4_1_Flash_swi_glu_002_R4",
+      "host": "qwen7b",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "DeepSeek_V4_1_Flash_swi_glu_002_R4",
+      "host": "internvl",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "Kimi_K3_swi_glu_003_R5",
+      "host": "qwen7b",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "Kimi_K3_swi_glu_003_R5",
+      "host": "internvl",
+      "dataset": "mmstar"
+    },
+    {
+      "candidate": "Kimi_K3_foreach_norm_003_R2",
+      "host": "clip",
+      "dataset": "coco"
+    }
+  ],
+  "operator_hosts": {
+    "gelu": [
+      "qwen7b"
+    ],
+    "swi_glu": [
+      "qwen7b",
+      "internvl"
+    ],
+    "foreach_norm": [
+      "clip"
+    ]
+  },
+  "generation": {
+    "mmstar_max_new_tokens": 16,
+    "dtype": "bfloat16",
+    "attention": "eager",
+    "do_sample": false,
+    "min_pixels": 200704,
+    "max_pixels": 401408,
+    "processor_use_fast": false
+  },
+  "mmstar": {
+    "source_manifest_sha256": "74301f758387e56e1a89a9fb09d4091482e759bca1768614416d584e7289e798",
+    "samples_sha256": "f8ca8c8f98893c9c4a2910f39d34cd4d639963e101e7554ae41d18d22dde6fbd",
+    "dev": 63,
+    "eval": 1241,
+    "dev_scope": "all 63 questions for native/wrapper; bounded recorded native tensors for gate",
+    "eval_image_groups": 1192,
+    "prompt": "original_question verbatim, followed by newline and Answer with one option letter only.; no reconstructed option list",
+    "native_reference": "each host uses its own newly evaluated native baseline; never borrow Qwen-3B 704/1241",
+    "prior_Qwen3b": "four existing candidates remain valid quality evidence; no Qwen-3B full rerun and no timing splice"
+  },
+  "additional_norm_selection": {
+    "rule": "one fixed source selected for generator balance among remaining V3 source-verified per-trajectory best full-correct versions",
+    "V3_original_generation_unchanged": true,
+    "old_failed_candidate_preserved": "Kimi_K3_foreach_norm_001_R4",
+    "stop_if_failed": "record failure; do not keep replacing candidates to force 8 eligible norms",
+    "accounting_if_pass": "9 original norm candidates attempted across batches, 8 eligible; original B 8/7 accounting unchanged"
+  },
+  "default_conditions": {
+    "clip": {
+      "id": "default",
+      "batch": 8,
+      "text_length": 77
+    }
+  },
+  "timing": {
+    "sessions": 3,
+    "blocks": 3,
+    "model_warmup": 2,
+    "model_repeats": 3,
+    "replay_warmup": 5,
+    "replay_repeats": 30,
+    "order_seed": 20261018,
+    "ttft": "first generated token delivered by HF streamer; prompt put excluded; includes identical token transfer instrumentation",
+    "decode_throughput": "(new_tokens-1)*batch/(end-first_token), fixed synthetic generation length; no task-quality claim"
+  },
+  "replay_rows": {
+    "normalization": [
+      1,
+      4,
+      8,
+      32,
+      128
+    ]
+  },
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 0.016
+  },
+  "upstream_clip_source_sha256": "753256b14f88fb00b69132361bde16178924231b8dcd1557dd0043a0359bce1d",
+  "excluded_after_B": [
+    {
+      "candidate_id": "Kimi_K3_foreach_norm_001_R4",
+      "reason": "B original case 13 FP32 precision failed, 19/20; retain V3 historical record; no replacement"
+    }
+  ],
+  "no_MMStar_model_timing": true,
+  "adapters": "C implementation: candidate SwiGLU projection/packing without discarded native activation computation; no generated kernel changes",
+  "failure_policy": "native/wrapper/environment/identity failures stop review; candidate failures retain records and health-check before continuing; no eval-based selection/tolerance changes; invalid/missing generation stays in denominator; incomplete retrieval unmeasured",
+  "statistics": "paired image-group bootstrap 5000, generation seed 20261019, retrieval seed 20261016; fixed retrieval corpus; descriptive related-candidate results",
+  "planned_counts": {
+    "fixed_candidate_sources": 5,
+    "mmstar_formal_candidate_comparisons": 6,
+    "mmstar_native_eval_runs": 2,
+    "mmstar_native_dev_runs": 2,
+    "mmstar_wrapper_dev_runs": 3,
+    "additional_norm_sources": 1,
+    "norm_formal_retrieval_if_eligible": 1,
+    "norm_default_timing_sessions_if_eligible": 3,
+    "norm_replay_points_if_eligible": 20,
+    "MMStar_timing_sessions": 0
+  }
+}

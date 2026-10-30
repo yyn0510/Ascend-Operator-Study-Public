@@ -1,0 +1,2670 @@
+[
+  {
+    "记录类型": "位置对照",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；仅文本侧",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.2000/93.0000/96.5000<br>58.2967/84.9660/92.7829",
+    "相对原生变化": "-0.1000/0.2000/-0.2000<br>0.0600/0.0200/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=31/38；图→文R@1区间[-0.6000,+0.4000]；文→图R@1区间[-0.1000,+0.2199]",
+    "原来源索引": "analysis_A_20261019/brief_summary.json :: Grok_4_6_gelu_001_R4/text",
+    "记录编号": "0007",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 31,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.742,
+            "difference_percentage_points": -0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.93,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 38,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5829668132746901,
+            "difference_percentage_points": 0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.09998000399920016,
+              0.21991203518592564
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8496601359456217,
+            "difference_percentage_points": 0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.03999200159968006,
+              0.09992006394884093
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9278288684526189,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.07998400319936012,
+              0.07996801279488205
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "位置对照",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；仅视觉侧",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.3000/92.9000/96.6000<br>58.1367/84.9660/92.7629",
+    "相对原生变化": "0.0000/0.1000/-0.1000<br>-0.1000/0.0200/-0.0200",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=15/67；图→文R@1区间[-0.4000,+0.4000]；文→图R@1区间[-0.3000,+0.1000]",
+    "原来源索引": "analysis_A_20261019/brief_summary.json :: Grok_4_6_gelu_001_R4/vision",
+    "记录编号": "0008",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 15,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.743,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.4,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.5
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.966,
+            "difference_percentage_points": -0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 67,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5813674530187924,
+            "difference_percentage_points": -0.09996001599360256,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.09996001599360256
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8496601359456217,
+            "difference_percentage_points": 0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.16,
+              0.2
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9276289484206317,
+            "difference_percentage_points": -0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13999999999999999,
+              0.1
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "位置对照",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；双侧",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.0000/92.9000/96.5000<br>58.1967/85.0060/92.7229",
+    "相对原生变化": "-0.3000/0.1000/-0.2000<br>-0.0400/0.0600/-0.0600",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=40/78；图→文R@1区间[-1.0000,+0.4000]；文→图R@1区间[-0.2599,+0.1600]",
+    "原来源索引": "analysis_A_20261019/brief_summary.json :: Grok_4_6_gelu_001_R4/both",
+    "记录编号": "0009",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 40,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.74,
+            "difference_percentage_points": -0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 78,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2599480103979204,
+              0.16
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8500599760095962,
+            "difference_percentage_points": 0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13999999999999999,
+              0.25989604158336665
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9272291083566573,
+            "difference_percentage_points": -0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.07996801279488205
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "位置对照",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；仅文本侧",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "analysis_A_20261019/brief_summary.json :: Kimi_K3_gelu_002_R3/text",
+    "记录编号": "0010",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.743,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.928,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.967,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5823670531787285,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9278288684526189,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "位置对照",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；仅视觉侧",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "analysis_A_20261019/brief_summary.json :: Kimi_K3_gelu_002_R3/vision",
+    "记录编号": "0011",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.743,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.928,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.967,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5823670531787285,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9278288684526189,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "位置对照",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；双侧",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "analysis_A_20261019/brief_summary.json :: Kimi_K3_gelu_002_R3/both",
+    "记录编号": "0012",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.743,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.928,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.967,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5823670531787285,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9278288684526189,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "ForeachNorm",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.5000/93.0000/96.5000<br>58.1967/84.9460/92.7629",
+    "相对原生变化": "0.2000/0.2000/-0.2000<br>-0.0400/0.0000/-0.0200",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=21/36；图→文R@1区间[-0.3000,+0.7000]；文→图R@1区间[-0.1800,+0.1000]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_DeepSeek_V4_1_Flash_foreach_norm_002_R5",
+    "记录编号": "0013",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 21,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.745,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.7000000000000001
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.93,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.5
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 36,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.18,
+              0.09996001599360256
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13997200559888023,
+              0.13991605036977814
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9276289484206317,
+            "difference_percentage_points": -0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.11990467589949626,
+              0.05998800239952009
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "ForeachNorm",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.5000/93.0000/96.5000<br>58.1967/84.9460/92.7629",
+    "相对原生变化": "0.2000/0.2000/-0.2000<br>-0.0400/0.0000/-0.0200",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=21/36；图→文R@1区间[-0.3000,+0.7000]；文→图R@1区间[-0.1800,+0.1000]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_DeepSeek_V4_1_Flash_foreach_norm_003_R5",
+    "记录编号": "0014",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 21,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.745,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.7000000000000001
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.93,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.5
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 36,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.18,
+              0.09996001599360256
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13997200559888023,
+              0.13991605036977814
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9276289484206317,
+            "difference_percentage_points": -0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.11990467589949626,
+              0.05998800239952009
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "ForeachNorm",
+    "生成来源": "GLM 5 3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.5000/93.0000/96.5000<br>58.1967/84.9460/92.7629",
+    "相对原生变化": "0.2000/0.2000/-0.2000<br>-0.0400/0.0000/-0.0200",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=21/36；图→文R@1区间[-0.3000,+0.7000]；文→图R@1区间[-0.1800,+0.1000]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_GLM_5_3_foreach_norm_003_R5",
+    "记录编号": "0015",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 21,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.745,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.7000000000000001
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.93,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.5
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 36,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.18,
+              0.09996001599360256
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13997200559888023,
+              0.13991605036977814
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9276289484206317,
+            "difference_percentage_points": -0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.11990467589949626,
+              0.05998800239952009
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "ForeachNorm",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.5000/93.0000/96.5000<br>58.1967/84.9460/92.7629",
+    "相对原生变化": "0.2000/0.2000/-0.2000<br>-0.0400/0.0000/-0.0200",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=21/36；图→文R@1区间[-0.3000,+0.7000]；文→图R@1区间[-0.1800,+0.1000]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Grok_4_6_foreach_norm_001_R5",
+    "记录编号": "0016",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 21,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.745,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.7000000000000001
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.93,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.5
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 36,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.18,
+              0.09996001599360256
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13997200559888023,
+              0.13991605036977814
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9276289484206317,
+            "difference_percentage_points": -0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.11990467589949626,
+              0.05998800239952009
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "ForeachNorm",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.5000/93.0000/96.5000<br>58.1967/84.9460/92.7629",
+    "相对原生变化": "0.2000/0.2000/-0.2000<br>-0.0400/0.0000/-0.0200",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=21/36；图→文R@1区间[-0.3000,+0.7000]；文→图R@1区间[-0.1800,+0.1000]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Grok_4_6_foreach_norm_003_R5",
+    "记录编号": "0017",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 21,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.745,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.7000000000000001
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.93,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.5
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 36,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.18,
+              0.09996001599360256
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13997200559888023,
+              0.13991605036977814
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9276289484206317,
+            "difference_percentage_points": -0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.11990467589949626,
+              0.05998800239952009
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "ForeachNorm",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R2",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.5000/93.0000/96.5000<br>58.1967/84.9460/92.7629",
+    "相对原生变化": "0.2000/0.2000/-0.2000<br>-0.0400/0.0000/-0.0200",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=21/36；图→文R@1区间[-0.3000,+0.7000]；文→图R@1区间[-0.1800,+0.1000]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Kimi_K3_foreach_norm_002_R2",
+    "记录编号": "0018",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 21,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.745,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.7000000000000001
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.93,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.5
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 36,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.18,
+              0.09996001599360256
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13997200559888023,
+              0.13991605036977814
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9276289484206317,
+            "difference_percentage_points": -0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.11990467589949626,
+              0.05998800239952009
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "ForeachNorm",
+    "生成来源": "Qwen3 8 Max",
+    "轨迹轮次": "T3/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.5000/93.0000/96.5000<br>58.1967/84.9460/92.7629",
+    "相对原生变化": "0.2000/0.2000/-0.2000<br>-0.0400/0.0000/-0.0200",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=21/36；图→文R@1区间[-0.3000,+0.7000]；文→图R@1区间[-0.1800,+0.1000]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Qwen3_8_Max_foreach_norm_003_R4",
+    "记录编号": "0019",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 21,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.745,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.7000000000000001
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.93,
+            "difference_percentage_points": 0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.5
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 36,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.18,
+              0.09996001599360256
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13997200559888023,
+              0.13991605036977814
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9276289484206317,
+            "difference_percentage_points": -0.019992003198720514,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.11990467589949626,
+              0.05998800239952009
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T2/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.0000/92.9000/96.5000<br>58.1967/85.0060/92.7229",
+    "相对原生变化": "-0.3000/0.1000/-0.2000<br>-0.0400/0.0600/-0.0600",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=40/78；图→文R@1区间[-1.0000,+0.4000]；文→图R@1区间[-0.2599,+0.1600]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_DeepSeek_V4_1_Flash_gelu_002_R5",
+    "记录编号": "0020",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 40,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.74,
+            "difference_percentage_points": -0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 78,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2599480103979204,
+              0.16
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8500599760095962,
+            "difference_percentage_points": 0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13999999999999999,
+              0.25989604158336665
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9272291083566573,
+            "difference_percentage_points": -0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.07996801279488205
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.0000/92.9000/96.5000<br>58.1967/85.0060/92.7229",
+    "相对原生变化": "-0.3000/0.1000/-0.2000<br>-0.0400/0.0600/-0.0600",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=40/78；图→文R@1区间[-1.0000,+0.4000]；文→图R@1区间[-0.2599,+0.1600]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_DeepSeek_V4_1_Flash_gelu_003_R5",
+    "记录编号": "0021",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 40,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.74,
+            "difference_percentage_points": -0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 78,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2599480103979204,
+              0.16
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8500599760095962,
+            "difference_percentage_points": 0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13999999999999999,
+              0.25989604158336665
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9272291083566573,
+            "difference_percentage_points": -0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.07996801279488205
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.0000/92.9000/96.5000<br>58.1967/85.0060/92.7229",
+    "相对原生变化": "-0.3000/0.1000/-0.2000<br>-0.0400/0.0600/-0.0600",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=40/78；图→文R@1区间[-1.0000,+0.4000]；文→图R@1区间[-0.2599,+0.1600]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Grok_4_6_gelu_001_R4",
+    "记录编号": "0022",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 40,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.74,
+            "difference_percentage_points": -0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 78,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2599480103979204,
+              0.16
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8500599760095962,
+            "difference_percentage_points": 0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13999999999999999,
+              0.25989604158336665
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9272291083566573,
+            "difference_percentage_points": -0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.07996801279488205
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T3/R2",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.0000/92.9000/96.5000<br>58.1967/85.0060/92.7229",
+    "相对原生变化": "-0.3000/0.1000/-0.2000<br>-0.0400/0.0600/-0.0600",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=40/78；图→文R@1区间[-1.0000,+0.4000]；文→图R@1区间[-0.2599,+0.1600]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Grok_4_6_gelu_003_R2",
+    "记录编号": "0023",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 40,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.74,
+            "difference_percentage_points": -0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 78,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2599480103979204,
+              0.16
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8500599760095962,
+            "difference_percentage_points": 0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13999999999999999,
+              0.25989604158336665
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9272291083566573,
+            "difference_percentage_points": -0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.07996801279488205
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.0000/92.9000/96.5000<br>58.1967/85.0060/92.7229",
+    "相对原生变化": "-0.3000/0.1000/-0.2000<br>-0.0400/0.0600/-0.0600",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=40/78；图→文R@1区间[-1.0000,+0.4000]；文→图R@1区间[-0.2599,+0.1600]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Kimi_K3_gelu_001_R4",
+    "记录编号": "0024",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 40,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.74,
+            "difference_percentage_points": -0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 78,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2599480103979204,
+              0.16
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8500599760095962,
+            "difference_percentage_points": 0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13999999999999999,
+              0.25989604158336665
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9272291083566573,
+            "difference_percentage_points": -0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.07996801279488205
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T2/R3",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Kimi_K3_gelu_002_R3",
+    "记录编号": "0025",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.743,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.928,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.967,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5823670531787285,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8494602159136345,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9278288684526189,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "74.0000/92.9000/96.5000<br>58.1967/85.0060/92.7229",
+    "相对原生变化": "-0.3000/0.1000/-0.2000<br>-0.0400/0.0600/-0.0600",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=40/78；图→文R@1区间[-1.0000,+0.4000]；文→图R@1区间[-0.2599,+0.1600]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Kimi_K3_gelu_003_R4",
+    "记录编号": "0026",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 40,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.74,
+            "difference_percentage_points": -0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.4
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 78,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5819672131147541,
+            "difference_percentage_points": -0.03998400639744103,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2599480103979204,
+              0.16
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8500599760095962,
+            "difference_percentage_points": 0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.13999999999999999,
+              0.25989604158336665
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9272291083566573,
+            "difference_percentage_points": -0.059976009596161534,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.2,
+              0.07996801279488205
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "LAION CLIP",
+    "替换算子": "GELU",
+    "生成来源": "Qwen3 8 Max",
+    "轨迹轮次": "T1/R2",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "74.3000/92.8000/96.7000<br>58.2367/84.9460/92.7829",
+    "候选结果": "73.9000/92.9000/96.5000<br>58.2367/85.0660/92.6429",
+    "相对原生变化": "-0.4000/0.1000/-0.2000<br>0.0000/0.1200/-0.1399",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=38/82；图→文R@1区间[-1.1000,+0.3000]；文→图R@1区间[-0.2200,+0.2199]",
+    "原来源索引": "C质量比较_63项.json :: clip_coco_Qwen3_8_Max_gelu_001_R2",
+    "记录编号": "0027",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 38,
+        "recall": {
+          "R@1": {
+            "native": 0.743,
+            "candidate": 0.739,
+            "difference_percentage_points": -0.4,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0999999999999999,
+              0.3
+            ]
+          },
+          "R@5": {
+            "native": 0.928,
+            "candidate": 0.929,
+            "difference_percentage_points": 0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3,
+              0.6
+            ]
+          },
+          "R@10": {
+            "native": 0.967,
+            "candidate": 0.965,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.6,
+              0.2
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 82,
+        "recall": {
+          "R@1": {
+            "native": 0.5823670531787285,
+            "candidate": 0.5823670531787285,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.21995600879824037,
+              0.21986807915250847
+            ]
+          },
+          "R@5": {
+            "native": 0.8494602159136345,
+            "candidate": 0.8506597361055578,
+            "difference_percentage_points": 0.11995201919232307,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.09992006394884093,
+              0.33972821742605913
+            ]
+          },
+          "R@10": {
+            "native": 0.9278288684526189,
+            "candidate": 0.9264294282287086,
+            "difference_percentage_points": -0.1399440223910436,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.27994401119776047,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "OpenAI CLIP",
+    "替换算子": "Sigmoid（QuickGELU内）",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T1/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "候选结果": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: quick_clip_coco_DeepSeek_V4_1_Flash_sigmoid_001_R5",
+    "记录编号": "0028",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.687,
+            "candidate": 0.687,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.89,
+            "candidate": 0.89,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.945,
+            "candidate": 0.945,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.49300279888044785,
+            "candidate": 0.49300279888044785,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.7774890043982408,
+            "candidate": 0.7774890043982408,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.883046781287485,
+            "candidate": 0.883046781287485,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "OpenAI CLIP",
+    "替换算子": "Sigmoid（QuickGELU内）",
+    "生成来源": "DeepSeek V4 1 Flash",
+    "轨迹轮次": "T3/R1",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "候选结果": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: quick_clip_coco_DeepSeek_V4_1_Flash_sigmoid_003_R1",
+    "记录编号": "0029",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.687,
+            "candidate": 0.687,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.89,
+            "candidate": 0.89,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.945,
+            "candidate": 0.945,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.49300279888044785,
+            "candidate": 0.49300279888044785,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.7774890043982408,
+            "candidate": 0.7774890043982408,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.883046781287485,
+            "candidate": 0.883046781287485,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "OpenAI CLIP",
+    "替换算子": "Sigmoid（QuickGELU内）",
+    "生成来源": "GLM 5 3",
+    "轨迹轮次": "T3/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "候选结果": "68.5000/88.9000/94.8000<br>48.9404/77.6489/88.3047",
+    "相对原生变化": "-0.2000/-0.1000/0.3000<br>-0.3599/-0.1000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=44/140；图→文R@1区间[-1.0000,+0.6000]；文→图R@1区间[-0.6397,-0.0800]",
+    "原来源索引": "C质量比较_63项.json :: quick_clip_coco_GLM_5_3_sigmoid_003_R5",
+    "记录编号": "0030",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 44,
+        "recall": {
+          "R@1": {
+            "native": 0.687,
+            "candidate": 0.685,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.6
+            ]
+          },
+          "R@5": {
+            "native": 0.89,
+            "candidate": 0.889,
+            "difference_percentage_points": -0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.2
+            ]
+          },
+          "R@10": {
+            "native": 0.945,
+            "candidate": 0.948,
+            "difference_percentage_points": 0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.7000000000000001
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 140,
+        "recall": {
+          "R@1": {
+            "native": 0.49300279888044785,
+            "candidate": 0.4894042383046781,
+            "difference_percentage_points": -0.3598560575769692,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.639747300439952,
+              -0.08
+            ]
+          },
+          "R@5": {
+            "native": 0.7774890043982408,
+            "candidate": 0.7764894042383047,
+            "difference_percentage_points": -0.09996001599360256,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3598560575769692,
+              0.1599360255897641
+            ]
+          },
+          "R@10": {
+            "native": 0.883046781287485,
+            "candidate": 0.883046781287485,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.21995600879824037,
+              0.21991203518592564
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "OpenAI CLIP",
+    "替换算子": "Sigmoid（QuickGELU内）",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T1/R5",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "候选结果": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: quick_clip_coco_Grok_4_6_sigmoid_001_R5",
+    "记录编号": "0031",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.687,
+            "candidate": 0.687,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.89,
+            "candidate": 0.89,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.945,
+            "candidate": 0.945,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.49300279888044785,
+            "candidate": 0.49300279888044785,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.7774890043982408,
+            "candidate": 0.7774890043982408,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.883046781287485,
+            "candidate": 0.883046781287485,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "OpenAI CLIP",
+    "替换算子": "Sigmoid（QuickGELU内）",
+    "生成来源": "Grok 4 6",
+    "轨迹轮次": "T2/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "候选结果": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: quick_clip_coco_Grok_4_6_sigmoid_002_R4",
+    "记录编号": "0032",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.687,
+            "candidate": 0.687,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.89,
+            "candidate": 0.89,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.945,
+            "candidate": 0.945,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.49300279888044785,
+            "candidate": 0.49300279888044785,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.7774890043982408,
+            "candidate": 0.7774890043982408,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.883046781287485,
+            "candidate": 0.883046781287485,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "OpenAI CLIP",
+    "替换算子": "Sigmoid（QuickGELU内）",
+    "生成来源": "Kimi K3",
+    "轨迹轮次": "T3/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "候选结果": "68.5000/88.9000/94.8000<br>48.9404/77.6489/88.3047",
+    "相对原生变化": "-0.2000/-0.1000/0.3000<br>-0.3599/-0.1000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=44/140；图→文R@1区间[-1.0000,+0.6000]；文→图R@1区间[-0.6397,-0.0800]",
+    "原来源索引": "C质量比较_63项.json :: quick_clip_coco_Kimi_K3_sigmoid_003_R4",
+    "记录编号": "0033",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 44,
+        "recall": {
+          "R@1": {
+            "native": 0.687,
+            "candidate": 0.685,
+            "difference_percentage_points": -0.2,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -1.0,
+              0.6
+            ]
+          },
+          "R@5": {
+            "native": 0.89,
+            "candidate": 0.889,
+            "difference_percentage_points": -0.1,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.5,
+              0.2
+            ]
+          },
+          "R@10": {
+            "native": 0.945,
+            "candidate": 0.948,
+            "difference_percentage_points": 0.3,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.7000000000000001
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 140,
+        "recall": {
+          "R@1": {
+            "native": 0.49300279888044785,
+            "candidate": 0.4894042383046781,
+            "difference_percentage_points": -0.3598560575769692,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.639747300439952,
+              -0.08
+            ]
+          },
+          "R@5": {
+            "native": 0.7774890043982408,
+            "candidate": 0.7764894042383047,
+            "difference_percentage_points": -0.09996001599360256,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.3598560575769692,
+              0.1599360255897641
+            ]
+          },
+          "R@10": {
+            "native": 0.883046781287485,
+            "candidate": 0.883046781287485,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              -0.21995600879824037,
+              0.21991203518592564
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "OpenAI CLIP",
+    "替换算子": "Sigmoid（QuickGELU内）",
+    "生成来源": "MiniMax M3",
+    "轨迹轮次": "T3/R2",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "候选结果": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: quick_clip_coco_MiniMax_M3_sigmoid_003_R2",
+    "记录编号": "0034",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.687,
+            "candidate": 0.687,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.89,
+            "candidate": 0.89,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.945,
+            "candidate": 0.945,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.49300279888044785,
+            "candidate": 0.49300279888044785,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.7774890043982408,
+            "candidate": 0.7774890043982408,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.883046781287485,
+            "candidate": 0.883046781287485,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  },
+  {
+    "记录类型": "正式任务",
+    "宿主模型": "OpenAI CLIP",
+    "替换算子": "Sigmoid（QuickGELU内）",
+    "生成来源": "Qwen3 8 Max",
+    "轨迹轮次": "T1/R4",
+    "数据集或输入": "COCO",
+    "条件版本": "BF16；默认任务条件",
+    "指标": "图→文R@1/5/10%；<br>文→图R@1/5/10%",
+    "原生参考": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "候选结果": "68.7000/89.0000/94.5000<br>49.3003/77.7489/88.3047",
+    "相对原生变化": "0.0000/0.0000/0.0000<br>0.0000/0.0000/0.0000",
+    "效率变化": "见下方同候选独立计时行",
+    "备注": "1000图/5002文；Top1变化（图→文/文→图）=0/0；图→文R@1区间[+0.0000,+0.0000]；文→图R@1区间[+0.0000,+0.0000]",
+    "原来源索引": "C质量比较_63项.json :: quick_clip_coco_Qwen3_8_Max_sigmoid_001_R4",
+    "记录编号": "0035",
+    "详细数值": {
+      "image_to_text": {
+        "queries": 1000,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.687,
+            "candidate": 0.687,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.89,
+            "candidate": 0.89,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.945,
+            "candidate": 0.945,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "text_to_image": {
+        "queries": 5002,
+        "image_groups": 1000,
+        "top1_changes": 0,
+        "recall": {
+          "R@1": {
+            "native": 0.49300279888044785,
+            "candidate": 0.49300279888044785,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@5": {
+            "native": 0.7774890043982408,
+            "candidate": 0.7774890043982408,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          },
+          "R@10": {
+            "native": 0.883046781287485,
+            "candidate": 0.883046781287485,
+            "difference_percentage_points": 0.0,
+            "paired_image_group_bootstrap_95pct_pp": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "bootstrap": {
+        "replicates": 5000,
+        "seed": 20261016,
+        "scope": "query image groups; retrieval corpus fixed; CI does not establish equivalence"
+      }
+    }
+  }
+]

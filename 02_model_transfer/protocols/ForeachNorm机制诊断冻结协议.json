@@ -1,0 +1,60 @@
+{
+  "stage": "ForeachNorm_mechanism_diagnostic",
+  "parent_candidate": "Kimi_K3_foreach_norm_003_R2",
+  "original_D_run": "extension_D_20261020_152026_2347",
+  "script_sha256": "254945fd0181193cbac1dd9a1a2df850fbffdaa7a06b710fc4980eb10e551c03",
+  "variants_in_order": [
+    "archived_original",
+    "rebuilt_control",
+    "aligned_tail_diagnostic"
+  ],
+  "lengths": [
+    512,
+    4096,
+    4097,
+    24577,
+    28673,
+    32768,
+    32769
+  ],
+  "expected_actual_partial_counts": [
+    1,
+    1,
+    2,
+    7,
+    8,
+    8,
+    9
+  ],
+  "tensor_list_length": 8,
+  "dtype": "bfloat16",
+  "norm_p": 2.0,
+  "source_capture_sha256": "9decf47842937549cc1e737e38a531abf4b1f230f54433134e734b8e0e1e20c4",
+  "input_construction": "512 uses exact saved input; other lengths repeat/truncate each saved row; no RNG",
+  "independent_process_per_variant_length": true,
+  "calls_per_point": 1,
+  "expected_points": 21,
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 0.016
+  },
+  "tiling_observation": "tiny host-only library calls the current installed binary actual calc_foreach_norm_tiling_params; dladdr checks binding; not a formula-only estimate",
+  "diagnostic_change": {
+    "file": "csrc/ops/foreach_norm/op_kernel/foreach_norm_kernel.cpp",
+    "before": "        auto tail = inLocal[numPartials];\n        AscendC::Duplicate(tail, ident, static_cast<int32_t>(padded - numPartials));",
+    "after": "        // Diagnostic only: same padding elements, aligned UB base and bit mask.\n        const int64_t alignedBase = (numPartials / 8) * 8;\n        uint64_t tailMask[1] = {uint64_t(0xff) & (uint64_t(0xff) << (numPartials - alignedBase))};\n        AscendC::Duplicate(inLocal[alignedBase], ident, tailMask, 1, 1, 8);",
+    "effect": "replace unaligned tail-start vector fill with aligned-base masked vector fill of exactly the same padding elements",
+    "not_changed": [
+      "p-norm arithmetic",
+      "tiling function",
+      "buffers",
+      "explicit synchronization statements",
+      "dtype",
+      "tolerance",
+      "other source files"
+    ]
+  },
+  "role": "explicit human diagnostic modification, separate from unchanged model-generated candidate; never added to V3 or formal candidate ranking",
+  "failure_policy": "record original/control/diagnostic candidate failures; fresh device health after each; controls/identity/build/tiling failures stop for review; restore initial package",
+  "limits": "No quality dataset, model run, timing claim, FP16 sweep, extra candidates or retries until a desired pattern appears."
+}
