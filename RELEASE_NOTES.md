@@ -4,7 +4,7 @@ This release consolidates the existing V3 and four-operator multimodal transfer 
 
 Included: formal V3 source archive and statistics; original recorded model-transfer outcomes, failures and diagnostic evidence; frozen protocols, candidate sources, execution and analysis snapshots; dataset selection records available in the source packages.
 
-Excluded: the incomplete Opus cohort, later E model-transfer expansion, paper outlines and redundant presentation drafts, model weights, dataset images, caches, packaged binaries and duplicate outer ZIPs. Excluding E does not remove its four operator names from the original V3 eight-operator benchmark.
+Excluded: the incomplete Opus cohort, paper outlines and redundant presentation drafts, model weights, dataset images, caches, packaged binaries and duplicate outer ZIPs. The original V3 eight-operator benchmark is retained in full.
 
 Public copies redact detected credential patterns, concrete assigned secrets, the local author's workspace/home paths and local username. Measurements, candidate identities, sample IDs and recorded failure states are retained. Source files are unchanged. `metadata/redaction_log.json` lists affected public entries and transformation classes; the member index records both original and published hashes. This is not a claim that an automated scan can establish perfect anonymity against all indirect identification.
 

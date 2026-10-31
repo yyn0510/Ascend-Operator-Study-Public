@@ -22,4 +22,4 @@ Preparation date: 2026-10-30. No NPU experiments or model generations were run d
 
 The source-entry count is a file count, not an experiment count. Historical snapshots can contain the same source file more than once. Known paths and service access fields were sanitized only in published copies. Source and public hashes are both retained.
 
-This validation establishes packaging integrity and the reported cohort counts. It does not independently rerun every statistic, certify all third-party rights, or guarantee anonymity against indirect inference. The E expansion and incomplete Opus formal cohort are excluded; the original V3 eight-operator scope remains intact.
+This validation establishes packaging integrity and the reported cohort counts. It does not independently rerun every statistic, certify all third-party rights, or guarantee anonymity against indirect inference. The incomplete Opus formal cohort is excluded; the original V3 eight-operator scope remains intact.

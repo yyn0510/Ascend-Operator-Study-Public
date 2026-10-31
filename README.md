@@ -31,7 +31,7 @@ Download the repository before running the commands. Do not upload only this REA
 
 ## Scope boundaries
 
-The incomplete Opus run is excluded from the formal V3 cohort. The subsequent E expansion (Mish/Exp in YOLOv4 and MaskedScale/ForeachAddcdivScalar in DeiT training) is excluded from this release. Those operator names still occur in V3 because all eight original generation tasks are included.
+The incomplete Opus run is excluded from the formal V3 cohort. All eight original V3 operator tasks are included.
 
 Task accuracy, output identity, numerical admission and speed are different outcomes. Timing uses controlled inputs and must not be interpreted as average latency across the task dataset. Selected-candidate admission rates are not population estimates for all generated implementations.
 
