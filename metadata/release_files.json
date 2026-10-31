@@ -71,8 +71,8 @@
   },
   {
     "file": "01_v3/README.md",
-    "bytes": 2553,
-    "sha256": "86354a29891bb8919917e62738546c80ffea89233948588fbed3935966d63087"
+    "bytes": 2651,
+    "sha256": "ba24c84d17d84ba4a026fa89bd91048e8bb52aa9ad9005616eaa99bc7ec2af22"
   },
   {
     "file": "01_v3/tables/v3_models.csv",
@@ -296,8 +296,8 @@
   },
   {
     "file": "02_model_transfer/README.md",
-    "bytes": 3801,
-    "sha256": "e846d0edf6ed9b2818b8d08001d6bc8f9c8d5639c67b47690b4feaec10051cd2"
+    "bytes": 3855,
+    "sha256": "8728135b388955afc48dacd5b873498c7d042954623709e84febafe6b4bffbd2"
   },
   {
     "file": "02_model_transfer/support/early_support-01.zip",
